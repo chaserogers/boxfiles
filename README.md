@@ -16,3 +16,12 @@ If you'd like to omit the Sublime Text portion of this repo entirely, delete the
 `source boxfiles/install.sh`
 
 That's it!  You're good to go.  Feel free to fork this repo and customize it as you see fit.
+
+## Rails template configuration
+
+To configure your rails_template to create a new repository on github and push your project to that repository on initialize, follow these steps:
+
+- navigate to boxfiles/rails/.rails_template.rb
+- uncomment lines 51-54
+- change b0xw00d to your github username on line 51
+- save your changes
