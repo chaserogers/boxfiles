@@ -26,6 +26,9 @@
 
   find = log --all --pretty=\"format:%Cgreen%H %Cblue%s\n%b%Creset\" --name-status --grep
 
+  ll = log \
+      --pretty=format:'%C(magenta)commit %H%Creset%C(yellow)%d%Creset\n%C(cyan)Author: %an <%ae>%Creset\n%C(blue)Date: %cd%Creset\n\n%B\n'
+
   lg = log \
     --graph \
     --pretty=format:'%C(magenta)commit %H%Creset%C(yellow)%d%Creset\n%C(cyan)Author: %an <%ae>%Creset\n%C(blue)Date: %cd%Creset\n\n%B\n'\
