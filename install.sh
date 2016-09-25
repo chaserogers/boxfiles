@@ -9,3 +9,6 @@ ln -sfv "$BOXFILES_ROOT/runcom/.pryrc" ~
 ln -sfv "$BOXFILES_ROOT/git/.gitconfig" ~
 ln -sfv "$BOXFILES_ROOT/git/.gitignore_global" ~
 ln -sfv "$BOXFILES_ROOT/git/.gitmessage.txt" ~
+
+rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+ln -sfnv "$BOXFILES_ROOT/sublime/User" ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User

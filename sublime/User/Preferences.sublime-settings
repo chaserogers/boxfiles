@@ -1,0 +1,37 @@
+{
+	"auto_close_tags": false,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_with_fields": true,
+	"caret_style": "blink",
+	"color_scheme": "Packages/Bango Color Scheme/bango.tmTheme",
+	"enki_theme_accent_white": true,
+	"enki_theme_compact_sidebar": true,
+	"enki_theme_panel_separator": true,
+	"enki_theme_small_statusbar": true,
+	"enki_theme_small_tab": true,
+	"enki_theme_tabs_autowidth": true,
+	"enki_theme_tree_headings": true,
+	"font_face": "Hack",
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"match_brackets": false,
+	"match_brackets_angle": false,
+	"match_brackets_braces": false,
+	"match_brackets_content": false,
+	"match_brackets_square": false,
+	"match_tags": false,
+	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+		80
+	],
+	"save_on_focus_lost": true,
+	"theme": "Enki-Theme.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"word_wrap": "false"
+}
