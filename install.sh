@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-BOXFILE_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BOXFILES_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-ln -sfv "$BOXFILE_ROOT/runcom/.bash_profile" ~
-ln -sfv "$BOXFILE_ROOT/runcom/.inputrc" ~
-ln -sfv "$BOXFILE_ROOT/git/.gitconfig" ~
-ln -sfv "$BOXFILE_ROOT/git/.gitignore_global" ~
-ln -sfv "$BOXFILE_ROOT/git/.gitmessage.txt" ~
+ln -sfv "$BOXFILES_ROOT/runcom/.bash_profile" ~
+ln -sfv "$BOXFILES_ROOT/runcom/.inputrc" ~
+ln -sfv "$BOXFILES_ROOT/git/.gitconfig" ~
+ln -sfv "$BOXFILES_ROOT/git/.gitignore_global" ~
+ln -sfv "$BOXFILES_ROOT/git/.gitmessage.txt" ~

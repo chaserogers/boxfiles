@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-for BOXFILE in `find /Users/chasenutile/Desktop/Code/boxfiles/system/`; do
+SCRIPT_PATH=`readlink $BASH_SOURCE`
+BOXFILES_ROOT=$(dirname "$(dirname "$SCRIPT_PATH")")
+
+for BOXFILE in `find "$BOXFILES_ROOT"/system/`; do
   [ -r "$BOXFILE" ] && [ -f "$BOXFILE" ] && source "$BOXFILE";
 done
-unset BOXFILE;
