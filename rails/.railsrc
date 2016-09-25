@@ -1,0 +1,4 @@
+-B #Skip Bundle
+-T #Skip Test-Unit
+-d postgresql #Use postgres
+-m ~/.rails_template.rb #load custom rails template
