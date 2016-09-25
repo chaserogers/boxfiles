@@ -18,3 +18,6 @@ which -s subl && export EDITOR="subl --wait"
 test -d $HOME/.rvm/bin && PATH=$PATH:$HOME/.rvm/bin
 source ~/.profile
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+cowsay -f small "$(fortune -s)"
+PATH=/opt/local/bin:$PATH/
