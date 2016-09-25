@@ -50,4 +50,15 @@ git_prompt (){
 }
 
 # PS1 is the variable for the prompt you see everytime you hit enter
-PROMPT_COMMAND='PS1="${BIWhite}${On_White}\T | \w${c_reset}\n$(git_prompt)${BICyan}⨠${BIYellow}⨠${BIGreen}⨠${BIRed}⨠${c_reset} "'
+
+#single color prompt (arrows)
+# PROMPT_COMMAND='PS1="${BIWhite}${On_White}\T | \w${c_reset}\n$(git_prompt)${BICyan}⨠${BIYellow}⨠${BIGreen}⨠${BIRed}⨠${c_reset} "'
+
+#single color prompt (squares)
+# PROMPT_COMMAND='PS1="${BIWhite}${On_White}\T | \w${c_reset}\n$(git_prompt)${BICyan} ❒ ${BIYellow}❒ ${BIGreen}❒ ${BIRed}❒${c_reset} "'
+
+#triple color prompt (squares)
+# PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \D{%m/%d/%y} ${c_reset}${BIWhite}${bakcyn} \@ ${c_reset}${BIWhite}${bakylw} $PWD ${c_reset}\n$(git_prompt)${BICyan} ❑ ${BIYellow}❒ ${BIGreen}❑ ${BIRed}❒${c_reset} "'
+
+#triple color prompt (arrows)
+PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \D{%m/%d/%y} ${c_reset}${BIWhite}${bakcyn} \@ ${c_reset}${BIWhite}${bakylw} $PWD ${c_reset}\n$(git_prompt)${BICyan}⨠${BIYellow}⨠${BIGreen}⨠${BIRed}⨠${c_reset} "'
