@@ -56,7 +56,7 @@
 [push]
   default = matching
 [commit]
-  template = /Users/chasenutile/.gitmessage.txt
+  template = /Users/b0xw00d/.gitmessage.txt
 [filter "lfs"]
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f

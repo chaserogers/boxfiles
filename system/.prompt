@@ -34,16 +34,19 @@ git_prompt (){
   #Clean branch
   if git diff --quiet 2> /dev/null; then
     git_color="${BIGreen}"
+    # git_color="${bakgrn}"
   fi
 
   #Dirty branch
   if ! git diff --quiet 2> /dev/null; then
     git_color="${BIRed}"
+    # git_color="${bakred}"
   fi
 
   #Tracked branch
   if ! git diff --cached --quiet 2> /dev/null; then
     git_color="${BIYellow}"
+    # git_color="${bakylw}"
   fi
 
   echo "${git_color}[$git_branch]${c_reset}"
@@ -52,13 +55,13 @@ git_prompt (){
 # PS1 is the variable for the prompt you see everytime you hit enter
 
 #single color prompt (arrows)
-# PROMPT_COMMAND='PS1="${BIWhite}${On_White}\T | \w${c_reset}\n$(git_prompt)${BICyan}⨠${BIYellow}⨠${BIGreen}⨠${BIRed}⨠${c_reset} "'
+# PROMPT_COMMAND='PS1="${BIWhite}${bakpur}\T | \w${c_reset}\n$(git_prompt)${BICyan}⨠${BIYellow}⨠${BIGreen}⨠${BIRed}⨠${c_reset} "'
 
 #single color prompt (squares)
-# PROMPT_COMMAND='PS1="${BIWhite}${On_White}\T | \w${c_reset}\n$(git_prompt)${BICyan} ❒ ${BIYellow}❒ ${BIGreen}❒ ${BIRed}❒${c_reset} "'
+# PROMPT_COMMAND='PS1="${BIWhite}${bakpur}\T | \w${c_reset}\n$(git_prompt)${BICyan} ❒ ${BIYellow}❒ ${BIGreen}❒ ${BIRed}❒${c_reset} "'
 
 #triple color prompt (squares)
-# PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \D{%m/%d/%y} ${c_reset}${BIWhite}${bakcyn} \@ ${c_reset}${BIWhite}${bakylw} $PWD ${c_reset}\n$(git_prompt)${BICyan} ❑ ${BIYellow}❒ ${BIGreen}❑ ${BIRed}❒${c_reset} "'
+# PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \D{%m/%d/%y} ${c_reset}${BIWhite}${bakcyn} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan} ❑ ${BIYellow}❒ ${BIGreen}❑ ${BIRed}❒${c_reset} "'
 
 #triple color prompt (arrows)
-PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \D{%m/%d/%y} ${c_reset}${BIWhite}${bakcyn} \@ ${c_reset}${BIWhite}${bakylw} $PWD ${c_reset}\n$(git_prompt)${BICyan}⨠${BIYellow}⨠${BIGreen}⨠${BIRed}⨠${c_reset} "'
+PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \D{%m/%d/%y} ${c_reset}${BIWhite}${bakcyn} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}⨠${BIYellow}⨠${BIGreen}⨠${BIRed}⨠${c_reset} "'
