@@ -17,6 +17,10 @@ If you'd like to omit the Sublime Text portion of this repo entirely, delete the
 
 That's it!  You're good to go.  Feel free to fork this repo and customize it as you see fit.
 
+## iTerm configuration
+
+This task can be accomplished from your iTerm Preferences window.  Here is a useful article on how to sync your iTerm preferences with dotfiles:  [http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-repository/](http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-repository/).
+
 ## Rails template configuration
 
 To configure your rails_template to create a new repository on github and push your project to that repository on initialize, follow these steps:
