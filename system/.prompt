@@ -1,0 +1,53 @@
+# \[\e[0m\] resets the color to default color
+c_reset='\[\e[0m\]'
+
+# Bold High Intensity
+BIBlack='\[\e[1;90m\]'      # Black
+BIRed='\[\e[1;91m\]'        # Red
+BIGreen='\[\e[1;92m\]'      # Green
+BIYellow='\[\e[1;93m\]'     # Yellow
+BIBlue='\[\e[1;94m\]'       # Blue
+BIPurple='\[\e[1;95m\]'     # Purple
+BICyan='\[\e[1;96m\]'       # Cyan
+BIWhite='\[\e[1;97m\]'      # White
+
+# Background Colors
+On_Black='\[\e[40m\]'       # Black
+bakred='\[\e[41m\]'         # Red
+bakgrn='\[\e[42m\]'         # Green
+bakylw='\[\e[43m\]'         # Yellow
+bakblu='\[\e[44m\]'         # Blue
+bakpur='\[\e[45m\]'         # Purple
+bakcyn='\[\e[46m\]'         # Cyan
+On_White='\[\e[47m\]'       # White
+
+# determines if the git branch you are on is clean or dirty
+git_prompt (){
+
+  if ! git rev-parse --git-dir > /dev/null 2>&1; then
+    return 0
+  fi
+
+  # Grab working branch name
+  git_branch=$(Git branch 2>/dev/null| sed -n '/^\*/s/^\* //p')
+
+  #Clean branch
+  if git diff --quiet 2> /dev/null; then
+    git_color="${BIGreen}"
+  fi
+
+  #Dirty branch
+  if ! git diff --quiet 2> /dev/null; then
+    git_color="${BIRed}"
+  fi
+
+  #Tracked branch
+  if ! git diff --cached --quiet 2> /dev/null; then
+    git_color="${BIYellow}"
+  fi
+
+  echo "${git_color}[$git_branch]${c_reset}"
+}
+
+# PS1 is the variable for the prompt you see everytime you hit enter
+PROMPT_COMMAND='PS1="${BIWhite}${On_White}\T | \w${c_reset}\n$(git_prompt)${BICyan}⨠${BIYellow}⨠${BIGreen}⨠${BIRed}⨠${c_reset} "'

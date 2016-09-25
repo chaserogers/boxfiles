@@ -1,0 +1,12 @@
+function topen() {
+  touch $1
+  open $1
+}
+
+function mk() {
+  mkdir -p "$@" && cd "$@"
+}
+
+function manpdf() {
+  man -t "${1}" | open -f -a /Applications/Preview.app/
+}

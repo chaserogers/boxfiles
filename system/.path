@@ -1,0 +1,20 @@
+# Path for brew
+test -d /usr/local/bin && export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+
+# Path for Heroku
+test -d /usr/local/heroku/ && export PATH="/usr/local/heroku/bin:$PATH"
+# Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/Library/Python/2.7/site-packages:$PATH"
+
+# Load git completions
+git_completion_script=/usr/local/etc/bash_completion.d/git-completion.bash
+test -s $git_completion_script && source $git_completion_script
+
+# Set sublime as the default editor
+which -s subl && export EDITOR="subl --wait"
+
+# Path for RVM and load RVM as a function
+test -d $HOME/.rvm/bin && PATH=$PATH:$HOME/.rvm/bin
+source ~/.profile
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

@@ -1,0 +1,66 @@
+[core]
+  excludesfile = ~/.gitignore_global
+
+[color]
+  status = auto
+  diff = auto
+
+[color "status"]
+  untracked = cyan
+  changed = green
+  added = yellow
+
+[alias]
+  ci = commit
+  co = checkout
+  st = status
+  ch = cherry -v origin
+  df = diff
+  br = branch
+  stage = add
+  unstage = reset HEAD
+  amend= commit --verbose --amend
+  orb = ! git fetch origin && git pull --rebase origin
+  urb = ! git fetch upstream && git pull --rebase upstream
+  ph = "! echo 'git push heroku' $(git branch-name) ':master' &&  git push heroku $(git branch-name):master"
+
+  find = log --all --pretty=\"format:%Cgreen%H %Cblue%s\n%b%Creset\" --name-status --grep
+
+  lg = log \
+    --graph \
+    --pretty=format:'%C(magenta)commit %H%Creset%C(yellow)%d%Creset\n%C(cyan)Author: %an <%ae>%Creset\n%C(blue)Date: %cd%Creset\n\n%B\n'\
+    --name-status
+
+  mine = log \
+    --pretty=format:'%C(magenta)commit %H%Creset%C(yellow)%d%Creset\n%C(cyan)Author: %an <%ae>%Creset\n%C(blue)Date: %cd%Creset\n\n%B\n' \
+    --author=chaseanthonyrogers@gmail.com
+
+  lg1 = log \
+    --pretty=format:'%C(magenta)%h%Creset -%C(yellow)%d%Creset %s %C(blue)(%cr) %C(cyan)<%an>%Creset' \
+    --abbrev-commit \
+    --date=relative
+
+  long = log \
+    --pretty=format:'%C(magenta)commit %H%Creset%C(yellow)%d%Creset\n%C(cyan)Author: %an <%ae>%Creset\n%C(blue)Date: %cd%Creset\n\n%B\n' \
+    -p
+
+[user]
+  name = Chase Rogers
+  email = chaseanthonyrogers@gmail.com
+
+[credential]
+  helper = osxkeychain
+[push]
+  default = matching
+[commit]
+  template = /Users/chasenutile/.gitmessage.txt
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true

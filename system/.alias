@@ -1,0 +1,24 @@
+alias ls1='ls -1'
+alias ll='ls -laGh'
+alias cl='clear'
+alias e='subl'
+
+alias ..='cd ..'
+alias d='cd ~/Desktop'
+alias code='cd ~/Desktop/Code'
+alias jump='cd ~/Desktop/jumpstart'
+
+alias memory='ps auxm'
+alias cpu='ps auxr'
+
+alias gs='git status'
+alias brall='git branch -a'
+
+alias be='bundle exec'
+alias yolo='bundle exec rake db:{drop,create,migrate}'
+alias xoxo='mix ecto.drop && mix ecto.create && mix ecto.migrate'
+alias pm='python manage.py'
+alias perver='python manage.py runserver'
+alias pherver='mix phoenix.server'
+alias fs='foreman start -f Procfile-dev'
+alias popo='rubocop'
