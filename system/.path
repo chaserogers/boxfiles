@@ -3,7 +3,6 @@ test -d /usr/local/bin && export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PAT
 
 # Path for Heroku
 test -d /usr/local/heroku/ && export PATH="/usr/local/heroku/bin:$PATH"
-# Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/Library/Python/2.7/site-packages:$PATH"
 
@@ -11,13 +10,9 @@ export PATH="/Library/Python/2.7/site-packages:$PATH"
 git_completion_script=/usr/local/etc/bash_completion.d/git-completion.bash
 test -s $git_completion_script && source $git_completion_script
 
-# Set sublime as the default editor
-which -s subl && export EDITOR="subl --wait"
-
-# Path for RVM and load RVM as a function
+# Path for RVM
 test -d $HOME/.rvm/bin && PATH=$PATH:$HOME/.rvm/bin
-source ~/.profile
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+export PATH="$PATH:$HOME/.rvm/bin"
 
-cowsay -f small "$(fortune -s)"
+# Path for VIM
 PATH=/opt/local/bin:$PATH/
