@@ -1,14 +1,12 @@
 [core]
-  excludesfile = ~/.gitignore_global
+	excludesfile = /Users/b0xw00d/.gitignore_global
 
-[color]
-  status = auto
-  diff = auto
+[user]
+	name = Chase
+	email = chaseanthonyrogers@gmail.com
 
-[color "status"]
-  untracked = cyan
-  changed = green
-  added = yellow
+[github]
+  user = b0xw00d
 
 [alias]
   ci = commit
@@ -19,51 +17,74 @@
   br = branch
   stage = add
   unstage = reset HEAD
-  amend= commit --verbose --amend
+  amend = commit --verbose --amend
   orb = ! git fetch origin && git pull --rebase origin
   urb = ! git fetch upstream && git pull --rebase upstream
   ph = "! echo 'git push heroku' $(git branch-name) ':master' &&  git push heroku $(git branch-name):master"
-
   find = log --all --pretty=\"format:%Cgreen%H %Cblue%s\n%b%Creset\" --name-status --grep
 
   ll = log \
-      --pretty=format:'%C(magenta)commit %H%Creset%C(yellow)%d%Creset\n%C(cyan)Author: %an <%ae>%Creset\n%C(blue)Date: %cd%Creset\n\n%B\n'
+      --pretty=format:'%C(magenta bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(cyan bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n'
 
   lg = log \
     --graph \
-    --pretty=format:'%C(magenta)commit %H%Creset%C(yellow)%d%Creset\n%C(cyan)Author: %an <%ae>%Creset\n%C(blue)Date: %cd%Creset\n\n%B\n'\
+    --pretty=format:'%C(magenta bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(cyan bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n'\
     --name-status
 
   mine = log \
-    --pretty=format:'%C(magenta)commit %H%Creset%C(yellow)%d%Creset\n%C(cyan)Author: %an <%ae>%Creset\n%C(blue)Date: %cd%Creset\n\n%B\n' \
+    --pretty=format:'%C(magenta bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(cyan bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n' \
     --author=chaseanthonyrogers@gmail.com
 
   lg1 = log \
-    --pretty=format:'%C(magenta)%h%Creset -%C(yellow)%d%Creset %s %C(blue)(%cr) %C(cyan)<%an>%Creset' \
+    --pretty=format:'%C(magenta bold)%h%Creset -%C(yellow bold)%d%Creset %s %C(blue bold)(%cr) %C(cyan bold)<%an>%Creset' \
     --abbrev-commit \
     --date=relative
 
-  long = log \
-    --pretty=format:'%C(magenta)commit %H%Creset%C(yellow)%d%Creset\n%C(cyan)Author: %an <%ae>%Creset\n%C(blue)Date: %cd%Creset\n\n%B\n' \
+  logdf = log \
+    --pretty=format:'%C(magenta bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(cyan bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n' \
     -p
 
-[user]
-  name = Chase Rogers
-  email = chaseanthonyrogers@gmail.com
+[color]
+  ui = auto
+[color "status"]
+  header = normal
+  branch = normal
+  untracked = cyan
+  added = yellow
+  changed = red
+[color "branch"]
+  current = green bold
+  local = yellow
+  remote = cyan
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  plain = normal
+  old = red bold
+  new = green bold
+  whitespace = "normal bold"
+[color "interactive"]
+  prompt = cyan bold
+  header = green bold
+  help = yellow
+  error = red
+[color "decorate"]
+  branch = yellow bold
+  remoteBranch = cyan
+  tag = white bold
+  stash = blue
+  HEAD = yellow
 
 [credential]
   helper = osxkeychain
+
 [push]
   default = matching
+
 [commit]
-  template = /Users/b0xw00d/.gitmessage.txt
+	template = /Users/b0xw00d/.gitmessage.txt
+
 [filter "lfs"]
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
   required = true
-[difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path =
-[mergetool "sourcetree"]
-  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true

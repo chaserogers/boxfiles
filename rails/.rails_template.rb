@@ -54,6 +54,44 @@ run "cp ~/.gitmessage.txt ./.github/commit.template"
 run "cp ~/.pull_request_template.md ./.github/PULL_REQUEST_TEMPLATE.md"
 # run "cp ~/.issue_template.md #{app_path}/.github/ISSUE_TEMPLATE.md"
 
+#add .editorconfig file
+run "touch .editorconfig"
+inject_into_file '.editorconfig', after: // do
+  <<-CODE
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.rb]
+indent_style = space
+indent_size = 2
+
+[*.{js,json,html,erb,haml,scss,sass}]
+indent_style = space
+indent_size = 4
+
+[Rakefile]
+indent_style = space
+indent_size = 2
+
+[Gemfile*]
+indent_style = space
+indent_size = 2
+
+[config.ru]
+indent_style = space
+indent_size = 2
+  CODE
+end
+
 #add new rake file to initialize commit template in this directory only
 rakefile("commit_template.rake") do
   <<-TASK
