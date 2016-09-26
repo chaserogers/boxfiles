@@ -7,6 +7,7 @@ ln -sfv "$BOXFILES_ROOT/runcom/.inputrc" ~
 ln -sfv "$BOXFILES_ROOT/runcom/.pryrc" ~
 ln -sfv "$BOXFILES_ROOT/rails/.railsrc" ~
 ln -sfv "$BOXFILES_ROOT/rails/.rails_template.rb" ~
+ln -sfv "$BOXFILES_ROOT/rails/.rspec" ~
 ln -sfv "$BOXFILES_ROOT/git/.gitconfig" ~
 ln -sfv "$BOXFILES_ROOT/git/.gitignore_global" ~
 ln -sfv "$BOXFILES_ROOT/git/.gitmessage.txt" ~
