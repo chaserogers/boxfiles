@@ -9,6 +9,7 @@ done
 
 # Load RVM into shell  *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+source ~/.profile
 
 #cowsay ascii on session load
 cowsay -f small "$(fortune -s)"
