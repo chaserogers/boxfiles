@@ -19,6 +19,31 @@ generate('rspec:install')
 #initialize guard
 run "bundle exec guard init rspec"
 
+#add custom icons for rspec examples
+inject_into_file 'spec/spec_helper.rb', after: /^end/ do
+  <<-CODE
+
+
+if defined? RSpec::Core::Formatters::ProgressFormatter
+  RSpec::Core::Formatters::ProgressFormatter.class_eval do
+    DOTS = ["✅ ", "⚠️ ", "❌ "]
+
+    def example_passed(_example)
+      output.print DOTS[0]
+    end
+
+    def example_pending(_example)
+      output.print DOTS[1]
+    end
+
+    def example_failed(_example)
+      output.print DOTS[2]
+    end
+  end
+end
+  CODE
+end
+
 #fix README
 run "rm README.rdoc"
 run "touch README.md"
