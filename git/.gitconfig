@@ -57,12 +57,12 @@
   local = yellow
   remote = cyan
 [color "diff"]
-  meta = yellow bold
-  frag = magenta bold
+  meta = yellow
+  frag = magenta
   plain = normal
   old = red bold
   new = green bold
-  whitespace = "normal bold"
+  whitespace = normal
 [color "interactive"]
   prompt = cyan bold
   header = green bold
