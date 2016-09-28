@@ -64,8 +64,6 @@ git_prompt (){
 function cps() {
   if [[ $# == "0" ]]; then
     PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}⨠${BIRed}⨠${BIYellow}⨠${BIGreen}⨠${c_reset} "'
-  elif [ $1 == "default" ]; then
-    PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}⨠${BIRed}⨠${BIYellow}⨠${BIGreen}⨠${c_reset} "'
   elif [ $1 == "stars" ]; then
     PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}✦ ${BIYellow}✦ ${BIGreen}✦${c_reset} "'
   elif [ $1 == "flowers" ]; then
