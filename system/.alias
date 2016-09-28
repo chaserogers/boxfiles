@@ -6,7 +6,7 @@ alias e='subl'
 alias ..='cd ..'
 alias d='cd ~/Desktop'
 alias code='cd ~/Desktop/Code'
-alias dot='cd ~/Desktop/Code/boxfiles'
+alias dot='cd ~/boxfiles'
 
 alias memory='ps auxm'
 alias cpu='ps auxr'
