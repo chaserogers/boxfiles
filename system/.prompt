@@ -2,24 +2,32 @@
 c_reset='\[\e[0m\]'
 
 # Bold High Intensity
-BIBlack='\[\e[1;90m\]'      # Black
-BIRed='\[\e[1;91m\]'        # Red
-BIGreen='\[\e[1;92m\]'      # Green
-BIYellow='\[\e[1;93m\]'     # Yellow
-BIBlue='\[\e[1;94m\]'       # Blue
-BIPurple='\[\e[1;95m\]'     # Purple
-BICyan='\[\e[1;96m\]'       # Cyan
-BIWhite='\[\e[1;97m\]'      # White
+BIBlack='\[\e[1;90m\]'
+BIRed='\[\e[1;91m\]'
+BIGreen='\[\e[1;92m\]'
+BIYellow='\[\e[1;93m\]'
+BIBlue='\[\e[1;94m\]'
+BIPurple='\[\e[1;95m\]'
+BICyan='\[\e[1;96m\]'
+BIWhite='\[\e[1;97m\]'
 
-# Background Colors
-On_Black='\[\e[40m\]'       # Black
-bakred='\[\e[41m\]'         # Red
-bakgrn='\[\e[42m\]'         # Green
-bakylw='\[\e[43m\]'         # Yellow
-bakblu='\[\e[44m\]'         # Blue
-bakpur='\[\e[45m\]'         # Purple
-bakcyn='\[\e[46m\]'         # Cyan
-On_White='\[\e[47m\]'       # White
+# Normal
+red='\[\e[0;31m\]'
+green='\[\e[0;32m\]'
+yellow='\[\e[0;33m\]'
+blue='\[\e[0;34m\]'
+purple='\[\e[0;35m\]'
+cyan='\[\e[0;36m\]'
+
+# Background colors
+On_Black='\[\e[40m\]'
+bakred='\[\e[41m\]'
+bakgrn='\[\e[42m\]'
+bakylw='\[\e[43m\]'
+bakblu='\[\e[44m\]'
+bakpur='\[\e[45m\]'
+bakcyn='\[\e[46m\]'
+On_White='\[\e[47m\]'
 
 # determines if the git branch you are on is clean or dirty
 git_prompt (){
@@ -52,17 +60,24 @@ git_prompt (){
   echo "${git_color}[$git_branch]${c_reset}"
 }
 
-# PS1 is the variable for the prompt you see everytime you hit enter
+#switch between prompts from the command line
+function cps() {
+  if [[ $# == "0" ]]; then
+    PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}⨠${BIRed}⨠${BIYellow}⨠${BIGreen}⨠${c_reset} "'
+  elif [ $1 == "default" ]; then
+    PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}⨠${BIRed}⨠${BIYellow}⨠${BIGreen}⨠${c_reset} "'
+  elif [ $1 == "stars" ]; then
+    PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}✦ ${BIYellow}✦ ${BIGreen}✦${c_reset} "'
+  elif [ $1 == "flowers" ]; then
+    PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakcyn} \u ${c_reset}${BIWhite}${bakpur} \w ${c_reset}\n$(git_prompt)${BICyan}✿ ${BIYellow}✿ ${BIGreen}✿${c_reset} "'
+  elif [ $1 == "squares" ]; then
+    PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \D{%m/%d/%y} ${c_reset}${BIWhite}${bakcyn} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BIBlue}◼︎ ${BICyan}◼︎ ${BIPurple}◼︎${c_reset} "'
+  elif [ $1 == "onestar" ]; then
+    PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}✦${c_reset} "'
+  elif [ $1 == "simple" ]; then
+    PROMPT_COMMAND='PS1="${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}:>${c_reset} "'
+  fi
+  return;
+}
 
-#single color prompt (arrows)
-# PROMPT_COMMAND='PS1="${BIWhite}${bakpur}\T | \w${c_reset}\n$(git_prompt)${BICyan}⨠${BIRed}⨠${BIYellow}⨠${BIGreen}⨠${c_reset} "'
-
-#triple color prompts (squares)
-# PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \D{%m/%d/%y} ${c_reset}${BIWhite}${bakcyn} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BIBlue} ◼︎ ${BICyan}◼︎ ${BIPurple}◼︎${c_reset} "'
-
-#triple color prompt (arrows, stars, flowers)
-# PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \D{%m/%d/%y} ${c_reset}${BIWhite}${bakcyn} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}★${c_reset} "'
-# PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \D{%m/%d/%y} ${c_reset}${BIWhite}${bakcyn} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}★ ${BIYellow}★ ${BIGreen}★${c_reset} "'
-# PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \D{%m/%d/%y} ${c_reset}${BIWhite}${bakcyn} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}〓${BIYellow}〓${BIGreen}〓${c_reset}"'
-# PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \D{%m/%d/%y} ${c_reset}${BIWhite}${bakcyn} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}✿ ${BIYellow}✿ ${BIGreen}✿${c_reset} "'
-PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \D{%m/%d/%y} ${c_reset}${BIWhite}${bakcyn} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}⨠${BIRed}⨠${BIYellow}⨠${BIGreen}⨠${c_reset} "'
+cps
