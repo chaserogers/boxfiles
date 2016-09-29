@@ -12,4 +12,4 @@ done
 source ~/.profile
 
 #cowsay ascii on session load
-cowsay -f small "$(fortune -s)"
+# cowsay -f small "$(fortune -s)"
