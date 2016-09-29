@@ -18,6 +18,8 @@ yellow='\[\e[0;33m\]'
 blue='\[\e[0;34m\]'
 purple='\[\e[0;35m\]'
 cyan='\[\e[0;36m\]'
+orange='\[\e[38;5;208m\]'
+hotpink='\[\e[38;5;201m\]'
 
 # Background colors
 On_Black='\[\e[40m\]'
@@ -63,6 +65,8 @@ git_prompt (){
 #switch between prompts from the command line
 function cps() {
   if [[ $# == "0" ]]; then
+    PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BIPurple}✦${c_reset} "'
+  elif [ $1 == "arrows" ]; then
     PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}⨠${BIRed}⨠${BIYellow}⨠${BIGreen}⨠${c_reset} "'
   elif [ $1 == "stars" ]; then
     PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}✦ ${BIYellow}✦ ${BIGreen}✦${c_reset} "'
@@ -70,8 +74,6 @@ function cps() {
     PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakcyn} \u ${c_reset}${BIWhite}${bakpur} \w ${c_reset}\n$(git_prompt)${BICyan}✿ ${BIYellow}✿ ${BIGreen}✿${c_reset} "'
   elif [ $1 == "squares" ]; then
     PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \D{%m/%d/%y} ${c_reset}${BIWhite}${bakcyn} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BIBlue}◼︎ ${BICyan}◼︎ ${BIPurple}◼︎${c_reset} "'
-  elif [ $1 == "onestar" ]; then
-    PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}✦${c_reset} "'
   elif [ $1 == "simple" ]; then
     PROMPT_COMMAND='PS1="${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}:>${c_reset} "'
   fi
