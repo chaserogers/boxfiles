@@ -29,4 +29,4 @@ To configure your rails_template to create a new repository on github and push y
 - change b0xw00d to your github username on line 51
 - save your changes
 
-An example application generated with this template can be found [here] (https://github.com/b0xw00d/rails_template_example_app).
+An example application generated with this template can be found [here] (https://github.com/b0xw00d/rails_template_example).
