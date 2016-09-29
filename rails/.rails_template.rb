@@ -144,9 +144,9 @@ rakefile("commit_template.rake") do
 end
 
 # remove unwanted comments
-run 'sed -i "" "/#/d" Gemfile'
-run 'sed -i "" "/#/d" spec/spec_helper.rb'
-run 'sed -i "" "/#/d" spec/rails_helper.rb'
+run 'sed -i "" "/#.*/d" Gemfile'
+run 'sed -i "" "/#.*/d" spec/spec_helper.rb'
+run 'sed -i "" "/#.*/d" spec/rails_helper.rb'
 
 # initialize local Git repository and Initial Commit
 git :init
