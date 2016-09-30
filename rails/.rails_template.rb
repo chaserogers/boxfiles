@@ -153,9 +153,6 @@ git :init
 git add: "."
 git commit: "-m 'initial commit'"
 
-# set commit template
-run "rake template:commit"
-
 # create remote repo on Github and push
 # github_username = 'b0xw00d'
 # run "curl -u '#{github_username}' https://api.github.com/user/repos -d '{\"name\":\"#{app_path}\"}'"
