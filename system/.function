@@ -10,3 +10,20 @@ function mk() {
 function manpdf() {
   man -t "${1}" | open -f -a /Applications/Preview.app/
 }
+
+function weather() {
+  curl wttr.in/$1
+}
+
+function hdi() {
+  answerlink=`howdoi $@ -l`
+  open $answerlink
+}
+
+function cpu-list() {
+  ps auxr | head -n $1 | cut -c1-155
+}
+
+function memory-list() {
+  ps auxm | head -n $1 | cut -c1-155
+}
