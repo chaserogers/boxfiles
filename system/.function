@@ -21,9 +21,9 @@ function hdi() {
 }
 
 function cpulist() {
-  ps auxr | head -n $1 | cut -c1-155
+  ps auxr | head -n $1 | cut -c1-165
 }
 
 function memlist() {
-  ps auxm | head -n $1 | cut -c1-155
+  ps auxm | head -n $1 | cut -c1-165
 }
