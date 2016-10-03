@@ -27,6 +27,8 @@ alias gs='git status'
 alias brall='git branch -a'
 
 alias be='bundle exec'
+alias rs='rails server'
+alias rc='rails console'
 alias migrate='bundle exec rake db:migrate'
 alias yolo='bundle exec rake db:{drop,create,migrate,seed}'
 alias xoxo='mix ecto.{drop,create,migrate}'
