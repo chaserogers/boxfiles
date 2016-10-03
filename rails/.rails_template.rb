@@ -11,12 +11,19 @@ inject_into_file 'Gemfile', after: /:development, :test do/ do
   CODE
 end
 
-# add guard-rspec and rubocop gems
+inject_into_file 'Gemfile', before: /group :development, :test do/ do
+  <<-CODE
+gem 'hirb'
+
+  CODE
+end
+# add guard-rspec, pry-rails, and rubocop gems
 inject_into_file 'Gemfile', after: /:development do/ do
   <<-CODE
 
   gem 'guard-rspec', require: false
   gem 'rubocop', require: false
+  gem 'pry-rails'
   CODE
 end
 
@@ -103,6 +110,9 @@ indent_size = 2
   CODE
 end
 
+# add .pryrc
+run "cp ~/.pryrc ./.pryrc"
+
 # add Procfile for deployment to Heroku
 run "touch Procfile"
 inject_into_file 'Procfile', after: // do
@@ -154,7 +164,7 @@ git add: "."
 git commit: "-m 'initial commit'"
 
 # create remote repo on Github and push
-# github_username = 'b0xw00d'
-# run "curl -u '#{github_username}' https://api.github.com/user/repos -d '{\"name\":\"#{app_path}\"}'"
-# git remote: "add origin https://github.com/#{github_username}/#{app_path}.git"
-# git push: "origin master"
+github_username = 'b0xw00d'
+run "curl -u '#{github_username}' https://api.github.com/user/repos -d '{\"name\":\"#{app_path}\"}'"
+git remote: "add origin https://github.com/#{github_username}/#{app_path}.git"
+git push: "origin master"
