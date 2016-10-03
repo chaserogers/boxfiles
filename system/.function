@@ -20,10 +20,10 @@ function hdi() {
   open $answerlink
 }
 
-function cpu-list() {
+function cpulist() {
   ps auxr | head -n $1 | cut -c1-155
 }
 
-function memory-list() {
+function memlist() {
   ps auxm | head -n $1 | cut -c1-155
 }
