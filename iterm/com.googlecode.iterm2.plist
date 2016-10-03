@@ -31822,9 +31822,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>565 172 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>429 315 796 473 0 0 1440 877 </string>
+	<string>429 240 918 498 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>145 3 1290 808 0 0 1440 877 </string>
+	<string>30 0 1410 865 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>118 0 1290 787 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -32108,7 +32108,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>160</integer>
+			<integer>170</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Boost</key>
@@ -32530,7 +32530,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>40</integer>
+			<integer>43</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
