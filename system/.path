@@ -6,10 +6,6 @@ test -d /usr/local/heroku/ && export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/Library/Python/2.7/site-packages:$PATH"
 
-# Load git completions
-git_completion_script=/usr/local/etc/bash_completion.d/git-completion.bash
-test -s $git_completion_script && source $git_completion_script
-
 # Path for RVM
 test -d $HOME/.rvm/bin && PATH=$PATH:$HOME/.rvm/bin
 export PATH="$PATH:$HOME/.rvm/bin"

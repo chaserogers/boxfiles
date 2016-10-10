@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-SCRIPT_PATH=`readlink $BASH_SOURCE`
+SCRIPT_PATH=$(readlink $BASH_SOURCE)
 BOXFILES_ROOT=$(dirname "$(dirname "$SCRIPT_PATH")")
 
-for BOXFILE in `find "$BOXFILES_ROOT"/system/`; do
+for BOXFILE in $(find "$BOXFILES_ROOT"/system/); do
   [ -r "$BOXFILE" ] && [ -f "$BOXFILE" ] && source "$BOXFILE";
 done
 
@@ -11,5 +11,9 @@ done
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 source ~/.profile
 
+# Load git completions
+git_completion_script=/usr/local/etc/bash_completion.d/git-completion.bash
+test -s $git_completion_script && source $git_completion_script
+
 #cowsay ascii on session load
-# cowsay -f small "$(fortune -s)" | lolcat
+cowsay -f small "$(fortune -s)" | lolcat
