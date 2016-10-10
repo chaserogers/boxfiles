@@ -63,7 +63,7 @@ git_prompt (){
     tracker="+"
   fi
 
-  echo "${cyan}${tracker}${c_reset}${git_color}[$git_branch]${c_reset}"
+  echo "${orange}${tracker}${c_reset}${git_color}[$git_branch]${c_reset}"
 }
 
 #switch between prompts from the command line
