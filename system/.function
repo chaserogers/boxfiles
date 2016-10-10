@@ -27,3 +27,7 @@ function cpulist() {
 function memlist() {
   ps auxm | head -n $1 | cut -c1-165
 }
+
+function num_untracked() {
+  expr `git status --porcelain 2>/dev/null| grep "^??" | wc -l`
+}
