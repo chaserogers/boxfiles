@@ -1,9 +1,6 @@
 if defined? Rails.env
   Pry.config.view_source = "(#{Rails.env})"
   Pry.config.prompt_name = "#{File.basename(Dir.pwd)}"
-elsif defined? ENV['RACK_ENV']
-  Pry.config.view_source = "(#{ENV['RACK_ENV']})"
-  Pry.config.prompt_name = "#{File.basename(Dir.pwd)}"
 else
   Pry.config.view_source = "(main)"
   Pry.config.prompt_name = "pry"
