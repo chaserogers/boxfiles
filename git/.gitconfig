@@ -23,10 +23,10 @@
   ph = "! echo 'git push heroku' $(git branch-name) ':master' &&  git push heroku $(git branch-name):master"
   find = log --all --pretty=\"format:%Cgreen%H %Cblue%s\n%b%Creset\" --name-status --grep
 
-  ll = log \
+  lg = log \
       --pretty=format:'%C(magenta bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(cyan bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n'
 
-  lg = log \
+  ll = log \
     --graph \
     --pretty=format:'%C(magenta bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(cyan bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n'\
     --name-status
@@ -40,7 +40,7 @@
     --abbrev-commit \
     --date=relative
 
-  logdf = log \
+  lgdf = log \
     --pretty=format:'%C(magenta bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(cyan bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n' \
     -p
 
