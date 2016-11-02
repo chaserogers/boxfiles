@@ -14,6 +14,7 @@
   st = status
   ch = cherry -v origin
   df = diff
+  dt = difftool
   br = branch
   stage = add
   unstage = reset HEAD
@@ -91,3 +92,9 @@
 
 [ghi]
 	token = !security find-internet-password -a b0xw00d -s github.com -l 'ghi token' -w
+
+[diff]
+	tool = gvimdiff
+
+[difftool]
+	prompt = false
