@@ -45,6 +45,7 @@ packages=(
   libusb-compat
   libyaml
   little-cms2
+  macvim
   mercurial
   mongodb
   node
