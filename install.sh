@@ -26,4 +26,4 @@ rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 ln -sfnv "$BOXFILES_ROOT/sublime/User" ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 # Install Homebrew and packages
-source "$BOXFILES_ROOT/package/brew.sh"
+# source "$BOXFILES_ROOT/package/brew.sh"
