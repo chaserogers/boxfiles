@@ -1,5 +1,6 @@
-call plug#begin('~/.vim/plugged')
 " Make sure to use single quotes!
+
+call plug#begin('~/.vim/plugged')
 Plug 'ddollar/nerdcommenter'
 Plug 'vim-scripts/The-NERD-tree'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -27,19 +28,33 @@ colorscheme cave-tweak
 " Basic settings
 map <leader>rr :source ~/.vimrc<CR>
 set encoding=utf-8
-set number
 set guifont=Hack:h14
-set scrolloff=8
+set scrolloff=20
 set swapfile
 set dir=~/tmp
 filetype indent on
 
+" Indentation, tabs, etc
 set nowrap
 set tabstop=2
 set shiftwidth=2
 set expandtab
 set smartindent
 set autoindent
+
+" Relative line numbers
+set nu
+set rnu
+
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set rnu!
+  else
+    set rnu
+  endif
+endfunc
+
+nnoremap <leader>nn :call NumberToggle()<cr>
 
 " switch panes with arrow keys
 nnoremap <silent> <D-S-Right> <c-w>l
