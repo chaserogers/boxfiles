@@ -5,6 +5,7 @@ Plug 'vim-scripts/The-NERD-tree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'Raimondi/delimitMate'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -30,6 +31,17 @@ set guifont=Hack:h14
 set scrolloff=25
 set swapfile
 set dir=~/tmp
+filetype indent on
+
+set nowrap
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set smartindent
+set autoindent
+
+" Remove trailing spaces on save
+autocmd BufWritePre * :%s/\s\+$//e
 
 " Tabs/spaces
 set tabstop=2
@@ -66,10 +78,11 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ':'
 
 " NERDtree settings
-" NERDtree settings
 let NERDTreeShowHidden=1
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 
-runtime macros/matchit.vim
+" Git Gutter settings
+let g:gitgutter_enabled = 0
+
