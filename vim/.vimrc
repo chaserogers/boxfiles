@@ -21,14 +21,14 @@ call plug#end()
 
 " Color Scheme
 syntax on
-colorscheme base16-atelierheath
+colorscheme cave-tweak
 
 " Basic settings
-map <leader>s :source ~/.vimrc<CR>
+map <leader>rr :source ~/.vimrc<CR>
 set encoding=utf-8
 set number
 set guifont=Hack:h14
-set scrolloff=25
+set scrolloff=8
 set swapfile
 set dir=~/tmp
 filetype indent on
