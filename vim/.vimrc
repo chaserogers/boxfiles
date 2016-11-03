@@ -7,6 +7,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Raimondi/delimitMate'
 Plug 'Valloric/YouCompleteMe'
+Plug 'jistr/vim-nerdtree-tabs'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -15,7 +16,8 @@ Plug 'tpope/vim-fugitive'
 " Languages and Syntax
 Plug 'pangloss/vim-javascript'
 Plug 'plasticboy/vim-markdown'
-
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-endwise'
 call plug#end()
 
 " Color Scheme
@@ -39,6 +41,12 @@ set expandtab
 set smartindent
 set autoindent
 
+" switch panes with arrow keys
+nnoremap <silent> <D-S-Right> <c-w>l
+nnoremap <silent> <D-S-Left> <c-w>h
+nnoremap <silent> <D-S-Up> <c-w>k
+nnoremap <silent> <D-S-Down> <c-w>j
+
 " Remove trailing spaces on save
 autocmd BufWritePre * :%s/\s\+$//e
 
@@ -57,6 +65,10 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_working_path_mode = 'ca'
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>'],
+    \ }
 
 " air-line
 let g:airline_theme='base16_atelierheath'
