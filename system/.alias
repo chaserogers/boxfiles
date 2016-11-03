@@ -6,6 +6,8 @@ alias lmao='ls -lah | lolcat'
 alias rofl='ps auxr | lolcat -a --speed=1500'
 alias cl='clear'
 alias e='subl'
+alias vim='mvim'
+alias mm='mvim'
 
 alias ..='cd ..'
 alias prev='cd -'
