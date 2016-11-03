@@ -6,6 +6,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Raimondi/delimitMate'
+Plug 'Valloric/YouCompleteMe'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -15,8 +16,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'pangloss/vim-javascript'
 Plug 'plasticboy/vim-markdown'
 
-" Color Schemes
-Plug 'flazz/vim-colorschemes'
 call plug#end()
 
 " Color Scheme
