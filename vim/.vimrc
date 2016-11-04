@@ -22,19 +22,16 @@ call plug#end()
 " Color Scheme
 syntax on
 colorscheme cave-tweak
+set background=light
 
 " Statusline
 set statusline=
-set statusline+=%7*\[%n]                                  "buffernr
-set statusline+=%1*\ %<%F\                                "File+path
-set statusline+=%2*\ %y\                                  "FileType
-set statusline+=%3*\ %{''.(&fenc!=''?&fenc:&enc).''}      "Encoding
-set statusline+=%3*\ %{(&bomb?\",BOM\":\"\")}\            "Encoding2
-set statusline+=%4*\ %{&ff}\                              "FileFormat (dos/unix..)
-set statusline+=%5*\ %{&spelllang}\%{HighlightSearch()}\  "Spellanguage & Highlight on?
-set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\             "Rownumber/total (%)
-set statusline+=%9*\ col:%03c\                            "Colnr
-set statusline+=%0*\ \ %m%r%w\ %P\ \                      "Modified? Readonly? Top/bot.
+set statusline+=%6*\[%n]                                   "buffernr
+set statusline+=%5*\ %<%F\                                 "File+path
+set statusline+=%2*\ %{fugitive#statusline()}\             "Git branch
+set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\              "Rownumber/total (%)
+set statusline+=%9*\ col:%03c\                             "Colnr
+set statusline+=%0*\ %y\                                   "FileType
 
 function! HighlightSearch()
   if &hls
@@ -49,6 +46,7 @@ hi User2 guifg=#000000  guibg=#F4905C
 hi User3 guifg=#292b00  guibg=#f4f597
 hi User4 guifg=#112605  guibg=#aefe7B
 hi User5 guifg=#051d00  guibg=#7dcc7d
+hi User6 guifg=#051d00  guibg=#7dcc7d gui=bold
 hi User7 guifg=#ffffff  guibg=#880c0e gui=bold
 hi User8 guifg=#ffffff  guibg=#5b7fbb
 hi User9 guifg=#ffffff  guibg=#810085
@@ -116,6 +114,7 @@ let NERDTreeShowHidden=1
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeStatusline = "%0*\ [%n] <NERDtree>"
 
 " Git Gutter settings
 let g:gitgutter_enabled = 0
