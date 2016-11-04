@@ -9,6 +9,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'kchmck/vim-coffee-script'
 Plug 'elixir-lang/vim-elixir'
+Plug 'skalnik/vim-vroom'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -123,4 +124,3 @@ let NERDTreeStatusline = "%0*\ [%n] <NERDtree>"
 
 " Git Gutter settings
 let g:gitgutter_enabled = 0
-
