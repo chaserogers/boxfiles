@@ -7,6 +7,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'Valloric/YouCompleteMe'
 Plug 'jistr/vim-nerdtree-tabs'
+Plug 'kchmck/vim-coffee-script'
+Plug 'elixir-lang/vim-elixir'
 
 " Git
 Plug 'airblade/vim-gitgutter'
