@@ -56,7 +56,7 @@ hi User9 guifg=#ffffff  guibg=#810085
 hi User0 guifg=#ffffff  guibg=#094afe
 
 " Basic settings
-map <leader>rr :source ~/.vimrc<CR>
+map <leader>ll :source ~/.vimrc<CR>
 set encoding=utf-8
 set guifont=Hack:h14
 set scrolloff=20
