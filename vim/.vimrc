@@ -62,6 +62,9 @@ set dir=~/tmp
 filetype indent on
 set laststatus=2
 
+" Set colored ruler at the 80th column
+set colorcolumn=80
+
 " Indentation, tabs, etc
 set nowrap
 set tabstop=2
