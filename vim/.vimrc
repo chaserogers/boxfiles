@@ -22,6 +22,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 Plug 'elixir-lang/vim-elixir'
 Plug 'kchmck/vim-coffee-script'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " Color Scheme
