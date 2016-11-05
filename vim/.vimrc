@@ -7,9 +7,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'Valloric/YouCompleteMe'
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'kchmck/vim-coffee-script'
-Plug 'elixir-lang/vim-elixir'
 Plug 'skalnik/vim-vroom'
+Plug 'tpope/vim-surround'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -20,6 +19,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'plasticboy/vim-markdown'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
+Plug 'elixir-lang/vim-elixir'
+Plug 'kchmck/vim-coffee-script'
 call plug#end()
 
 " Color Scheme
@@ -123,4 +124,4 @@ map <C-n> :NERDTreeToggle<CR>
 let NERDTreeStatusline = "%0*\ [%n] <NERDtree>"
 
 " Git Gutter settings
-let g:gitgutter_enabled = 0
+let g:gitgutter_enabled = 1
