@@ -9,6 +9,7 @@ Plug 'honza/vim-snippets'
 Plug 'skalnik/vim-vroom'
 Plug 'ap/vim-buftabline'
 Plug 'ervandew/supertab'
+Plug 'terryma/vim-multiple-cursors'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -119,12 +120,6 @@ nnoremap <silent> <D-S-Down> <c-w>j
 " Remove trailing spaces on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Tabs/spaces
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-
 " Trailing whitespace
 set listchars=tab:>-,trail:-
 set list
@@ -144,3 +139,10 @@ let NERDTreeStatusline = "%0*\ [%n] <NERDtree>"
 
 " Git Gutter settings
 let g:gitgutter_enabled = 1
+
+" Multiple Cursors settings
+let g:multi_cursor_use_default_mapping = 0
+let g:multi_cursor_next_key = '<C-d>'
+let g:multi_cursor_prev_key = '<C-y>'
+let g:multi_cursor_skip_key = '<C-x>'
+let g:multi_cursor_quit_key = '<Esc>'
