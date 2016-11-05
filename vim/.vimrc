@@ -3,12 +3,12 @@ Plug 'ddollar/nerdcommenter'
 Plug 'vim-scripts/The-NERD-tree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Raimondi/delimitMate'
-Plug 'Valloric/YouCompleteMe'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-surround'
 Plug 'honza/vim-snippets'
 Plug 'skalnik/vim-vroom'
 Plug 'ap/vim-buftabline'
+Plug 'ervandew/supertab'
 
 " Git
 Plug 'airblade/vim-gitgutter'
