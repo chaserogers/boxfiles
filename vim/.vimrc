@@ -8,6 +8,7 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-surround'
 Plug 'honza/vim-snippets'
 Plug 'skalnik/vim-vroom'
+Plug 'ap/vim-buftabline'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -24,7 +25,7 @@ call plug#end()
 
 " Color Scheme
 syntax on
-colorscheme Tomorrow-Night-Bright
+colorscheme Tomorrow-Night
 
 " Statusline
 set statusline=
@@ -64,6 +65,25 @@ set swapfile
 set dir=~/tmp
 filetype indent on
 set laststatus=2
+
+" Buffers
+set hidden
+nnoremap <D-]> :bnext<CR>
+nnoremap <D-[> :bprev<CR>
+
+let g:buftabline_numbers = 2
+let g:buftabline_separators = 1
+
+nmap <D-1> <Plug>BufTabLine.Go(1)
+nmap <D-2> <Plug>BufTabLine.Go(2)
+nmap <D-3> <Plug>BufTabLine.Go(3)
+nmap <D-4> <Plug>BufTabLine.Go(4)
+nmap <D-5> <Plug>BufTabLine.Go(5)
+nmap <D-6> <Plug>BufTabLine.Go(6)
+nmap <D-7> <Plug>BufTabLine.Go(7)
+nmap <D-8> <Plug>BufTabLine.Go(8)
+nmap <D-9> <Plug>BufTabLine.Go(9)
+nmap <D-0> <Plug>BufTabLine.Go(10)
 
 " Set colored ruler at the 80th column
 set colorcolumn=80
@@ -118,6 +138,7 @@ let g:ctrlp_show_hidden = 1
 let NERDTreeShowHidden = 1
 autocmd StdinReadPre * let s:std_in = 1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd VimEnter * wincmd p
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeStatusline = "%0*\ [%n] <NERDtree>"
 
