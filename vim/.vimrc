@@ -1,5 +1,3 @@
-" Make sure to use single quotes!
-
 call plug#begin('~/.vim/plugged')
 Plug 'ddollar/nerdcommenter'
 Plug 'vim-scripts/The-NERD-tree'
@@ -9,6 +7,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'skalnik/vim-vroom'
 Plug 'tpope/vim-surround'
+Plug 'honza/vim-snippets'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -25,7 +24,7 @@ call plug#end()
 
 " Color Scheme
 syntax on
-colorscheme cave-tweak
+colorscheme Tomorrow
 set background=light
 
 " Statusline
