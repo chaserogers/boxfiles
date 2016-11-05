@@ -5,9 +5,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'Valloric/YouCompleteMe'
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'skalnik/vim-vroom'
 Plug 'tpope/vim-surround'
 Plug 'honza/vim-snippets'
+Plug 'skalnik/vim-vroom'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -55,6 +55,7 @@ hi User9 guifg=#ffffff  guibg=#810085
 hi User0 guifg=#ffffff  guibg=#094afe
 
 " Basic settings
+let mapleader = ","
 map <leader>ll :source ~/.vimrc<CR>
 set encoding=utf-8
 set guifont=Hack:h14
@@ -115,8 +116,8 @@ let g:ctrlp_show_hidden = 1
 let g:ctrlp_working_path_mode = 'ca'
 
 " NERDtree settings
-let NERDTreeShowHidden=1
-autocmd StdinReadPre * let s:std_in=1
+let NERDTreeShowHidden = 1
+autocmd StdinReadPre * let s:std_in = 1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeStatusline = "%0*\ [%n] <NERDtree>"
