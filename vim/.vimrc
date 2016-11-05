@@ -25,7 +25,6 @@ call plug#end()
 " Color Scheme
 syntax on
 colorscheme Tomorrow
-set background=light
 
 " Statusline
 set statusline=
