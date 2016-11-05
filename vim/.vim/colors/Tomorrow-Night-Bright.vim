@@ -263,7 +263,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	end
 
 	" Standard Highlighting
-	call <SID>X("Comment", s:comment, "", "")
+	call <SID>X("Comment", s:comment, "", "italic")
 	call <SID>X("Todo", s:comment, s:background, "")
 	call <SID>X("Title", s:comment, "", "")
 	call <SID>X("Identifier", s:red, "", "none")
@@ -300,8 +300,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("phpMemberSelector", s:foreground, "", "")
 
 	" Ruby Highlighting
-	call <SID>X("rubySymbol", s:green, "", "")
+	call <SID>X("rubySymbol", s:red, "", "")
 	call <SID>X("rubyConstant", s:yellow, "", "")
+	call <SID>X("rubyControl", s:blue, "", "")
 	call <SID>X("rubyAttribute", s:blue, "", "")
 	call <SID>X("rubyInclude", s:blue, "", "")
 	call <SID>X("rubyLocalVariableOrMethod", s:orange, "", "")
@@ -334,7 +335,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	" JavaScript Highlighting
 	call <SID>X("javaScriptBraces", s:foreground, "", "")
-	call <SID>X("javaScriptFunction", s:purple, "", "")
+	call <SID>X("javaScriptFunction", s:orange, "", "")
 	call <SID>X("javaScriptConditional", s:purple, "", "")
 	call <SID>X("javaScriptRepeat", s:purple, "", "")
 	call <SID>X("javaScriptNumber", s:orange, "", "")

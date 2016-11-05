@@ -11,7 +11,6 @@ let s:orange = "f5871f"
 let s:yellow = "eab700"
 let s:green = "718c00"
 let s:aqua = "3e999f"
-let s:pink = "FF69B4"
 let s:blue = "4271ae"
 let s:purple = "8959a8"
 let s:window = "efefef"
@@ -266,19 +265,18 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Title", s:comment, "", "")
 	call <SID>X("Identifier", s:red, "", "none")
 	call <SID>X("Statement", s:foreground, "", "")
-	call <SID>X("Conditional", s:foreground, "", "bold")
+	call <SID>X("Conditional", s:foreground, "", "")
 	call <SID>X("Repeat", s:foreground, "", "")
 	call <SID>X("Structure", s:purple, "", "")
-	call <SID>X("Function", s:pink, "", "")
-	call <SID>X("Constant", s:orange, "", "bold")
-	call <SID>X("String", s:blue, "", "")
+	call <SID>X("Function", s:blue, "", "")
+	call <SID>X("Constant", s:orange, "", "")
+	call <SID>X("String", s:green, "", "")
 	call <SID>X("Special", s:foreground, "", "")
 	call <SID>X("PreProc", s:purple, "", "")
-	call <SID>X("Operator", s:aqua, "", "bold")
+	call <SID>X("Operator", s:aqua, "", "none")
 	call <SID>X("Type", s:blue, "", "none")
-	call <SID>X("Define", s:purple, "", "bold")
+	call <SID>X("Define", s:purple, "", "none")
 	call <SID>X("Include", s:blue, "", "")
-	call <SID>X("StorageClass", s:purple, "", "bold")
 	"call <SID>X("Ignore", "666666", "", "")
 
 	" Vim Highlighting
@@ -299,16 +297,16 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("phpMemberSelector", s:foreground, "", "")
 
 	" Ruby Highlighting
-	call <SID>X("rubySymbol", s:green, "", "bold")
-	call <SID>X("rubyConstant", s:orange, "", "")
-	call <SID>X("rubyControl", s:purple, "", "bold")
+	call <SID>X("rubySymbol", s:red, "", "")
+	call <SID>X("rubyConstant", s:yellow, "", "")
+	call <SID>X("rubyControl", s:purple, "", "")
 	call <SID>X("rubyAttribute", s:blue, "", "")
 	call <SID>X("rubyInclude", s:blue, "", "")
 	call <SID>X("rubyLocalVariableOrMethod", s:orange, "", "")
 	call <SID>X("rubyCurlyBlock", s:orange, "", "")
 	call <SID>X("rubyStringDelimiter", s:green, "", "")
 	call <SID>X("rubyInterpolationDelimiter", s:orange, "", "")
-	call <SID>X("rubyConditional", s:purple, "", "bold")
+	call <SID>X("rubyConditional", s:purple, "", "")
 	call <SID>X("rubyRepeat", s:purple, "", "")
 
 	" Python Highlighting
@@ -334,7 +332,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	" JavaScript Highlighting
 	call <SID>X("javaScriptBraces", s:foreground, "", "")
-	call <SID>X("javaScriptFunction", s:pink, "", "bold")
+	call <SID>X("javaScriptFunction", s:orange, "", "")
 	call <SID>X("javaScriptConditional", s:purple, "", "")
 	call <SID>X("javaScriptRepeat", s:purple, "", "")
 	call <SID>X("javaScriptNumber", s:orange, "", "")
