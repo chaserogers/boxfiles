@@ -1,6 +1,6 @@
 " Color Scheme
 syntax on
-colorscheme Tomorrow-Night
+colorscheme deep-space
 
 " Basic settings
 set encoding=utf-8
@@ -10,7 +10,9 @@ set swapfile
 set dir=~/tmp
 filetype indent on
 set laststatus=2
-set colorcolumn=80
+set colorcolumn=81
+" highlight OverLength guibg=#222222
+" match OverLength /\%>80v.\+/
 set nowrap
 set tabstop=2
 set shiftwidth=2
