@@ -2,7 +2,7 @@
 set statusline=
 set statusline+=%6*\[%n]                                   "buffernr
 set statusline+=%5*\ %<%F\                                 "File+path
-set statusline+=%2*\ %{fugitive#statusline()}\             "Git branch
+set statusline+=%2*\ [%{fugitive#head()}]\             "Git branch
 set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\              "Rownumber/total (%)
 set statusline+=%9*\ col:%03c\                             "Colnr
 set statusline+=%0*\ %y\                                   "FileType
