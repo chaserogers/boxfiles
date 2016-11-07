@@ -39,6 +39,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 highlight ExtraWhitespace ctermbg=red guibg=deeppink
 match ExtraWhitespace /\s\+$/
 
-if has("gui_running")
-  autocmd VimLeave * :!open -a iTerm
-endif
+" if has("gui_running")
+  " autocmd VimLeave * :!open -a iTerm
+" endif
