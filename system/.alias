@@ -9,6 +9,7 @@ alias e='subl'
 alias vim='mvim'
 alias vi='mvim'
 alias mm='mvim'
+alias m='mvim'
 
 alias ..='cd ..'
 alias prev='cd -'
