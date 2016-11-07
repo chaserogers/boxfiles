@@ -38,3 +38,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 " Trailing whitespace
 set listchars=tab:>-,trail:-
 set list
+
+if has("gui_running")
+  autocmd VimLeave * :!open -a iTerm
+endif
