@@ -35,9 +35,9 @@ endfunc
 " Remove trailing spaces on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Trailing whitespace
-set listchars=tab:>-,trail:-
-set list
+" Highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=deeppink
+match ExtraWhitespace /\s\+$/
 
 if has("gui_running")
   autocmd VimLeave * :!open -a iTerm
