@@ -36,3 +36,6 @@ nmap <D-8> <Plug>BufTabLine.Go(8)
 nmap <D-9> <Plug>BufTabLine.Go(9)
 nmap <D-0> <Plug>BufTabLine.Go(10)
 
+" search and replace
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+nnoremap <Leader>S :%s/\<<C-r><C-w>\>//<Left>
