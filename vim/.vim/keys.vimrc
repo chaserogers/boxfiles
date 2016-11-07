@@ -3,7 +3,7 @@ map <leader>ll :source ~/.vimrc<CR>
 map <C-n> :NERDTreeToggle<CR>
 
 " toggle relative line numbers
-nnoremap <leader>nn :call NumberToggle()<cr>
+nnoremap <leader>nn :call numbertoggle()<cr>
 
 " switch panes with arrow keys
 nnoremap <silent> <D-S-Right> <c-w>l
@@ -38,4 +38,3 @@ nmap <D-0> <Plug>BufTabLine.Go(10)
 
 " search and replace
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
-nnoremap <Leader>S :%s/\<<C-r><C-w>\>//<Left>
