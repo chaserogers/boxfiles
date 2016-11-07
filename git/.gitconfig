@@ -1,6 +1,6 @@
 [core]
 	excludesfile = /Users/b0xw00d/.gitignore_global
-	editor = mvim -f --nomru -c \"au VimLeave * !open -a iTerm\"
+	editor = mvim -f --nomru -c \"autocmd VimLeave * :!open -a iTerm\"
 
 [user]
 	name = Chase
