@@ -1,3 +1,6 @@
+" enable ruby-matchit
+runtime! macros/matchit.vim
+
 " ctrlp settings
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'

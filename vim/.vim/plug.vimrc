@@ -10,6 +10,7 @@ Plug 'ap/vim-buftabline'
 Plug 'ervandew/supertab'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'mileszs/ack.vim'
+Plug 'vim-scripts/ruby-matchit'
 
 " Git
 Plug 'airblade/vim-gitgutter'
