@@ -38,3 +38,7 @@ nmap <D-0> <Plug>BufTabLine.Go(10)
 
 " search and replace
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+
+" ack
+cnoreabbrev Ack Ack!
+nnoremap <Leader>f :Ack!<Space>

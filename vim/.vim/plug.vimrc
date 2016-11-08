@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'ddollar/nerdcommenter'
 Plug 'vim-scripts/The-NERD-tree'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Raimondi/delimitMate'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-surround'
 Plug 'honza/vim-snippets'
@@ -10,6 +9,7 @@ Plug 'skalnik/vim-vroom'
 Plug 'ap/vim-buftabline'
 Plug 'ervandew/supertab'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'mileszs/ack.vim'
 
 " Git
 Plug 'airblade/vim-gitgutter'
