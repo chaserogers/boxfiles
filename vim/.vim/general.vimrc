@@ -4,15 +4,13 @@ colorscheme deep-space
 
 " Basic settings
 set encoding=utf-8
-set guifont=Hack:h14
+set guifont=Office\ Code\ Pro:h17
 set scrolloff=20
 set swapfile
 set dir=~/tmp
 filetype indent on
 set laststatus=2
 set colorcolumn=81
-" highlight OverLength guibg=#222222
-" match OverLength /\%>80v.\+/
 set nowrap
 set tabstop=2
 set shiftwidth=2
@@ -38,7 +36,3 @@ autocmd BufWritePre * :%s/\s\+$//e
 " Highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=deeppink
 match ExtraWhitespace /\s\+$/
-
-" if has("gui_running")
-  " autocmd VimLeave * :!open -a iTerm
-" endif
