@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-Plug 'ddollar/nerdcommenter'
 Plug 'vim-scripts/The-NERD-tree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jistr/vim-nerdtree-tabs'
@@ -11,6 +10,8 @@ Plug 'ervandew/supertab'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'mileszs/ack.vim'
 Plug 'vim-scripts/ruby-matchit'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-unimpaired'
 
 " Git
 Plug 'airblade/vim-gitgutter'

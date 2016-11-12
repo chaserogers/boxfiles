@@ -42,6 +42,3 @@ nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 " ack
 cnoreabbrev Ack Ack!
 nnoremap <Leader>f :Ack!<Space>
-
-" delete to beginning of text
-nmap <D-BS> c^
