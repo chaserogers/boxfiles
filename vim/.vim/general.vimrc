@@ -34,5 +34,5 @@ endfunc
 autocmd BufWritePre * :%s/\s\+$//e
 
 " Highlight trailing whitespace
-highlight ExtraWhitespace ctermbg=red guibg=deeppink
+highlight ExtraWhitespace ctermbg=red guibg='#400000'
 match ExtraWhitespace /\s\+$/

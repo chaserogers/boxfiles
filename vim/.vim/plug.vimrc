@@ -12,6 +12,8 @@ Plug 'mileszs/ack.vim'
 Plug 'vim-scripts/ruby-matchit'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'Shougo/vimshell.vim'
 
 " Git
 Plug 'airblade/vim-gitgutter'

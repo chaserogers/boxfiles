@@ -42,3 +42,6 @@ nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 " ack
 cnoreabbrev Ack Ack!
 nnoremap <Leader>f :Ack!<Space>
+
+" vimshell
+nnoremap <Leader>sh :VimShell<CR>

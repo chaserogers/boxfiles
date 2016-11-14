@@ -28,3 +28,9 @@ set hidden
 " set ordinal numbers for buffer tabs
 let g:buftabline_numbers = 2
 let g:buftabline_separators = 1
+
+" vimshell
+let g:vimshell_editor_command = 'mvim'
+let g:vimshell_vimshrc_path = '~/.vim/.vimshrc'
+let g:vimshell_user_prompt = 'fnamemodify(getcwd(), "")'
+let g:vimshell_prompt = ">>> "
