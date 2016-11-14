@@ -34,3 +34,6 @@ let g:vimshell_editor_command = 'mvim'
 let g:vimshell_vimshrc_path = '~/.vim/.vimshrc'
 let g:vimshell_user_prompt = 'fnamemodify(getcwd(), "")'
 let g:vimshell_prompt = ">>> "
+
+" vim-move
+let g:move_key_modifier = 'C'

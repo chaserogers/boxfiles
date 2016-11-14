@@ -16,6 +16,7 @@ Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'Shougo/vimshell.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'godlygeek/tabular'
+Plug 'matze/vim-move'
 
 " Git
 Plug 'airblade/vim-gitgutter'
