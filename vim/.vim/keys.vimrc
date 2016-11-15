@@ -47,9 +47,7 @@ nnoremap <Leader>f :Ack!<Space>
 nnoremap <Leader>sh :VimShell<CR>
 
 " tabularize keymappings
-if exists(":Tabularize")
-  nmap <Leader>t= :Tabularize /=<CR>
-  vmap <Leader>t= :Tabularize /=<CR>
-  nmap <Leader>t: :Tabularize /:\zs<CR>
-  vmap <Leader>t: :Tabularize /:\zs<CR>
-endif
+nnoremap <Leader>= :Tabularize /=<CR>
+vnoremap <Leader>= :Tabularize /=<CR>
+nnoremap <Leader>: :Tabularize /:\zs<CR>
+vnoremap <Leader>: :Tabularize /:\zs<CR>
