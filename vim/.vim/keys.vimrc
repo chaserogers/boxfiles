@@ -3,7 +3,7 @@ map <leader>ll :source ~/.vimrc<CR>
 map <C-n> :NERDTreeToggle<CR>
 
 " toggle relative line numbers
-nnoremap <leader>nn :call numbertoggle()<cr>
+nnoremap <leader>nn :call NumberToggle()<cr>
 
 " switch panes with arrow keys
 nnoremap <silent> <D-S-Right> <c-w>l
