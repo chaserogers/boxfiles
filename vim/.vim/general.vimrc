@@ -8,6 +8,7 @@ set guifont=Office\ Code\ Pro:h17
 set scrolloff=20
 set swapfile
 set dir=~/tmp
+set shortmess+=A
 set laststatus=2
 set colorcolumn=81
 set nowrap
