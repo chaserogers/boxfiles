@@ -31857,17 +31857,17 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>110 66 409 279 0 0 1440 877 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>687 178 445 77 0 0 1440 877 </string>
+	<string>687 44 445 77 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>438 405 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>412 363 620 392 0 0 1440 877 </string>
+	<string>379 1236 620 392 -335 900 2048 841 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>565 172 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>502 158 918 498 0 0 1440 877 </string>
+	<string>502 368 918 381 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>8 3 1430 862 0 0 1440 877 </string>
+	<string>8 8 1430 862 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>118 0 1290 787 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -35430,8 +35430,12 @@
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>0.99607843160629272</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
 				<real>0.43529412150382996</real>
 				<key>Red Component</key>
@@ -40512,8 +40516,12 @@
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>0.54901963472366333</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
 				<real>0.27450981736183167</real>
 				<key>Red Component</key>
@@ -44561,8 +44569,12 @@
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>0.43171143531799316</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
 				<real>1</real>
 				<key>Red Component</key>
@@ -44619,8 +44631,12 @@
 			</dict>
 			<key>Ansi 2 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>0.092498354613780975</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
 				<real>0.6950421929359436</real>
 				<key>Red Component</key>
@@ -44650,8 +44666,12 @@
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>0.57602518796920776</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
 				<real>0.35004982352256775</real>
 				<key>Red Component</key>
@@ -44703,8 +44723,12 @@
 			<false/>
 			<key>Background Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>0.27054747939109802</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
 				<real>0.11274909973144531</real>
 				<key>Red Component</key>
@@ -44760,8 +44784,12 @@
 			<real>0.0</real>
 			<key>Cursor Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>0.21945112943649292</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
 				<real>0.74987590312957764</real>
 				<key>Red Component</key>
@@ -44807,8 +44835,12 @@
 			<false/>
 			<key>Foreground Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>0.75428962707519531</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
 				<real>0.86175870895385742</real>
 				<key>Red Component</key>
@@ -48669,7 +48701,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-11-18T16:59:06Z</date>
+	<date>2017-01-19T17:08:59Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -48721,7 +48753,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.12</string>
+	<string>3.0.13</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
