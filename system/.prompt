@@ -67,21 +67,15 @@ git_prompt (){
 }
 
 #switch between prompts from the command line
-function cps() {
+function change_prompt() {
   if [[ $# == "0" ]]; then
     PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BIPurple}✦${c_reset} "'
   elif [ $1 == "arrows" ]; then
-    PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}⨠${BIRed}⨠${BIYellow}⨠${BIGreen}⨠${c_reset} "'
-  elif [ $1 == "stars" ]; then
-    PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}✦ ${BIYellow}✦ ${BIGreen}✦${c_reset} "'
-  elif [ $1 == "flowers" ]; then
-    PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakcyn} \u ${c_reset}${BIWhite}${bakpur} \w ${c_reset}\n$(git_prompt)${BICyan}✿ ${BIYellow}✿ ${BIGreen}✿${c_reset} "'
-  elif [ $1 == "squares" ]; then
-    PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \D{%m/%d/%y} ${c_reset}${BIWhite}${bakcyn} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BIBlue}◼︎ ${BICyan}◼︎ ${BIPurple}◼︎${c_reset} "'
+    PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}⨠${BIYellow}⨠${BIGreen}⨠${c_reset} "'
   elif [ $1 == "simple" ]; then
     PROMPT_COMMAND='PS1="${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}:>${c_reset} "'
   fi
   return;
 }
 
-cps
+change_prompt
