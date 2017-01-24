@@ -38,6 +38,8 @@ alias rc='rails console'
 alias migrate='bundle exec rake db:migrate'
 alias yolo='bundle exec rake db:{drop,create,migrate,seed}'
 alias popo='rubocop'
+alias cop='rubocop'
+alias pig='rubocop'
 alias rspec-all='rspec --no-fail-fast'
 alias fs='foreman start -f'
 
