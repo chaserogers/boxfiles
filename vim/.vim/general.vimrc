@@ -12,6 +12,8 @@ set shortmess+=A
 set laststatus=2
 set colorcolumn=81
 set nowrap
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
 
 " Relative line numbers
 set nu
