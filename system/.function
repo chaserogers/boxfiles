@@ -31,3 +31,9 @@ function memlist() {
 function num_untracked() {
   expr `git status --porcelain 2>/dev/null| grep "^??" | wc -l`
 }
+
+# pow server needs to reload pf anchor rules from time to time
+function reload_pf_anchor_rules() {
+  sudo pfctl -f /etc/pf.conf
+  sudo pfctl -e
+}

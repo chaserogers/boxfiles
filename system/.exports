@@ -1,2 +1,4 @@
+export PATH="/usr/local/opt/mysql@5.5/bin:$PATH"
 #make Sublime default editor
 which -s subl && export EDITOR="subl --wait"
+

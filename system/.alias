@@ -1,9 +1,7 @@
+# general bash commands
 alias ls='ls -G'
 alias ll='ls -laGh'
 alias ls1='ls -1G'
-alias lol='ls | lolcat'
-alias lmao='ls -lah | lolcat'
-alias rofl='ps auxr | lolcat -a --speed=1500'
 alias cl='clear'
 alias e='subl'
 alias vim='mvim'
@@ -11,10 +9,13 @@ alias vi='mvim'
 alias mm='mvim'
 alias m='mvim'
 
+# file navigation
 alias ..='cd ..'
 alias prev='cd -'
 alias back='cd -'
 alias d='cd ~/Desktop'
+alias w='cd ~/work'
+alias work='cd ~/work'
 alias p='cd ~/projects'
 alias projects='cd ~/projects'
 alias old='cd ~/code/old'
@@ -24,28 +25,42 @@ alias code='cd ~/code'
 alias dot='cd ~/.boxfiles/boxfiles'
 alias box='cd ~/.boxfiles/boxfiles'
 
+# system cpu and memory
 alias memory='ps auxm | less -S'
 alias cpu='ps auxr | less -S'
 alias ps?='ps aux | grep'
 alias cpu?='ps aux | grep'
 
+# git
 alias gs='git status'
 alias brall='git branch -a'
 
+# rails and ruby
 alias be='bundle exec'
 alias rs='rails server'
 alias rc='rails console'
 alias migrate='bundle exec rake db:migrate'
 alias yolo='bundle exec rake db:{drop,create,migrate,seed}'
+alias dcm='bundle exec rake db:{drop,create,migrate}'
+alias prepare='rake db:test:prepare'
 alias popo='rubocop'
 alias cop='rubocop'
-alias pig='rubocop'
 alias rspec-all='rspec --no-fail-fast'
+alias rvmgs='rvm gemset use'
+
+# servers etc
+alias log='tail -f log/development.log'
 alias fs='foreman start -f'
 
+# python
 alias pm='python manage.py'
 alias pyserver='python manage.py runserver'
 
+# elixir and phoenix
 alias xoxo='mix ecto.{drop,create,migrate}'
 alias perver='mix phoenix.server'
 alias console='iex -S mix phoenix.server'
+
+# github issues gem
+alias mile='ghi milestone'
+alias label='ghi list --label'
