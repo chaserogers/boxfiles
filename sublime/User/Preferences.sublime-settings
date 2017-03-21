@@ -4,6 +4,7 @@
 	"auto_complete_with_fields": true,
 	"caret_style": "blink",
 	"color_scheme": "Packages/Tweaker Color Scheme/Tweaker.tmTheme",
+	"draw_indent_guides": false,
 	"enki_theme_accent_white": true,
 	"enki_theme_compact_sidebar": true,
 	"enki_theme_panel_separator": true,
@@ -12,7 +13,7 @@
 	"enki_theme_tabs_autowidth": true,
 	"enki_theme_tree_headings": true,
 	"font_face": "Office Code Pro",
-	"font_size": 15,
+	"font_size": 14,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -28,7 +29,8 @@
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
-		80
+		80,
+		100
 	],
 	"save_on_focus_lost": true,
 	"theme": "Enki-Theme.sublime-theme",
