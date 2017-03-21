@@ -6,7 +6,7 @@ run "touch README.md"
 inject_into_file 'Gemfile', after: /:development, :test do/ do
   <<-CODE
 
-  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-rails'
   gem 'factory_girl_rails'
   CODE
 end
@@ -48,7 +48,7 @@ inject_into_file 'spec/spec_helper.rb', after: /^end/ do
 
 if defined? RSpec::Core::Formatters::ProgressFormatter
   RSpec::Core::Formatters::ProgressFormatter.class_eval do
-    DOTS = ["✅ ", "⚠️ ", "❌ "]
+    DOTS = ["✅ ", "⚠️ ", "❌ "].freeze
 
     def example_passed(_example)
       output.print DOTS[0]
@@ -158,12 +158,12 @@ run 'sed -i "" "/#.*/d" Gemfile'
 run 'sed -i "" "/#.*/d" spec/spec_helper.rb'
 run 'sed -i "" "/#.*/d" spec/rails_helper.rb'
 
-# initialize local Git repository and Initial Commit
-git :init
-git add: "."
-git commit: "-m 'initial commit'"
+# # initialize local Git repository and Initial Commit
+# git :init
+# git add: "."
+# git commit: "-m 'initial commit'"
 
-# create remote repo on Github and push
+# # create remote repo on Github and push
 # github_username = 'b0xw00d'
 # run "curl -u '#{github_username}' https://api.github.com/user/repos -d '{\"name\":\"#{app_path}\"}'"
 # git remote: "add origin https://github.com/#{github_username}/#{app_path}.git"
