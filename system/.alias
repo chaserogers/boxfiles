@@ -1,5 +1,5 @@
 # general bash commands
-alias ls='ls -G'
+alias ls='ls -lG'
 alias ll='ls -laGh'
 alias ls1='ls -1G'
 alias cl='clear'
@@ -51,6 +51,7 @@ alias rvmgs='rvm gemset use'
 # servers etc
 alias log='tail -f log/development.log'
 alias fs='foreman start -f'
+alias serve='python -m SimpleHTTPServer 8000'
 
 # python
 alias pm='python manage.py'
