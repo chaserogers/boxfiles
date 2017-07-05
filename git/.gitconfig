@@ -78,7 +78,7 @@
   HEAD = yellow
 
 [credential]
-  helper = osxkeychain
+	helper = osxkeychain
 
 [push]
   default = matching
