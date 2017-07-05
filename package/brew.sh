@@ -7,6 +7,7 @@ brew upgrade
 
 # Install packages
 packages=(
+  ack
   autoconf
   automake
   bash
@@ -48,6 +49,7 @@ packages=(
   macvim
   mercurial
   mongodb
+  mysql
   node
   openssl
   ossp-uuid
