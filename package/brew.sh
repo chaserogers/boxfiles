@@ -2,6 +2,7 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap homebrew/versions
 brew tap homebrew/dupes
+brew tap caskroom/cask
 brew update
 brew upgrade
 
@@ -77,4 +78,21 @@ packages=(
   xz
 )
 
+casks=(
+  alfred
+  atom
+  docker
+  docker-toolbox
+  google-chrome
+  iterm2
+  java
+  postman
+  slack
+  spotify
+  sublime-text
+  vlc
+  xact
+)
+
+brew cask install "${casks[@]}"
 brew install "${packages[@]}"
