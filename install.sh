@@ -26,3 +26,6 @@ ln -sfnv "$BOXFILES_ROOT/sublime/User" ~/Library/Application\ Support/Sublime\ T
 
 # Install Homebrew and packages
 source "$BOXFILES_ROOT/package/brew.sh"
+
+# Hush terminal login messages
+touch .hushlogin
