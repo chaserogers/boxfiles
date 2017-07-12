@@ -68,12 +68,14 @@ git_prompt (){
 
 #switch between prompts from the command line
 function change_prompt() {
+  shopt -s promptvars
+
   if [[ $# == "0" ]]; then
-    PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BIPurple}✦${c_reset} "'
+    PROMPT_COMMAND='PS1="$(printf "%$((COLUMNS-1))s\r")${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BIPurple}✦${c_reset} "'
   elif [ $1 == "arrows" ]; then
-    PROMPT_COMMAND='PS1="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}⨠${BIYellow}⨠${BIGreen}⨠${c_reset} "'
+    PROMPT_COMMAND='PS1="$(printf "%$((COLUMNS-1))s\r")${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}⨠${BIYellow}⨠${BIGreen}⨠${c_reset} "'
   elif [ $1 == "simple" ]; then
-    PROMPT_COMMAND='PS1="${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}:>${c_reset} "'
+    PROMPT_COMMAND='PS1="$(printf "%$((COLUMNS-1))s\r")${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BICyan}:>${c_reset} "'
   fi
   return;
 }
