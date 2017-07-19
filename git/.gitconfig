@@ -1,9 +1,8 @@
 [core]
-	excludesfile = /Users/b0xw00d/.gitignore_global
-	# editor = mvim -f --nomru -c \"autocmd VimLeave * :!open -a iTerm\"
+	excludesfile = ~/.gitignore_global
 
 [user]
-	name = Chase
+	name = Chase Anthony Rogers
 	email = chaseanthonyrogers@gmail.com
 
 [github]
@@ -84,7 +83,7 @@
   default = matching
 
 [commit]
-	template = /Users/b0xw00d/.gitmessage.txt
+	template = ~/.gitmessage.txt
 
 [filter "lfs"]
   clean = git-lfs clean %f
