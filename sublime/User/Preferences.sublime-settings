@@ -33,7 +33,7 @@
 		100
 	],
 	"save_on_focus_lost": true,
-	"theme": "Enki-Theme.sublime-theme",
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"word_wrap": "false"
 }
