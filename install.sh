@@ -24,6 +24,9 @@ ln -sfnv "$BOXFILES_ROOT/vim/.vim" ~/.vim
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 ln -sfnv "$BOXFILES_ROOT/sublime/User" ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
+# Install osx config
+source "$BOXFILES_ROOT/mac/osx.sh"
+
 # Install Homebrew and packages
 source "$BOXFILES_ROOT/package/brew.sh"
 

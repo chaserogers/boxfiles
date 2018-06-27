@@ -1,4 +1,13 @@
 {
-    "tab_size": 4,
-    "translate_tabs_to_spaces": true
+	"extensions":
+	[
+		".jshintrc",
+		".eslintrc",
+		".bowerrc",
+		".jscsrc",
+		"geojson",
+		".csslintrc"
+	],
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true
 }

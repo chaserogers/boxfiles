@@ -158,13 +158,13 @@ run 'sed -i "" "/#.*/d" Gemfile'
 run 'sed -i "" "/#.*/d" spec/spec_helper.rb'
 run 'sed -i "" "/#.*/d" spec/rails_helper.rb'
 
-# # initialize local Git repository and Initial Commit
-# git :init
-# git add: "."
-# git commit: "-m 'initial commit'"
+# initialize local Git repository and Initial Commit
+git :init
+git add: "."
+git commit: "-m 'initial commit'"
 
-# # create remote repo on Github and push
-# github_username = 'b0xw00d'
-# run "curl -u '#{github_username}' https://api.github.com/user/repos -d '{\"name\":\"#{app_path}\"}'"
-# git remote: "add origin https://github.com/#{github_username}/#{app_path}.git"
-# git push: "origin master"
+# create remote repo on Github and push
+github_username = 'b0xw00d'
+run "curl -u '#{github_username}' https://api.github.com/user/repos -d '{\"name\":\"#{app_path}\"}'"
+git remote: "add origin https://github.com/#{github_username}/#{app_path}.git"
+git push: "origin master"

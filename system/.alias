@@ -33,7 +33,15 @@ alias cpu?='ps aux | grep'
 
 # git
 alias gs='git status'
+alias gc='git commit'
+alias ga='git add'
+alias gdf='git diff'
 alias brall='git branch -a'
+
+# heroku
+alias hlog='heroku logs --tail -r'
+alias promote='heroku pipelines:promote -r'
+alias set_vars='figaro heroku:set -e'
 
 # rails and ruby
 alias be='bundle exec'
@@ -45,6 +53,8 @@ alias dcm='bundle exec rake db:{drop,create,migrate}'
 alias prepare='rake db:test:prepare'
 alias popo='rubocop'
 alias cop='rubocop'
+alias rop='rspec && rubocop'
+alias rubospec='rspec && rubocop'
 alias rspec-all='rspec --no-fail-fast'
 alias rvmgs='rvm gemset use'
 

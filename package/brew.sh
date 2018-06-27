@@ -2,9 +2,10 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap homebrew/versions
 brew tap homebrew/dupes
+brew tap homebrew/services
 brew tap caskroom/cask
 brew update
-brew upgrade
+brew upgrade --all
 
 # Install packages
 packages=(
@@ -26,6 +27,7 @@ packages=(
   ghi
   ghostscript
   git
+  git-flow
   gnupg2
   go
   gpg-agent
@@ -96,3 +98,5 @@ casks=(
 
 brew cask install "${casks[@]}"
 brew install "${packages[@]}"
+
+brew services start --all

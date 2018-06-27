@@ -1,5 +1,10 @@
 {
-    "tab_size": 4,
-    "translate_tabs_to_spaces": true,
-	"extensions": ["rails", "erb"]
+	"extensions":
+	[
+		"html.erb",
+		"rails",
+		"erb"
+	],
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true
 }
