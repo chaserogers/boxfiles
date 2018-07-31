@@ -13,7 +13,7 @@
 	"enki_theme_tabs_autowidth": true,
 	"enki_theme_tree_headings": true,
 	"font_face": "Office Code Pro",
-	"font_size": 18,
+	"font_size": 17,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -30,7 +30,7 @@
 	"rulers":
 	[
 		80,
-		100
+		98
 	],
 	"save_on_focus_lost": true,
 	"theme": "Default.sublime-theme",

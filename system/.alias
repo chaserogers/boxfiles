@@ -69,8 +69,8 @@ alias pyserver='python manage.py runserver'
 
 # elixir and phoenix
 alias xoxo='mix ecto.{drop,create,migrate}'
-alias perver='mix phoenix.server'
-alias console='iex -S mix phoenix.server'
+alias ps='mix phoenix.server'
+alias pc='iex -S mix phoenix.server'
 
 # github issues gem
 alias mile='ghi milestone'
