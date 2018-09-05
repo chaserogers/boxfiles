@@ -1,0 +1,12 @@
+\set QUIET 1
+
+\x on
+\pset null 'null'
+\set COMP_KEYWORD_CASE upper
+\set VERBOSITY verbose
+\timing
+
+export PAGER=less
+\pset pager always
+
+\unset QUIET

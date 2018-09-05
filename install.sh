@@ -6,6 +6,7 @@ BOXFILES_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ln -sfv "$BOXFILES_ROOT/runcom/.bash_profile" ~
 ln -sfv "$BOXFILES_ROOT/runcom/.inputrc" ~
 ln -sfv "$BOXFILES_ROOT/runcom/.pryrc" ~
+ln -sfv "$BOXFILES_ROOT/runcom/.psqlrc" ~
 ln -sfv "$BOXFILES_ROOT/rails/.railsrc" ~
 ln -sfv "$BOXFILES_ROOT/rails/.rails_template.rb" ~
 ln -sfv "$BOXFILES_ROOT/rails/.rspec" ~

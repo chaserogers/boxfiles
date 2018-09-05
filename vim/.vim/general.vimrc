@@ -4,10 +4,12 @@ colorscheme deep-space
 
 " Basic settings
 set encoding=utf-8
-set guifont=Office\ Code\ Pro:h17
+set guifont=Office\ Code\ Pro:h15
 set scrolloff=20
 set swapfile
 set dir=~/.tmp
+set lines=45
+set columns=155
 set directory=~/.vim/swapfiles//
 set shortmess+=A
 set laststatus=2

@@ -15,5 +15,7 @@ source ~/.profile
 git_completion_script=/usr/local/etc/bash_completion.d/git-completion.bash
 test -s $git_completion_script && source $git_completion_script
 
+source ~/.private_profile
+
 #cowsay ascii on session load
-# cowsay -f small "$(fortune -s)" | lolcat
+# cowsay -f small "$(fortune -s)"

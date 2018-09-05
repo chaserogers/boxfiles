@@ -45,6 +45,7 @@ alias set_vars='figaro heroku:set -e'
 
 # rails and ruby
 alias be='bundle exec'
+alias fs='foreman start -f'
 alias rs='rails server'
 alias rc='rails console'
 alias migrate='bundle exec rake db:migrate'
@@ -60,17 +61,20 @@ alias rvmgs='rvm gemset use'
 
 # servers etc
 alias log='tail -f log/development.log'
-alias fs='foreman start -f'
 alias serve='python -m SimpleHTTPServer 8000'
-
-# python
-alias pm='python manage.py'
-alias pyserver='python manage.py runserver'
 
 # elixir and phoenix
 alias xoxo='mix ecto.{drop,create,migrate}'
-alias ps='mix phoenix.server'
-alias pc='iex -S mix phoenix.server'
+alias xs='mix phx.server'
+alias xc='iex -S mix phx.server'
+
+# docker
+alias dc='docker-compose'
+alias dcrw='docker-compose run web'
+alias dcu='docker-compose up'
+alias dcrc='docker-compose run web rails console'
+alias dcdcm='docker-compose run web rails db:{drop,create,migrate}'
+alias dcyolo='docker-compose run web rails db:{drop,create,migrate,seed}'
 
 # github issues gem
 alias mile='ghi milestone'
