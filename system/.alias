@@ -37,6 +37,7 @@ alias gc='git commit'
 alias ga='git add'
 alias gdf='git diff'
 alias brall='git branch -a'
+alias remotes='git remote -v'
 
 # heroku
 alias hlog='heroku logs --tail -r'

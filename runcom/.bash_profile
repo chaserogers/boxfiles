@@ -17,5 +17,9 @@ test -s $git_completion_script && source $git_completion_script
 
 source ~/.private_profile
 
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
 #cowsay ascii on session load
 # cowsay -f small "$(fortune -s)"
