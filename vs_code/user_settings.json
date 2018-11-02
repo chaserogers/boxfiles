@@ -1,0 +1,51 @@
+{
+    "editor.tabCompletion": "on",
+    "editor.cursorBlinking": "blink",
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.highlightActiveIndentGuide": false,
+    "editor.renderLineHighlight": "none",
+    "terminal.integrated.enableBell": true,
+    "editor.fontSize": 15,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [80,100],
+    "editor.renderIndentGuides": false,
+    "files.trimTrailingWhitespace": true,
+    "files.autoSave": "onFocusChange",
+    "editor.fontFamily": "Office Code Pro",
+    "breadcrumbs.enabled": true,
+    "html.format.wrapLineLength": 0,
+    "diffEditor.renderSideBySide": false,
+    "gitlens.currentLine.scrollable": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.historyExplorer.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.activeIconPack": "none",
+    "material-icon-theme.folders.theme": "classic",
+    "material-icon-theme.hidesExplorerArrows": true,
+    "material-icon-theme.files.associations": {
+        ".env.staging": "settings",
+        ".env.production": "settings",
+        ".env.development": "settings",
+        ".env": "settings"
+    },
+    "editor.occurrencesHighlight": false,
+    "window.newWindowDimensions": "maximized",
+    "files.useExperimentalFileWatcher": true,
+    "trailing-spaces.syntaxIgnore": [
+        "markdown"
+    ],
+    "editor.links": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.matchBrackets": false,
+    "ruby.intellisense": "rubyLocate",
+    "[shellscript]": {
+        "editor.detecetIndentation": false,
+        "editor.tabSize": 2
+    },
+    "window.restoreWindows": "none",
+    "json.format.enable": false,
+    "html.format.enable": false
+}
