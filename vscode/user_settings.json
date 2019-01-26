@@ -47,5 +47,11 @@
     },
     "window.restoreWindows": "none",
     "json.format.enable": false,
-    "html.format.enable": false
+    "html.format.enable": false,
+    "window.zoomLevel": 0,
+    "window.nativeTabs": true,
+    "window.title": "${rootPath}${separator}${activeEditorShort}",
+    "search.location": "panel",
+    "gitlens.views.fileHistory.enabled": false,
+    "gitlens.views.lineHistory.enabled": false
 }

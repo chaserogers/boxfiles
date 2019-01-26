@@ -17,6 +17,7 @@ Plug 'Shougo/vimshell.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'godlygeek/tabular'
 Plug 'matze/vim-move'
+Plug 'wincent/terminus'
 
 " Git
 Plug 'airblade/vim-gitgutter'

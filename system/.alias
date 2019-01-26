@@ -3,22 +3,15 @@ alias ls='ls -lG'
 alias ll='ls -laGh'
 alias ls1='ls -1G'
 alias cl='clear'
-alias e='code'
-alias vim='mvim'
-alias vi='mvim'
-alias mm='mvim'
-alias m='mvim'
+alias e='subl'
 alias pcat='pygmentize -f terminal256 -O style=native -g'
+alias tmux="TERM=xterm-256color tmux"
 
 # file navigation
 alias ..='cd ..'
-alias prev='cd -'
-alias back='cd -'
 alias d='cd ~/Desktop'
 alias w='cd ~/work'
-alias work='cd ~/work'
 alias dot='cd ~/.boxfiles/boxfiles'
-alias box='cd ~/.boxfiles/boxfiles'
 
 # system cpu and memory
 alias memory='ps auxm | less -S'
@@ -44,16 +37,10 @@ alias be='bundle exec'
 alias fs='foreman start -f'
 alias rs='rails server'
 alias rc='rails console'
-alias migrate='bundle exec rake db:migrate'
 alias yolo='bundle exec rake db:{drop,create,migrate,seed}'
 alias dcm='bundle exec rake db:{drop,create,migrate}'
-alias prepare='rake db:test:prepare'
-alias popo='rubocop'
 alias cop='rubocop'
-alias rop='rspec && rubocop'
-alias rubospec='rspec && rubocop'
 alias rspec-all='rspec --no-fail-fast'
-alias rvmgs='rvm gemset use'
 
 # servers etc
 alias log='tail -f log/development.log'
@@ -68,10 +55,20 @@ alias xc='iex -S mix phx.server'
 alias dc='docker-compose'
 alias dcrw='docker-compose run web'
 alias dcu='docker-compose up'
-alias dcrc='docker-compose run web rails console'
 alias dcdcm='docker-compose run web rails db:{drop,create,migrate}'
 alias dcyolo='docker-compose run web rails db:{drop,create,migrate,seed}'
+
+# electron and electron-forge
+alias ef='electron-forge'
+alias efs='electron-forge start'
 
 # github issues gem
 alias mile='ghi milestone'
 alias label='ghi list --label'
+
+# terraform
+alias tfm='terraform'
+alias tfmc='terraform console'
+
+# msg-cli
+alias mc='msg-cli'

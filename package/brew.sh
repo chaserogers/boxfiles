@@ -92,6 +92,7 @@ casks=(
   slack
   spotify
   sublime-text
+  visual-studio-code
   vlc
   xact
 )

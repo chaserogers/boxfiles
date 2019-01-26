@@ -13,14 +13,18 @@ set columns=155
 set directory=~/.vim/swapfiles//
 set shortmess+=A
 set laststatus=2
-set colorcolumn=81
 set nowrap
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
+" use system keyboard by default
+set clipboard=unnamed
+
 " Relative line numbers
 set nu
-set rnu
 
 function! NumberToggle()
   if(&relativenumber == 1)

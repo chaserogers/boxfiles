@@ -21,5 +21,9 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
+# if [[ ! $TERM =~ screen ]]; then
+#     exec tmux
+# fi
+
 #cowsay ascii on session load
 # cowsay -f small "$(fortune -s)"

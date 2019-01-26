@@ -17,6 +17,9 @@ ln -sfv "$BOXFILES_ROOT/git/.pull_request_template.md" ~
 ln -sfv "$BOXFILES_ROOT/git/.issue_template.md" ~
 ln -sfv "$BOXFILES_ROOT/vim/.vimrc" ~
 
+rm -rf ~/Library/Application\ Support/Code/User/settings.json
+ln -sfv "$BOXFILES_ROOT/vs_code/user_settings.json" ~/Library/Application\ Support/Code/User/settings.json
+
 # Symlink vim package and config folders
 rm -rf ~/.vim
 ln -sfnv "$BOXFILES_ROOT/vim/.vim" ~/.vim

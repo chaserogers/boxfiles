@@ -1,4 +1,3 @@
 -B #Skip Bundle
 -T #Skip Test-Unit
 -d postgresql #Use postgres
--m ~/work/msg-rails-template/rails_template.rb
