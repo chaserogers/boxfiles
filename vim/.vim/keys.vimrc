@@ -1,6 +1,5 @@
 let mapleader = ","
 map <leader>ll :source ~/.vimrc<CR>
-map <C-n> :NERDTreeToggle<CR>
 
 " toggle relative line numbers
 nnoremap <leader>nn :call NumberToggle()<cr>
@@ -43,11 +42,6 @@ nnoremap <Leader>s :%s/\<<C-r><C-w>\>//gic<Left><Left><Left><Left>
 cnoreabbrev Ack Ack!
 nnoremap <Leader>f :Ack!<Space>
 
-" vimshell
-nnoremap <Leader>sh :VimShell<CR>
-
-" tabularize keymappings
-nnoremap <Leader>= :Tabularize /=<CR>
-vnoremap <Leader>= :Tabularize /=<CR>
-nnoremap <Leader>: :Tabularize /:\zs<CR>
-vnoremap <Leader>: :Tabularize /:\zs<CR>
+" tabularize plugin
+nnoremap <Leader>tt :Tabularize /
+vnoremap <Leader>tt :Tabularize /

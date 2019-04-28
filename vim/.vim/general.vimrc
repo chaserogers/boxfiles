@@ -5,15 +5,25 @@ colorscheme deep-space
 " Basic settings
 set encoding=utf-8
 set guifont=Office\ Code\ Pro:h15
+set guioptions=
 set scrolloff=20
 set swapfile
 set dir=~/.tmp
 set lines=45
-set columns=155
+set columns=90
 set directory=~/.vim/swapfiles//
 set shortmess+=A
 set laststatus=2
 set nowrap
+set spr
+set ea
+set nocompatible
+set backspace=2
+
+set hlsearch
+" <Ctrl-l> redraws the screen and removes any search highlighting.
+nnoremap <silent> <C-l> :nohl<CR><C-l>
+
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 
@@ -35,7 +45,7 @@ function! NumberToggle()
 endfunc
 
 " Remove trailing spaces on save
-autocmd BufWritePre * :%s/\s\+$//e
+au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,README.md  setf markdown
 
 " Highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg='#400000'
@@ -49,6 +59,8 @@ set shiftwidth=2
 set expandtab
 set smartindent
 set autoindent
+
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 
 " for html/rb files, 2 spaces
 autocmd Filetype html setlocal ts=2 sw=2 expandtab

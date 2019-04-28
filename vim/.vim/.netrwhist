@@ -1,7 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/chase.rogers/.boxfiles/boxfiles'
-let g:netrw_dirhist_2='/Users/chase.rogers/.boxfiles/boxfiles/runcom'
-let g:netrw_dirhist_3='/Users/chase.rogers/.boxfiles/boxfiles'
-let g:netrw_dirhist_4='/Users/chase.rogers/.boxfiles/boxfiles/system'
-let g:netrw_dirhist_5='/Users/chase.rogers/tutorials/terraform-tutorial/2g_Outputs'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/chase.rogers/work/msg-cli/lib'
+let g:netrw_dirhist_2='/Users/chase.rogers/work/msg-cli/lib/msg'
+let g:netrw_dirhist_3='/Users/chase.rogers/work/msg-cli/lib/msg/cli'
+let g:netrw_dirhist_4='/Users/chase.rogers/work/msg-cli/lib/msg/cli/utils'
+let g:netrw_dirhist_5='/Users/chase.rogers/work/msg-cli'
+let g:netrw_dirhist_6='/Users/chase.rogers/.boxfiles/boxfiles'
+let g:netrw_dirhist_7='/Users/chase.rogers/work/msg-cli'

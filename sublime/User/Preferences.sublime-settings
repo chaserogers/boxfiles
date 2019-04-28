@@ -2,6 +2,7 @@
 	"auto_close_tags": false,
 	"auto_complete_commit_on_tab": true,
 	"auto_complete_with_fields": true,
+	"block_caret": false,
 	"caret_style": "blink",
 	"color_scheme": "Packages/Color Schemes - Wicked Schemes by b0xw00d/dark/Cactus.tmTheme",
 	"draw_indent_guides": false,

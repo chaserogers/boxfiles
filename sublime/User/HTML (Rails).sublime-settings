@@ -2,8 +2,8 @@
 	"extensions":
 	[
 		"rails",
-		"html.erb",
-		"erb"
+		"erb",
+		"html.erb"
 	],
 	"tab_size": 4,
 	"translate_tabs_to_spaces": true
