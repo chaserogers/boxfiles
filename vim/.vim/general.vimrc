@@ -30,9 +30,22 @@ set hlsearch
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
-" change cursor in normal and insert mode when using terminal vim
-let &t_SI = "\e[6 q"
-let &t_EI = "\e[2 q"
+" changes the cursor shape/color
+" in the terminal depending on the mode
+" see http://code.google.com/p/iterm2/issues/detail?id=710&q=cursor
+function! SetCursorStyle()
+  if &term =~ "xterm\\|rxvt"
+    " use a | cursor in insert mode
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+
+    " use a rectangle cursor otherwise
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+    " reset cursor when vim exits
+    autocmd VimLeave * silent !echo -ne "\<Esc>]50;CursorShape=0\x7"
+
+  endif
+endfunction
 
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=

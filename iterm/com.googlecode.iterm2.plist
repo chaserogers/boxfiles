@@ -32205,9 +32205,9 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>98 285 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>578 1079 820 901 0 900 1920 1177 </string>
+	<string>256 928 820 863 -621 900 2560 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 0 820 877 0 0 1440 877 </string>
+	<string>1119 1090 820 863 -621 900 2560 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>0 900 820 882 0 900 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -32925,7 +32925,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>44</integer>
+			<integer>45</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -38872,7 +38872,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>57A1EE31-3070-42B1-BB0A-4799E5C0D480</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>45</integer>
+	<integer>50</integer>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -39539,7 +39539,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-05-02T22:15:35Z</date>
+	<date>2019-05-03T22:15:34Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
