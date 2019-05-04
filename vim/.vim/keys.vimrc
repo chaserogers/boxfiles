@@ -1,20 +1,11 @@
 let mapleader = ","
 map <leader>ll :source ~/.vimrc<CR>
 
-" toggle relative line numbers
-nnoremap <leader>nn :call NumberToggle()<cr>
-
 " switch panes with arrow keys
 nnoremap <silent> <D-S-Right> <c-w>l
 nnoremap <silent> <D-S-Left> <c-w>h
 nnoremap <silent> <D-S-Up> <c-w>k
 nnoremap <silent> <D-S-Down> <c-w>j
-
-" enter new lines above and below cursor from middle of text
-nmap <D-S-Enter> O<Esc>
-nmap <D-Enter> o<Esc>
-imap <D-S-Enter> <Esc>O
-imap <D-Enter> <Esc>o
 
 " buffer keys
 nnoremap <D-]> :bnext<CR>

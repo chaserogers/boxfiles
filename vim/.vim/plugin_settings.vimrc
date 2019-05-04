@@ -27,3 +27,6 @@ let g:buftabline_separators = 1
 
 " better markdown folding
 let g:markdown_folding = 0
+
+" netrw tree view
+let g:netrw_liststyle=3
