@@ -32085,6 +32085,8 @@
 	<true/>
 	<key>DisableFullscreenTransparency</key>
 	<true/>
+	<key>DoubleClickPerformsSmartSelection</key>
+	<true/>
 	<key>EnableDivisionView</key>
 	<true/>
 	<key>EnableProxyIcon</key>
@@ -32106,7 +32108,7 @@
 	<key>HideMenuBarInFullscreen</key>
 	<false/>
 	<key>HideScrollbar</key>
-	<true/>
+	<false/>
 	<key>HideTab</key>
 	<true/>
 	<key>HideTabCloseButton</key>
@@ -32205,13 +32207,13 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>98 285 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>219 1002 820 877 -621 900 2560 1057 </string>
+	<string>278 0 820 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1108 1052 820 882 -621 900 2560 1057 </string>
+	<string>410 0 820 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>-621 900 820 882 -621 900 2560 1057 </string>
+	<string>11 0 820 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1078 943 820 882 -621 900 2560 1057 </string>
+	<string>605 0 820 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>-194 915 820 882 -621 900 2560 1057 </string>
 	<key>New Bookmarks</key>
@@ -32221,6 +32223,8 @@
 			<true/>
 			<key>Allow Title Reporting</key>
 			<false/>
+			<key>Allow Title Setting</key>
+			<true/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -32545,6 +32549,8 @@
 			<string>No</string>
 			<key>Custom Directory</key>
 			<string>No</string>
+			<key>Custom Window Title</key>
+			<string></string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Disable Printing</key>
@@ -33101,12 +33107,14 @@
 			<true/>
 			<key>Use Canonical Parser</key>
 			<false/>
+			<key>Use Custom Window Title</key>
+			<true/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
-			<true/>
+			<false/>
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
@@ -38872,7 +38880,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>57A1EE31-3070-42B1-BB0A-4799E5C0D480</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>80</integer>
+	<integer>92</integer>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>

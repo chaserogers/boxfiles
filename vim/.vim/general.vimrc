@@ -9,13 +9,19 @@ highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 " Basic settings
 set encoding=utf-8
 set guifont=Office\ Code\ Pro:h15
+set guioptions=
 
 " put swapfiles elsewhere
 set swapfile
 set directory^=~/.vim/swapfiles//
-
 set shortmess+=A
+
 set nowrap
+" set wrap
+" set linebreak
+" set nolist
+
+
 set spr
 set ea
 set nocompatible
