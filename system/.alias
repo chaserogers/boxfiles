@@ -3,7 +3,7 @@ alias ls='ls -lG'
 alias ll='ls -laGh'
 alias ls1='ls -1G'
 alias cl='clear'
-alias e='mvim'
+alias e='vim'
 alias v='vim'
 alias pcat='pygmentize -f terminal256 -O style=native -g'
 alias tmux="TERM=xterm-256color tmux"

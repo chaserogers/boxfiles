@@ -5,7 +5,7 @@
 	<key>AdjustWindowForFontSizeChange</key>
 	<false/>
 	<key>AllowClipboardAccess</key>
-	<false/>
+	<true/>
 	<key>AnimateDimming</key>
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -32205,13 +32205,13 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>98 285 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>256 928 820 863 -621 900 2560 1057 </string>
+	<string>219 1002 820 877 -621 900 2560 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1119 1090 820 863 -621 900 2560 1057 </string>
+	<string>1108 1052 820 882 -621 900 2560 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 900 820 882 0 900 1920 1177 </string>
+	<string>-621 900 820 882 -621 900 2560 1057 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>599 0 820 877 0 0 1440 877 </string>
+	<string>1078 943 820 882 -621 900 2560 1057 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>-194 915 820 882 -621 900 2560 1057 </string>
 	<key>New Bookmarks</key>
@@ -38872,7 +38872,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>57A1EE31-3070-42B1-BB0A-4799E5C0D480</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>50</integer>
+	<integer>80</integer>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -39539,7 +39539,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-05-03T22:15:34Z</date>
+	<date>2019-05-04T22:15:36Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>

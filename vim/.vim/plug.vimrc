@@ -10,6 +10,8 @@ Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'godlygeek/tabular'
 Plug 'morhetz/gruvbox'
 Plug 'arcticicestudio/nord-vim'
+Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-fugitive'
 
 " Git
 Plug 'airblade/vim-gitgutter'
