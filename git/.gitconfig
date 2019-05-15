@@ -25,24 +25,24 @@
   find = log --all --pretty=\"format:%Cgreen%H %Cblue%s\n%b%Creset\" --name-status --grep
 
   lg = log \
-      --pretty=format:'%C(magenta bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(cyan bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n'
+      --pretty=format:'%C(green bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(magenta bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n'
 
   ll = log \
     --graph \
-    --pretty=format:'%C(magenta bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(cyan bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n'\
+    --pretty=format:'%C(green bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(magenta bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n'\
     --name-status
 
   mine = log \
-    --pretty=format:'%C(magenta bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(cyan bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n' \
+    --pretty=format:'%C(green bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(magenta bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n' \
     --author=chaseanthonyrogers@gmail.com
 
   lg1 = log \
-    --pretty=format:'%C(magenta bold)%h%Creset -%C(yellow bold)%d%Creset %s %C(blue bold)(%cr) %C(cyan bold)<%an>%Creset' \
+    --pretty=format:'%C(green bold)%h%Creset -%C(yellow bold)%d%Creset %s %C(blue bold)(%cr) %C(magenta bold)<%an>%Creset' \
     --abbrev-commit \
     --date=relative
 
   lgdf = log \
-    --pretty=format:'%C(magenta bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(cyan bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n' \
+    --pretty=format:'%C(green bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(magenta bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n' \
     -p
 
 [color]

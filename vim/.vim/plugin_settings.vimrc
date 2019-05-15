@@ -32,3 +32,7 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head'
       \ },
       \ }
+
+" markdown preview
+let vim_markdown_preview_hotkey='<C-m>'
+let vim_markdown_preview_github=1

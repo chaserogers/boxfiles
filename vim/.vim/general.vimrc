@@ -16,10 +16,10 @@ set swapfile
 set directory^=~/.vim/swapfiles//
 set shortmess+=A
 
-set nowrap
-" set wrap
-" set linebreak
-" set nolist
+" set nowrap
+set wrap
+set linebreak
+set nolist
 
 
 set spr

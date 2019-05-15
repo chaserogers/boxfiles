@@ -12,6 +12,7 @@ Plug 'morhetz/gruvbox'
 Plug 'arcticicestudio/nord-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'JamshedVesuna/vim-markdown-preview'
 
 " Git
 Plug 'airblade/vim-gitgutter'

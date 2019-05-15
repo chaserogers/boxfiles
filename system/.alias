@@ -1,7 +1,6 @@
 # general bash commands
 alias ls='ls -lG'
 alias ll='ls -laGh'
-alias ls1='ls -1G'
 alias cl='clear'
 alias e='vim'
 alias v='vim'
@@ -15,24 +14,9 @@ alias w='cd ~/work'
 alias n='cd ~/notes'
 alias dot='cd ~/.boxfiles/boxfiles'
 
-# system cpu and memory
-alias memory='ps auxm | less -S'
-alias cpu='ps auxr | less -S'
-alias ps?='ps aux | grep'
-alias cpu?='ps aux | grep'
-
 # git
 alias gs='git status'
-alias gc='git commit'
-alias ga='git add'
-alias gdf='git diff'
 alias brall='git branch -a'
-alias remotes='git remote -v'
-
-# heroku
-alias hlog='heroku logs --tail -r'
-alias promote='heroku pipelines:promote -r'
-alias set_vars='figaro heroku:set -e'
 
 # rails and ruby
 alias be='bundle exec'
@@ -42,16 +26,6 @@ alias rc='rails console'
 alias yolo='bundle exec rake db:{drop,create,migrate,seed}'
 alias dcm='bundle exec rake db:{drop,create,migrate}'
 alias cop='rubocop'
-alias rspec-all='rspec --no-fail-fast'
-
-# servers etc
-alias log='tail -f log/development.log'
-alias serve='python -m SimpleHTTPServer 8000'
-
-# elixir and phoenix
-alias xoxo='mix ecto.{drop,create,migrate}'
-alias xs='mix phx.server'
-alias xc='iex -S mix phx.server'
 
 # docker compose
 alias dc='docker-compose'
@@ -59,14 +33,6 @@ alias dcrw='docker-compose run web'
 alias dcu='docker-compose up'
 alias dcdcm='docker-compose run web rails db:{drop,create,migrate}'
 alias dcyolo='docker-compose run web rails db:{drop,create,migrate,seed}'
-
-# electron and electron-forge
-alias ef='electron-forge'
-alias efs='electron-forge start'
-
-# github issues gem
-alias mile='ghi milestone'
-alias label='ghi list --label'
 
 # terraform
 alias tfm='terraform'

@@ -76,20 +76,6 @@ function get_terminal_column() {
   echo "$((${pos[1]} - 1))"
 }
 
-# function timer_start {
-#   timer=${timer:-$SECONDS}
-# }
-
-# function timer_stop {
-#   timer_show=$(($SECONDS - $timer))
-#   unset timer
-# }
-
-# trap 'timer_start' DEBUG
-# PROMPT_COMMAND=timer_stop
-
-# PS1="${BIPurple}[last: $(timer_show)s][\w]$ ${c_reset}"
-
 function configure_prompt() {
   if [ "$(get_terminal_column)" != 0 ]; then
     PS1="\n"
@@ -101,6 +87,3 @@ function configure_prompt() {
 # PROMPT_COMMAND='PS1+="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BIPurple}\$${c_reset} "'
 PROMPT_COMMAND='PS1+="${BICyan}[\t \u \W]${c_reset}$(git_prompt)\n${BICyan}$ ${c_reset}"'
 PROMPT_COMMAND="configure_prompt;$PROMPT_COMMAND"
-
-# export PS1="${BICyan}[\t \u \w]
-# $(git_prompt)$ ${c_reset}"
