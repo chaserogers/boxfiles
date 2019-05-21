@@ -6,9 +6,5 @@ test -d /usr/local/heroku/ && export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/Library/Python/2.7/site-packages:$PATH"
 
-# Path for RVM
-test -d $HOME/.rvm/bin && PATH=$PATH:$HOME/.rvm/bin
-export PATH="$PATH:$HOME/.rvm/bin"
-
 # Path for VIM
 PATH=/opt/local/bin:$PATH/

@@ -8,8 +8,11 @@ highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 
 " Basic settings
 set encoding=utf-8
-set guifont=Office\ Code\ Pro:h15
+set guifont=Office\ Code\ Pro:h14
 set guioptions=
+
+" dont show mode under statusline as it isnt needed
+set noshowmode
 
 " put swapfiles elsewhere
 set swapfile
@@ -40,9 +43,6 @@ set mouse=a
 
 " keep mouse in middle of screen while scrolling
 set scrolloff=20
-
-" <Ctrl-l> redraws the screen and removes any search highlighting.
-nnoremap <silent> <C-l> :nohl<CR><C-l>
 
 " change cursors between modes in terminal vim
 let &t_SI = "\e[6 q"

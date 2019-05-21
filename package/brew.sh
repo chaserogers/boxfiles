@@ -17,6 +17,7 @@ packages=(
   chromedriver
   coreutils
   cowsay
+  csshx
   dirmngr
   elasticsearch
   elixir
@@ -66,6 +67,7 @@ packages=(
   python
   python3
   racket
+  rbenv
   readline
   redis
   ruby

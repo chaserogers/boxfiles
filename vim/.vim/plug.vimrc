@@ -8,10 +8,8 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'godlygeek/tabular'
-Plug 'morhetz/gruvbox'
 Plug 'arcticicestudio/nord-vim'
 Plug 'itchyny/lightline.vim'
-Plug 'tpope/vim-fugitive'
 Plug 'JamshedVesuna/vim-markdown-preview'
 
 " Git

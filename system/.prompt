@@ -65,25 +65,28 @@ function git_prompt() {
   echo "${c_reset}${git_color}($git_branch)${c_reset}${orange}${tracker}"
 }
 
-function get_terminal_column() {
-  exec < /dev/tty
-  local oldstty=$(stty -g)
-  stty raw -echo min 0
-  echo -en "\033[6n" > /dev/tty
-  local pos
-  IFS=';' read -r -d R -a pos
-  stty $oldstty
-  echo "$((${pos[1]} - 1))"
-}
+# function get_terminal_column() {
+#   exec < /dev/tty
+#   local oldstty=$(stty -g)
+#   stty raw -echo min 0
+#   echo -en "\033[6n" > /dev/tty
+#   local pos
+#   IFS=';' read -r -d R -a pos
+#   stty $oldstty
+#   echo "$((${pos[1]} - 1))"
+# }
 
-function configure_prompt() {
-  if [ "$(get_terminal_column)" != 0 ]; then
-    PS1="\n"
-  else
-    PS1=""
-  fi
-}
+# function configure_prompt() {
+#   if [ "$(get_terminal_column)" != 0 ]; then
+#     PS1="\n"
+#   else
+#     PS1=""
+#   fi
+# }
 
 # PROMPT_COMMAND='PS1+="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BIPurple}\$${c_reset} "'
-PROMPT_COMMAND='PS1+="${BICyan}[\t \u \W]${c_reset}$(git_prompt)\n${BICyan}$ ${c_reset}"'
-PROMPT_COMMAND="configure_prompt;$PROMPT_COMMAND"
+
+# PROMPT_COMMAND='PS1+="${BICyan}[\t \u \W]${c_reset}$(git_prompt)\n${BICyan}$ ${c_reset}"'
+# PROMPT_COMMAND="configure_prompt;$PROMPT_COMMAND"
+
+PROMPT_COMMAND='PS1="${BICyan}[\t \u \W]${c_reset}$(git_prompt)\n${BICyan}$ ${c_reset}"'
