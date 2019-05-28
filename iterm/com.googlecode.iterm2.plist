@@ -32088,7 +32088,7 @@
 	<key>DoubleClickPerformsSmartSelection</key>
 	<true/>
 	<key>EnableDivisionView</key>
-	<true/>
+	<false/>
 	<key>EnableProxyIcon</key>
 	<false/>
 	<key>EnableRendezvous</key>
@@ -32110,7 +32110,7 @@
 	<key>HideScrollbar</key>
 	<true/>
 	<key>HideTab</key>
-	<true/>
+	<false/>
 	<key>HideTabCloseButton</key>
 	<false/>
 	<key>HideTabNumber</key>
@@ -32207,19 +32207,23 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>98 285 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>313 1007 810 855 -621 900 2560 1057 </string>
+	<string>625 -7 810 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-615 1069 810 855 -621 900 2560 1057 </string>
+	<string>220 -7 810 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>837 1025 810 855 -621 900 2560 1057 </string>
+	<string>3 -1 810 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>276 7 810 837 0 0 1440 877 </string>
+	<string>558 19 810 854 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>270 51 810 837 0 0 1920 1057 </string>
+	<string>25 0 810 855 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
-	<string>352 220 810 837 0 0 1920 1057 </string>
+	<string>280 3 810 855 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
-	<string>343 93 1210 837 0 0 1920 1057 </string>
+	<string>195 8 810 855 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 7</key>
+	<string>344 22 810 855 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 8</key>
+	<string>365 22 810 855 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -33099,6 +33103,8 @@
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
+			<key>Title Components</key>
+			<integer>5</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Triggers</key>
@@ -38875,7 +38881,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{265, 759}</string>
+		<string>{218, 725}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -38884,7 +38890,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>57A1EE31-3070-42B1-BB0A-4799E5C0D480</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>170</integer>
+	<integer>182</integer>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -39475,6 +39481,10 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSearchHistory</key>
+	<array>
+		<string>width</string>
+	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>521055553.14339501</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -39551,7 +39561,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-05-18T22:06:49Z</date>
+	<date>2019-05-25T14:54:22Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -39611,7 +39621,7 @@
 	<key>WebKitStandardFont</key>
 	<string>.AppleSystemUIFont</string>
 	<key>WindowNumber</key>
-	<true/>
+	<false/>
 	<key>WindowStyle</key>
 	<integer>1</integer>
 	<key>WordCharacters</key>
