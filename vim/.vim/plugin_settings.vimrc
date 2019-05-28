@@ -12,7 +12,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_working_path_mode = 'ra'
 
 " set max results of ctrlp to be scrollable up to 100
-let g:ctrlp_match_window = 'results:100'
+let g:ctrlp_match_window = 'results:40'
 
 " Buffer Tabline (buftabline)
 set hidden
@@ -25,18 +25,30 @@ let g:lightline = {
       \ 'colorscheme': 'nord',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'filename', 'gitbranch' ] ],
+      \             [ 'gitbranch', 'filename' ] ],
       \   'right': [ [ 'lineinfo' ],
       \              [ 'percent' ],
       \              [ 'fileencoding', 'filetype' ] ]
       \ },
       \ 'component_function': {
       \   'gitbranch': 'fugitive#head',
+      \   'filename': 'LightlineFilename',
       \ },
       \ }
 
+function! LightlineModified()
+  let modified = &modified ? '*' : ''
+  return modified
+endfunction
+
+function! LightlineFilename()
+  let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
+  let modified = &modified ? ' *' : ''
+  return filename . modified
+endfunction
+
 " markdown preview
-let vim_markdown_preview_hotkey='<C-m>'
+let vim_markdown_preview_hotkey='<c-m>'
 let vim_markdown_preview_github=1
 
 " use enter to select supertab completion
