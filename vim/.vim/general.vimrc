@@ -24,7 +24,6 @@ set wrap
 set linebreak
 set nolist
 
-
 set spr
 set ea
 set nocompatible
