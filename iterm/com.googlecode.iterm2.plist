@@ -32110,7 +32110,7 @@
 	<key>HideScrollbar</key>
 	<true/>
 	<key>HideTab</key>
-	<false/>
+	<true/>
 	<key>HideTabCloseButton</key>
 	<false/>
 	<key>HideTabNumber</key>
@@ -32207,15 +32207,15 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>98 285 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>625 -7 810 877 0 0 1440 877 </string>
+	<string>1794 -877 810 854 1241 -900 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>220 -7 810 877 0 0 1440 877 </string>
+	<string>1276 -859 810 836 1241 -900 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>3 -1 810 877 0 0 1440 877 </string>
+	<string>2612 506 810 836 0 0 3840 1577 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>558 19 810 854 0 0 1440 877 </string>
+	<string>99 87 810 836 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>25 0 810 855 0 0 1440 877 </string>
+	<string>44 18 810 836 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
 	<string>280 3 810 855 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
@@ -32232,7 +32232,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Allow Title Setting</key>
-			<true/>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -32588,6 +32588,8 @@
 			<false/>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
+			<key>Icon</key>
+			<integer>0</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -32939,7 +32941,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>46</integer>
+			<integer>45</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -33118,7 +33120,7 @@
 			<key>Use Canonical Parser</key>
 			<false/>
 			<key>Use Custom Window Title</key>
-			<true/>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
@@ -38890,7 +38892,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>57A1EE31-3070-42B1-BB0A-4799E5C0D480</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>182</integer>
+	<integer>183</integer>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -39483,6 +39485,8 @@
 	</dict>
 	<key>NoSyncSearchHistory</key>
 	<array>
+		<string>heartbeat</string>
+		<string>list</string>
 		<string>width</string>
 	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
@@ -39561,7 +39565,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-05-25T14:54:22Z</date>
+	<date>2019-05-29T20:38:13Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
