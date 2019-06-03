@@ -3,11 +3,13 @@
 
 [user]
 	name = Chase Rogers
-	email = chase.rogers@vibes.com
+  email = chaseanthonyrogers@gmail.com
+
+[includeIf "gitdir:~/work/"]
+    path = ~/work/.gitconfig
 
 [github]
   user = b0xw00d
-  email = chaseanthonyrogers@gmail.com
 
 [alias]
   ci = commit
