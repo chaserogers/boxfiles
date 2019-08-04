@@ -5,11 +5,11 @@
 	name = Chase Rogers
   email = chaseanthonyrogers@gmail.com
 
-[includeIf "gitdir:~/work/"]
-    path = ~/work/.gitconfig
-
 [github]
   user = b0xw00d
+
+[includeIf "gitdir:~/work/"]
+    path = ~/work/.gitconfig
 
 [alias]
   ci = commit
