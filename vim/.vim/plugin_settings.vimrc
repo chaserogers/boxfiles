@@ -53,3 +53,9 @@ let vim_markdown_preview_github=1
 
 " use enter to select supertab completion
 let g:SuperTabCrMapping = 1
+
+" close ack quickfind window after selection
+let g:ack_autoclose = 1
+
+" disable deleting brackets in pair
+let g:AutoPairsMapBS = 0

@@ -11,6 +11,7 @@ Plug 'godlygeek/tabular'
 Plug 'arcticicestudio/nord-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'jiangmiao/auto-pairs'
 
 " Git
 Plug 'airblade/vim-gitgutter'

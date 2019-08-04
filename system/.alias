@@ -2,8 +2,8 @@
 alias ls='ls -lG'
 alias ll='ls -laGh'
 alias cl='clear'
+alias vim='mvim -v'
 alias e='vim'
-alias v='vim'
 alias pcat='pygmentize -f terminal256 -O style=native -g'
 alias tmux="TERM=xterm-256color tmux"
 
@@ -35,8 +35,7 @@ alias dcdcm='docker-compose run web rails db:{drop,create,migrate}'
 alias dcyolo='docker-compose run web rails db:{drop,create,migrate,seed}'
 
 # terraform
-alias tfm='terraform'
-alias tfmc='terraform console'
+alias tf='terraform'
 
 # msg-cli
 alias mc='msg-cli'

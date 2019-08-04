@@ -8,8 +8,9 @@ highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 
 " Basic settings
 set encoding=utf-8
-set guifont=Office\ Code\ Pro:h14
+set guifont=Office\ Code\ Pro:h15
 set guioptions=
+set lines=43 columns=100
 
 " dont show mode under statusline as it isnt needed
 set noshowmode
@@ -21,7 +22,7 @@ set shortmess+=A
 
 " set nowrap
 set wrap
-set linebreak
+set nolinebreak
 set nolist
 
 set spr
@@ -46,6 +47,9 @@ set scrolloff=20
 " change cursors between modes in terminal vim
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
+
+" time out on mapping after 0.5s, time out on key codes after 0.1s (fixes lag)
+set timeout timeoutlen=500 ttimeoutlen=100
 
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
