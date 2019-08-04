@@ -9,7 +9,7 @@
   user = b0xw00d
 
 [includeIf "gitdir:~/work/"]
-    path = ~/work/.gitconfig
+  path = ~/work/.gitconfig
 
 [alias]
   ci = commit
