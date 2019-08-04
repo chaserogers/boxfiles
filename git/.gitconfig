@@ -8,8 +8,8 @@
 [github]
   user = b0xw00d
 
-[includeIf "gitdir:~/work/"]
-  path = ~/work/.gitconfig
+; [includeIf "gitdir:~/work/"]
+;   path = ~/work/.gitconfig
 
 [alias]
   ci = commit
