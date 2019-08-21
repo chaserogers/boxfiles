@@ -1,13 +1,19 @@
 let mapleader = ","
 map <leader>ll :source ~/.vimrc<CR>
 
-" ack
-cnoreabbrev Ack Ack!
-nnoremap <leader>f :Ack!<Space>
+" " ack
+" cnoreabbrev Ack Ack!
+" nnoremap <leader>f :Ack!<Space>
+
+"rg
+nnoremap <leader>f :Rg<Space>
 
 " switch buffers
 map <leader>p :bp<cr>
 map <leader>n :bn<cr>
+
+" fzf file searc
+map <c-p> :Files<cr>
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 " nnoremap <silent> <c-l> :nohl<CR><C-l>

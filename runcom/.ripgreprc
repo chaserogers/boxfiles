@@ -1,0 +1,5 @@
+--hidden
+--follow
+--glob=!node_modules
+--glob=!.git
+--glob=!tmp

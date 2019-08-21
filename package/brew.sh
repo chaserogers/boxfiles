@@ -70,6 +70,7 @@ packages=(
   rbenv
   readline
   redis
+  rg
   ruby
   ruby-build
   spark
