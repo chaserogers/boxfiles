@@ -42,17 +42,17 @@ function git_prompt() {
 
   # Clean branch
   if git diff --quiet 2> /dev/null; then
-    git_color="${BIGreen}"
+    git_color="${green}"
   fi
 
   # Dirty branch
   if ! git diff --quiet 2> /dev/null; then
-    git_color="${BIRed}"
+    git_color="${red}"
   fi
 
   # Tracked branch
   if ! git diff --cached --quiet 2> /dev/null; then
-    git_color="${BIYellow}"
+    git_color="${yellow}"
   fi
 
   # Untracked files
@@ -88,5 +88,5 @@ function configure_prompt() {
 
 # PROMPT_COMMAND='PS1+="${BICyan}[\t][\w]${c_reset}$(git_prompt)\n${BICyan}$ ${c_reset}"'
 # PROMPT_COMMAND='PS1+="${BICyan}[\t][\w]${c_reset}$(git_prompt)\n${BICyan}$ ${c_reset}"'
-PROMPT_COMMAND='PS1+="${BICyan}[\u]${c_reset}${BIBlue}[\w]${c_reset}$(git_prompt)\n${BIGreen}$ ${c_reset}"'
+PROMPT_COMMAND='PS1+="${cyan}[\u][\w]${c_reset}$(git_prompt)\n${cyan}$ ${c_reset}"'
 PROMPT_COMMAND="configure_prompt;$PROMPT_COMMAND"
