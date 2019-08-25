@@ -6,6 +6,7 @@ alias vim='mvim -v'
 alias e='vim'
 
 # file navigation
+alias fzf='vim $(fzf)'
 alias ..='cd ..'
 alias d='cd ~/Desktop'
 alias w='cd ~/work'

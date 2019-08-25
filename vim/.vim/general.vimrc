@@ -64,6 +64,9 @@ match ExtraWhitespace /\s\+$/
 " trim trailing spaces on save
 autocmd BufWritePre * :%s/\s\+$//e
 
+" close all quickfix windows after a selection is made
+autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
+
 " indent and tabs
 filetype indent on
 set tabstop=2

@@ -19,32 +19,6 @@ set hidden
 " netrw tree view
 let g:netrw_liststyle=3
 
-" configure lightline
-let g:lightline = {
-      \ 'colorscheme': 'nord',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'filename' ] ],
-      \   'right': [ [ 'lineinfo' ],
-      \              [ 'percent' ],
-      \              [ 'fileencoding', 'filetype' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'fugitive#head',
-      \   'filename': 'LightlineFilename',
-      \ },
-      \ }
-
-function! LightlineModified()
-  let modified = &modified ? '*' : ''
-  return modified
-endfunction
-
-function! LightlineFilename()
-  let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
-  let modified = &modified ? ' *' : ''
-  return filename . modified
-endfunction
 
 " markdown preview
 let vim_markdown_preview_hotkey='<c-m>'

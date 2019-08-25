@@ -14,26 +14,21 @@
 [alias]
   ci = commit
   co = checkout
-  st = status
-  ch = cherry -v origin
   df = diff
-  dt = difftool
-  br = branch
-  stage = add
   unstage = reset HEAD
   amend = commit --verbose --amend
-  orb = ! git fetch origin && git pull --rebase origin
-  urb = ! git fetch upstream && git pull --rebase upstream
-  ph = "! echo 'git push heroku' $(git branch-name) ':master' &&  git push heroku $(git branch-name):master"
-  find = log --all --pretty=\"format:%Cgreen%H %Cblue%s\n%b%Creset\" --name-status --grep
 
   lg = log \
       --pretty=format:'%C(green bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(magenta bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n'
 
+  lg-find = log --all --pretty=\"format:%Cgreen%H %Cblue%s\n%b%Creset\" --name-status --grep
+
   ll = log \
     --graph \
-    --pretty=format:'%C(green bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(magenta bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n'\
-    --name-status
+    --abbrev-commit \
+    --decorate \
+    --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''%C(white)%s%C(reset) %C(dim white)- %an%C(reset)' \
+    --all
 
   mine = log \
     --pretty=format:'%C(green bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(magenta bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n' \
@@ -92,9 +87,6 @@
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
   required = true
-
-[ghi]
-	token = !security find-internet-password -a b0xw00d -s github.com -l 'ghi token' -w
 
 [diff]
 	tool = gvimdiff

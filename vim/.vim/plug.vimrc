@@ -27,6 +27,7 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'sheerun/vim-polyglot'
 Plug 'plasticboy/vim-markdown'
 Plug 'hashivim/vim-terraform'
+Plug 'stephpy/vim-yaml'
 
 " colors and themes
 Plug 'arcticicestudio/nord-vim'

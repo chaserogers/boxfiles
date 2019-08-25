@@ -1,4 +1,31 @@
-" " Statusline
+" configure lightline
+let g:lightline = {
+      \ 'colorscheme': 'nord',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'filename' ] ],
+      \   'right': [ [ 'lineinfo' ],
+      \              [ 'percent' ],
+      \              [ 'fileencoding', 'filetype' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head',
+      \   'filename': 'LightlineFilename',
+      \ },
+      \ }
+
+function! LightlineModified()
+  let modified = &modified ? '*' : ''
+  return modified
+endfunction
+
+function! LightlineFilename()
+  let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
+  let modified = &modified ? '[*]' : ''
+  return filename . modified
+endfunction
+
+" " Statusline (custom)
 " set statusline=
 " set statusline+=%6*\[%n]                                   "buffernr
 " set statusline+=%5*\ %<%F\                                 "File+path
@@ -25,3 +52,4 @@
 " hi User8 guifg=#ffffff  guibg=#5b7fbb ctermfg=lightgray  ctermbg=darkmagenta
 " hi User9 guifg=#ffffff  guibg=#810085 ctermfg=lightgray  ctermbg=darkred
 " hi User0 guifg=#ffffff  guibg=#094afe ctermfg=lightgray  ctermbg=darkred
+
