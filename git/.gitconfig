@@ -15,6 +15,8 @@
   ci = commit
   co = checkout
   df = diff
+  st = status
+  br = branch
   unstage = reset HEAD
   amend = commit --verbose --amend
 
