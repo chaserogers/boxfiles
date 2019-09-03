@@ -32207,21 +32207,21 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>98 285 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>201 4 1010 866 0 0 1440 877 </string>
+	<string>0 11 1060 866 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>425 11 1010 866 0 0 1440 877 </string>
-	<key>NSWindow Frame iTerm Window 2</key>
-	<string>277 11 1010 866 0 0 1440 877 </string>
-	<key>NSWindow Frame iTerm Window 3</key>
 	<string>0 11 1010 866 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>2115 255 1010 866 0 0 3440 1417 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>1 11 1010 866 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>0 0 1010 877 0 0 1440 877 </string>
+	<string>333 8 1010 866 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
-	<string>0 0 1010 877 0 0 1440 877 </string>
+	<string>354 11 1010 866 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
-	<string>0 0 1010 877 0 0 1440 877 </string>
+	<string>-3 551 2510 866 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 7</key>
-	<string>344 22 810 855 0 0 1440 877 </string>
+	<string>565 156 1010 866 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 8</key>
 	<string>365 22 810 855 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -38914,7 +38914,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>57A1EE31-3070-42B1-BB0A-4799E5C0D480</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>241</integer>
+	<integer>267</integer>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -39625,6 +39625,10 @@
 		<string>list</string>
 		<string>width</string>
 	</array>
+	<key>NoSyncSearchHistory2</key>
+	<array>
+		<string>hidden</string>
+	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>521055553.14339501</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -39701,7 +39705,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-25T02:03:06Z</date>
+	<date>2019-09-02T01:47:18Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
