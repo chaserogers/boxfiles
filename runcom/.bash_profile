@@ -18,4 +18,3 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 eval "$(rbenv init -)"
-export PATH=$PATH:/usr/local/mysql/bin

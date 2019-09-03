@@ -6,15 +6,11 @@ alias vim='mvim -v'
 alias e='vim'
 
 # file navigation
-alias fzf='vim $(fzf)'
 alias ..='cd ..'
 alias d='cd ~/Desktop'
 alias w='cd ~/work'
 alias n='cd ~/notes'
 alias dot='cd ~/.boxfiles/boxfiles'
-
-# git
-alias gs='git status'
 
 # rails and ruby
 alias be='bundle exec'

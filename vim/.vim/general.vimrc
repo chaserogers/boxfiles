@@ -8,9 +8,9 @@ highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 
 " Basic settings
 set encoding=utf-8
-set guifont=Office\ Code\ Pro:h15
+set guifont=Office\ Code\ Pro:h16
 set guioptions=
-set lines=43 columns=100
+set lines=43 columns=140
 
 " dont show mode under statusline as it isnt needed
 set noshowmode
@@ -42,7 +42,10 @@ set nofoldenable
 set mouse=a
 
 " keep mouse in middle of screen while scrolling
-set scrolloff=20
+set scrolloff=15
+
+" use system clipboard
+set clipboard=unnamed
 
 " change cursors between modes in terminal vim
 let &t_SI = "\e[6 q"

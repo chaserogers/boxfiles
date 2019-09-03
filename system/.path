@@ -8,3 +8,9 @@ export PATH="/Library/Python/2.7/site-packages:$PATH"
 
 # Path for VIM
 PATH=/opt/local/bin:$PATH/
+
+# path for mysql
+export PATH="$PATH:/usr/local/mysql/bin"
+
+# path for VS Code "code" command
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"

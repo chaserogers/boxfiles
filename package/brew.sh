@@ -91,10 +91,12 @@ casks=(
   google-chrome
   iterm2
   java
+  karabiner-elements
   postman
   slack
   spotify
   sublime-text
+  virtualbox
   visual-studio-code
   vlc
   xact

@@ -1,12 +1,14 @@
-let mapleader = ","
+let mapleader = " "
 map <leader>ll :source ~/.vimrc<CR>
 
-" " ack
-" cnoreabbrev Ack Ack!
-" nnoremap <leader>f :Ack!<Space>
+" quit without saving
+map <leader>q :q!<cr>
+
+" quit and save
+map <leader>x :x<cr>
 
 "rg
-nnoremap <leader>f :Rg<Space>
+nnoremap <leader>f :Rg<space>
 
 " switch buffers
 map <leader>p :bp<cr>

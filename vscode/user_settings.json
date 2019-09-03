@@ -1,7 +1,7 @@
 {
     "editor.tabCompletion": "on",
     "editor.cursorBlinking": "blink",
-    "workbench.colorTheme": "One Dark Pro Vivid",
+    "workbench.colorTheme": "Nord",
     "editor.hideCursorInOverviewRuler": true,
     "editor.highlightActiveIndentGuide": false,
     "editor.renderLineHighlight": "none",
