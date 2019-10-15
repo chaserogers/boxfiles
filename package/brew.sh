@@ -75,6 +75,7 @@ packages=(
   ruby-build
   spark
   sqlite
+  tfenv
   tokyo-cabinet
   tree
   unixodbc
