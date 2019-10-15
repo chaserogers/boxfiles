@@ -81,6 +81,7 @@ packages=(
   v8
   wxmac
   xz
+  yarn
 )
 
 casks=(

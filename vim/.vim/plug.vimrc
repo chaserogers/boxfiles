@@ -13,6 +13,8 @@ Plug 'jremmen/vim-ripgrep'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'diepm/vim-rest-console'
+Plug 'tpope/vim-eunuch'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -36,6 +38,7 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'mhartington/oceanic-next'
 Plug 'ciaranm/inkpot'
 Plug 'altercation/vim-colors-solarized'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 call plug#end()
-

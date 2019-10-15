@@ -88,5 +88,5 @@ function configure_prompt() {
 
 # PROMPT_COMMAND='PS1+="${BICyan}[\t][\w]${c_reset}$(git_prompt)\n${BICyan}$ ${c_reset}"'
 # PROMPT_COMMAND='PS1+="${BICyan}[\t][\w]${c_reset}$(git_prompt)\n${BICyan}$ ${c_reset}"'
-PROMPT_COMMAND='PS1+="${cyan}[\u][\w]${c_reset}$(git_prompt)\n${cyan}$ ${c_reset}"'
+PROMPT_COMMAND='PS1+="${cyan}[\#][\t][\w]${c_reset}$(git_prompt)\n${cyan}$ ${c_reset}"'
 PROMPT_COMMAND="configure_prompt;$PROMPT_COMMAND"

@@ -1,11 +1,21 @@
 let mapleader = " "
 map <leader>ll :source ~/.vimrc<CR>
 
+" write file (save)
+map <leader>w :w<cr>
+
 " quit without saving
 map <leader>q :q!<cr>
 
 " quit and save
 map <leader>x :x<cr>
+
+" move text after cursor to newline
+map <leader>j i<cr><esc>
+
+" insert newlines before and after cursor without leaving normal mode
+nnoremap <Leader>o o<esc>
+nnoremap <Leader>O O<esc>
 
 "rg
 nnoremap <leader>f :Rg<space>

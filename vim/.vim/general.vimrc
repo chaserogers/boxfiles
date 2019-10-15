@@ -1,6 +1,7 @@
 " Color Scheme
 syntax on
 colorscheme nord
+" colorscheme onehalflight
 
 " highlight cursor line in gutter
 set cursorline
