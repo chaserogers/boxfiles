@@ -1,9 +1,7 @@
 # Install Homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew tap homebrew/versions
-brew tap homebrew/dupes
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap homebrew/services
-brew tap caskroom/cask
+brew tap caskroom/cask-cask
 brew update
 brew upgrade --all
 
@@ -14,7 +12,6 @@ packages=(
   automake
   bash
   bsdmake
-  chromedriver
   coreutils
   cowsay
   csshx
@@ -87,10 +84,6 @@ packages=(
 
 casks=(
   alfred
-  atom
-  docker
-  docker-toolbox
-  google-chrome
   iterm2
   java
   karabiner-elements
@@ -98,7 +91,6 @@ casks=(
   slack
   spotify
   sublime-text
-  virtualbox
   visual-studio-code
   vlc
   xact
