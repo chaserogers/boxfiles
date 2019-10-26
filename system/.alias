@@ -29,5 +29,6 @@ alias dcu='docker-compose up'
 # terraform
 alias tf='terraform'
 
-# msg-cli
-alias mc='msg-cli'
+# vibes-cli
+alias vibes='vibes-cli'
+alias vc='vibes-cli'
