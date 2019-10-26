@@ -11,7 +11,7 @@ let g:buftabline_show=0
 " netrw tree view
 let g:netrw_liststyle=3
 let g:netrw_banner=0
-let g:netrw_winsize=25
+let g:netrw_winsize=-30
 
 " markdown preview
 let vim_markdown_preview_hotkey='<c-m>'
