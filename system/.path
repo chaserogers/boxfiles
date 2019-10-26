@@ -14,3 +14,6 @@ export PATH="$PATH:/usr/local/mysql/bin"
 
 # path for VS Code "code" command
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# openssl
+export PATH="/usr/local/opt/openssl/bin:$PATH"

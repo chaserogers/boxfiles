@@ -1,17 +1,17 @@
 " Color Scheme
 syntax on
 colorscheme nord
-" colorscheme onehalflight
 
 " highlight cursor line in gutter
 set cursorline
-highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+highlight CursorLine term=NONE cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+highlight CursorLineNr term=NONE cterm=NONE gui=bold guifg=#D8DEE9 guibg=#2E3440
 
 " Basic settings
 set encoding=utf-8
 set guifont=Office\ Code\ Pro:h16
 set guioptions=
-set lines=43 columns=140
+set lines=45 columns=100
 
 " dont show mode under statusline as it isnt needed
 set noshowmode
@@ -30,6 +30,7 @@ set spr
 set ea
 set nocompatible
 set backspace=2
+" set line numbers
 set nu
 set hlsearch
 

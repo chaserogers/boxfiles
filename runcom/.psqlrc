@@ -6,7 +6,4 @@
 \set VERBOSITY verbose
 \timing
 
-export PAGER=less
-\pset pager always
-
 \unset QUIET

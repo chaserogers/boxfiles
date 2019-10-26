@@ -20,9 +20,12 @@ nnoremap <Leader>O O<esc>
 "rg
 nnoremap <leader>f :Rg<space>
 
-" switch buffers
+" switch to preview buffer or next buffer
 map <leader>p :bp<cr>
 map <leader>n :bn<cr>
+
+" switch buffer by number
+map <leader>b :ls<cr>:b
 
 " fzf file searc
 map <c-p> :Files<cr>
@@ -33,12 +36,10 @@ nnoremap <silent> <c-l> /clearwithjibberishtextuusdfasdfavvasd<cr>
 
 " open netrw
 map <c-e> :Explore<cr>
+map <c-v> :Lexplore<cr>
 
 " show full path of file
 map <c-f> :echo expand('%:p')<cr>
-
-" insert newline without leaving normal mode
-nmap <c-o> o<Esc>
 
 " align with tabular
 map <leader>tt :Tab /
