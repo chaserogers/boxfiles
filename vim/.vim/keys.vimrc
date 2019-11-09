@@ -28,7 +28,7 @@ nnoremap <tab> :bn<cr>
 nnoremap <leader>b :ls<cr>:b
 
 " fzf file searc
-nnoremap <c-p> :Files<cr>
+map <c-p> :Files<cr>
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 " nnoremap <silent> <c-l> :nohl<CR><C-l>
@@ -36,10 +36,6 @@ nnoremap <silent> <c-l> /clearwithjibberishtextuusdfasdfavvasd<cr>
 
 " open netrw
 nnoremap <c-e> :Explore<cr>
-nnoremap <c-v> :Lexplore<cr>
 
 " show full path of file
 nnoremap <c-f> :echo expand('%:p')<cr>
-
-" align with tabular
-nnoremap <leader>tt :Tab /

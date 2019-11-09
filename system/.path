@@ -17,3 +17,6 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 # openssl
 export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+# golang workspace bin
+export PATH=$PATH:$(go env GOPATH)/bin

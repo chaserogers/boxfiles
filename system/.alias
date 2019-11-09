@@ -3,7 +3,6 @@ alias ls='ls -lG'
 alias ll='ls -laGh'
 alias cl='clear'
 alias vim='mvim -v'
-alias e='vim'
 
 # file navigation
 alias ..='cd ..'
@@ -28,7 +27,3 @@ alias dcu='docker-compose up'
 
 # terraform
 alias tf='terraform'
-
-# vibes-cli
-alias vibes='vibes-cli'
-alias vc='vibes-cli'

@@ -6,7 +6,7 @@
   email = chaseanthonyrogers@gmail.com
 
 [github]
-  user = b0xw00d
+  user = chaserogers
 
 [includeIf "gitdir:~/work/"]
   path = ~/work/.gitconfig

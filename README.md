@@ -1,11 +1,11 @@
-# boxfiles (dotfiles by b0xw00d)
+# boxfiles (dotfiles by chaserogers)
 
 ## Installation
 Install at your own risk!  I highly recommend making a backup of any important files before installing this.
 
 #### Clone this repository:
 
-`git clone https://github.com/b0xw00d/boxfiles.git`
+`git clone https://github.com/chaserogers/boxfiles.git`
 
 #### Install the dotfiles:
 
@@ -26,7 +26,7 @@ To configure your rails_template to create a new repository on github and push y
 
 - navigate to boxfiles/rails/.rails_template.rb
 - uncomment lines 51-54
-- change b0xw00d to your github username on line 51
+- change chaserogers to your github username on line 51
 - save your changes
 
-An example application generated with this template can be found [here] (https://github.com/b0xw00d/rails_template_example).
+An example application generated with this template can be found [here] (https://github.com/chaserogers/rails_template_example).

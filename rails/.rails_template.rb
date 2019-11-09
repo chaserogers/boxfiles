@@ -164,7 +164,7 @@ git add: "."
 git commit: "-m 'initial commit'"
 
 # create remote repo on Github and push
-github_username = 'b0xw00d'
+github_username = 'chaserogers'
 run "curl -u '#{github_username}' https://api.github.com/user/repos -d '{\"name\":\"#{app_path}\"}'"
 git remote: "add origin https://github.com/#{github_username}/#{app_path}.git"
 git push: "origin master"

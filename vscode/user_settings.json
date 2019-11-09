@@ -53,5 +53,6 @@
     "search.location": "panel",
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
-    "workbench.settings.editor": "json"
+    "workbench.settings.editor": "json",
+    "terminal.integrated.fontSize": 17
 }
