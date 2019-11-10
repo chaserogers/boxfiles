@@ -1,15 +1,15 @@
-# boxfiles (dotfiles by chaserogers)
+# dotfiles
 
 ## Installation
 Install at your own risk!  I highly recommend making a backup of any important files before installing this.
 
 #### Clone this repository:
 
-`git clone https://github.com/chaserogers/boxfiles.git`
+`git clone https://github.com/chaserogers/dotfiles.git`
 
 #### Install the dotfiles:
 
-`source boxfiles/install.sh`
+`source dotfiles/install.sh`
 
 That's it!  You're good to go.  Feel free to fork this repository and customize it as you see fit.
 
@@ -24,7 +24,7 @@ This task can be accomplished from your iTerm Preferences window.  Here is a use
 ## Rails template configuration
 To configure your rails_template to create a new repository on github and push your project to that repository on initialize, follow these steps:
 
-- navigate to boxfiles/rails/.rails_template.rb
+- navigate to dotfiles/rails/.rails_template.rb
 - uncomment lines 51-54
 - change chaserogers to your github username on line 51
 - save your changes

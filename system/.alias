@@ -10,7 +10,7 @@ alias ..='cd ..'
 alias d='cd ~/Desktop'
 alias w='cd ~/work'
 alias n='cd ~/notes'
-alias dot='cd ~/.boxfiles/boxfiles'
+alias dot='cd ~/.dotfiles/dotfiles'
 
 # rails and ruby
 alias be='bundle exec'

@@ -71,7 +71,8 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " close all quickfix windows after a selection is made
 " autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
-autocmd FileType qf nmap <buffer> <cr> <cr>:lcl<cr>
+autocmd FileType qf nmap <buffer> <cr> <cr>:lcl<cr>:cclose<cr>
+autocmd FileType qf nmap <buffer> <esc> :lcl<cr>:cclose<cr>
 
 " indent and tabs
 filetype indent on
