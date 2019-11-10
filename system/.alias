@@ -3,6 +3,7 @@ alias ls='ls -lG'
 alias ll='ls -laGh'
 alias cl='clear'
 alias vim='mvim -v'
+alias e='mvim -v'
 
 # file navigation
 alias ..='cd ..'

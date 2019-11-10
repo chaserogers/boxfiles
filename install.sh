@@ -8,6 +8,7 @@ ln -sfv "$BOXFILES_ROOT/runcom/.inputrc" ~
 ln -sfv "$BOXFILES_ROOT/runcom/.pryrc" ~
 ln -sfv "$BOXFILES_ROOT/runcom/.ripgreprc" ~
 ln -sfv "$BOXFILES_ROOT/runcom/.psqlrc" ~
+ln -sfv "$BOXFILES_ROOT/runcom/.jshintrc" ~
 ln -sfv "$BOXFILES_ROOT/rails/.railsrc" ~
 ln -sfv "$BOXFILES_ROOT/rails/.rails_template.rb" ~
 ln -sfv "$BOXFILES_ROOT/rails/.rspec" ~
@@ -30,10 +31,10 @@ rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 ln -sfnv "$BOXFILES_ROOT/sublime/User" ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 # Install osx config
-source "$BOXFILES_ROOT/mac/osx.sh"
+# source "$BOXFILES_ROOT/mac/osx.sh"
 
 # Install Homebrew and packages
-source "$BOXFILES_ROOT/package/brew.sh"
+# source "$BOXFILES_ROOT/package/brew.sh"
 
 # Hush terminal login messages
 touch .hushlogin
