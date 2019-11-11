@@ -6,6 +6,7 @@ Install at your own risk!  I highly recommend making a backup of any important f
 #### Clone this repository:
 
 github: `git clone https://github.com/chaserogers/dotfiles.git`
+
 gitlab: `git clone https://gitlab.com/chaserogers/dotfiles.git`
 
 #### Install the dotfiles:
