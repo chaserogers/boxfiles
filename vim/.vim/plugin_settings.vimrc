@@ -47,6 +47,7 @@ let g:ale_sign_warning = '--'
 
 nmap <silent> <c-k> <Plug>(ale_previous_wrap)
 nmap <silent> <c-j> <Plug>(ale_next_wrap)
+nmap <silent> <leader>d :ALEFix<cr>
 
 let g:ale_fixers = {
 \  'javascript': ['eslint'],
