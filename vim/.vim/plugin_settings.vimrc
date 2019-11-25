@@ -39,11 +39,15 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" ALE
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
+let g:ale_sign_error = '--'
+let g:ale_sign_warning = '--'
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 2
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+nmap <silent> <c-k> <Plug>(ale_previous_wrap)
+nmap <silent> <c-j> <Plug>(ale_next_wrap)
+
+let g:ale_fixers = {
+\  'javascript': ['eslint'],
+\}

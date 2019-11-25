@@ -32551,18 +32551,20 @@
 			<string>iTermTouchBarIdentifierNextMark</string>
 		</array>
 	</dict>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>970 768 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>314 3 1010 987 0 0 1680 1027 </string>
+	<string>557 23 1110 987 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>398 35 1010 987 0 0 1680 1027 </string>
+	<string>0 22 1110 987 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>575 40 1010 987 0 0 1680 1027 </string>
+	<string>616 40 1010 987 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1328 148 1010 987 0 0 3440 1417 </string>
+	<string>625 105 1010 987 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>2430 333 1010 987 0 0 3440 1417 </string>
+	<string>0 40 1110 987 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
-	<string>0 9 1010 971 0 0 2560 1417 </string>
+	<string>0 0 1110 987 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
 	<string>317 446 1010 971 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
@@ -32850,7 +32852,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>100</integer>
+			<integer>110</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Boost</key>
@@ -40009,6 +40011,7 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.6</string>
+		<string>3.3.7</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -40021,12 +40024,12 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{350, 853}</string>
+		<string>{375, 810}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>A112719B-FF81-4412-8351-08940FC523C9</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>31</integer>
+	<integer>32</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -40727,6 +40730,10 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSearchHistory2</key>
+	<array>
+		<string>airflow</string>
+	</array>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>592874541.18072295</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -40801,8 +40808,10 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-09T16:59:47Z</date>
+	<date>2019-11-23T18:02:21Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SavePasteHistory</key>
 	<false/>
@@ -40869,7 +40878,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.6</string>
+	<string>3.3.7</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

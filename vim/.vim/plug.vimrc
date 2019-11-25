@@ -20,7 +20,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " Languages and Syntax
-Plug 'vim-syntastic/syntastic'
+Plug 'dense-analysis/ale'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
