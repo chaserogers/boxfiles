@@ -30,8 +30,10 @@ set spr
 set ea
 set nocompatible
 set backspace=2
-" set line numbers
+
+" set relative line numbers
 set nu
+set rnu
 set hlsearch
 
 " show statusline everywhere
