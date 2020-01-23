@@ -20,3 +20,6 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 # golang workspace bin
 export PATH=$PATH:$(go env GOPATH)/bin
+
+# custom scripts
+export PATH=$PATH:~/.scripts

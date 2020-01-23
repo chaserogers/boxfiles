@@ -33,7 +33,7 @@ set backspace=2
 
 " set relative line numbers
 set nu
-set rnu
+" set rnu
 set hlsearch
 
 " show statusline everywhere

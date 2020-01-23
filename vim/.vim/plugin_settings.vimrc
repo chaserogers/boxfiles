@@ -9,9 +9,13 @@ set hidden
 let g:buftabline_show=0
 
 " netrw tree view
-let g:netrw_liststyle=3
-let g:netrw_banner=0
-let g:netrw_winsize=-30
+" let g:netrw_liststyle=3
+" let g:netrw_winsize=-30
+" let g:netrw_fastbrowse=2
+" let g:netrw_keepdir=0
+" let g:netrw_retmap=1
+" let g:netrw_silent=1
+" let g:netrw_special_syntax=1
 
 " markdown preview
 let vim_markdown_preview_hotkey='<c-m>'
@@ -48,6 +52,15 @@ let g:ale_sign_warning = '--'
 nmap <silent> <c-k> <Plug>(ale_previous_wrap)
 nmap <silent> <c-j> <Plug>(ale_next_wrap)
 nmap <silent> <leader>d :ALEFix<cr>
+
+
+" only run linters on exactly what I specify in this file
+let g:ale_linters_explicit = 1
+
+" list of linters to use
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
 
 let g:ale_fixers = {
 \  'javascript': ['eslint'],

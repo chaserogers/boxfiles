@@ -14,6 +14,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'diepm/vim-rest-console'
 Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-vinegar'
 
 " Git
 Plug 'airblade/vim-gitgutter'
