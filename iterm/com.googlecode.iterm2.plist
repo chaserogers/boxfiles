@@ -12,6 +12,8 @@
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -32552,17 +32554,17 @@
 		</array>
 	</dict>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>970 768 620 392 0 0 2560 1417 </string>
+	<string>1410 768 620 392 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1162 16 1110 987 0 0 3440 1417 </string>
+	<string>4 40 1110 987 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>22 18 1110 987 0 0 3440 1417 </string>
+	<string>0 37 1110 987 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>2316 421 1110 987 0 0 3440 1417 </string>
+	<string>555 40 1110 987 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>10 40 1110 987 0 0 1680 1027 </string>
+	<string>520 17 1110 987 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>16 40 1110 987 0 0 1680 1027 </string>
+	<string>70 32 1110 987 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
 	<string>0 0 1680 1027 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
@@ -40016,6 +40018,7 @@
 	<array>
 		<string>3.3.6</string>
 		<string>3.3.7</string>
+		<string>3.3.8</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -40033,7 +40036,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>A112719B-FF81-4412-8351-08940FC523C9</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>37</integer>
+	<integer>64</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -40734,11 +40737,6 @@
 			</dict>
 		</array>
 	</dict>
-	<key>NoSyncSearchHistory2</key>
-	<array>
-		<string>eslint</string>
-		<string>airflow</string>
-	</array>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>592874541.18072295</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -40813,7 +40811,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-12-29T19:14:21Z</date>
+	<date>2020-02-06T21:00:34Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -40883,7 +40881,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.7</string>
+	<string>3.3.8</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
