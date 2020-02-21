@@ -39,3 +39,6 @@ nnoremap <c-e> :Explore<cr>
 
 " show full path of file
 nnoremap <c-f> :echo expand('%:p')<cr>
+
+" align with tabular
+map <leader>tt :Tab /
