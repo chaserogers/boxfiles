@@ -15,6 +15,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'diepm/vim-rest-console'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-vinegar'
+Plug 'janko/vim-test'
+Plug  'tpope/vim-dispatch'
 
 " Git
 Plug 'airblade/vim-gitgutter'

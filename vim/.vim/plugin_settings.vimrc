@@ -65,3 +65,9 @@ let g:ale_linters = {
 let g:ale_fixers = {
 \  'javascript': ['eslint'],
 \}
+
+" vim-test
+let test#strategy = "dispatch"
+
+nmap <silent><leader>sf :TestFile<CR>
+nmap <silent><leader>sa :TestSuite<CR>
