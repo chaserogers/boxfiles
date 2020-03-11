@@ -96,10 +96,9 @@ autocmd Filetype css setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype elixir setlocal ts=2 sw=2 expandtab
 autocmd Filetype bash setlocal ts=2 sw=2 expandtab
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 expandtab
 
 " for js/coffee/jade/scss files, 4 spaces
 autocmd Filetype python setlocal ts=4 sw=4 expandtab
 autocmd FileType scss setlocal ts=4 sw=4 sts=0 expandtab
 autocmd FileType sass setlocal ts=4 sw=4 sts=0 expandtab
-autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 expandtab
-autocmd Filetype coffeescript setlocal ts=4 sw=4 sts=0 expandtab
