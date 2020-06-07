@@ -6,7 +6,7 @@
     "editor.highlightActiveIndentGuide": false,
     "editor.renderLineHighlight": "none",
     "terminal.integrated.enableBell": true,
-    "editor.fontSize": 15,
+    "editor.fontSize": 17,
     "editor.minimap.enabled": false,
     "editor.rulers": [80,100],
     "editor.renderIndentGuides": false,
@@ -29,7 +29,8 @@
         ".env.staging": "settings",
         ".env.production": "settings",
         ".env.development": "settings",
-        ".env": "settings"
+        ".env": "settings",
+        "*.go": "Go_gopher"
     },
     "editor.occurrencesHighlight": false,
     "window.newWindowDimensions": "maximized",
@@ -38,10 +39,13 @@
         "markdown"
     ],
     "editor.links": false,
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.startupEditor": "welcomePage",
     "editor.matchBrackets": "never",
     "ruby.intellisense": "rubyLocate",
     "[shellscript]": {
+        "editor.tabSize": 2
+    },
+    "[go]": {
         "editor.tabSize": 2
     },
     "window.restoreWindows": "none",
@@ -53,7 +57,7 @@
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
     "workbench.settings.editor": "json",
-    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontSize": 17,
     "bracketPairColorizer.scopeLineRelativePosition": false,
     "bracketPairColorizer.showHorizontalScopeLine": false,
     "bracketPairColorizer.showVerticalScopeLine": false,
@@ -62,5 +66,16 @@
     "jest.enableCodeLens": false,
     "jest.enableSnapshotPreviews": false,
     "jest.enableSnapshotUpdateMessages": false,
-    "jest.runAllTestsFirst": false
+    "jest.runAllTestsFirst": false,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["<leader>", "w"],
+            "commands": ["workbench.action.files.save"]
+        }
+    ]
 }

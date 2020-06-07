@@ -9,7 +9,7 @@ highlight CursorLineNr term=NONE cterm=NONE gui=bold guifg=#D8DEE9 guibg=#2E3440
 
 " Basic settings
 set encoding=utf-8
-set guifont=Office\ Code\ Pro:h16
+set guifont=Office\ Code\ Pro:h15
 set guioptions=
 set lines=45 columns=100
 
@@ -55,8 +55,8 @@ set clipboard=unnamed
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
-" time out on mapping after 0.5s, time out on key codes after 0.1s (fixes lag)
-set timeout timeoutlen=500 ttimeoutlen=100
+" time out on mapping after 1s, time out on key codes after 0.1s (fixes lag)
+set timeout timeoutlen=1100 ttimeoutlen=100
 
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=

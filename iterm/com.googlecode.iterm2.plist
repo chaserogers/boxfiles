@@ -32556,15 +32556,15 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1555 454 1000 954 0 0 2560 1417 </string>
+	<string>1162 20 1110 1010 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1202 84 1000 954 0 0 2560 1417 </string>
+	<string>22 22 1110 1010 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 463 1000 954 0 0 2560 1417 </string>
+	<string>2299 18 1110 1010 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>183 84 1000 954 0 0 2560 1417 </string>
+	<string>844 406 1110 1010 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>43 40 1110 987 0 0 1680 1027 </string>
+	<string>613 342 1000 954 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
 	<string>13 40 1110 987 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
@@ -32578,6 +32578,18 @@
 			<true/>
 			<key>ASCII Ligatures</key>
 			<false/>
+			<key>AWDS Pane Directory</key>
+			<string></string>
+			<key>AWDS Pane Option</key>
+			<string>Recycle</string>
+			<key>AWDS Tab Directory</key>
+			<string></string>
+			<key>AWDS Tab Option</key>
+			<string>Recycle</string>
+			<key>AWDS Window Directory</key>
+			<string></string>
+			<key>AWDS Window Option</key>
+			<string>Recycle</string>
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Allow Title Setting</key>
@@ -32905,7 +32917,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Advanced</string>
 			<key>Custom Window Title</key>
 			<string></string>
 			<key>Default Bookmark</key>
@@ -32943,6 +32955,8 @@
 			<integer>0</integer>
 			<key>Initial Text</key>
 			<string></string>
+			<key>Initial Use Transparency</key>
+			<false/>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -33276,14 +33290,16 @@
 			<key>Name</key>
 			<string>boxwood</string>
 			<key>Non Ascii Font</key>
-			<string>OfficeCodePro-Regular 15</string>
+			<string>OfficeCodePro-Regular 17</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Non-ASCII Ligatures</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>OfficeCodePro-Regular 15</string>
+			<string>OfficeCodePro-Regular 17</string>
 			<key>Only The Default BG Color Uses Transparency</key>
+			<false/>
+			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
@@ -33292,7 +33308,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>48</integer>
+			<integer>44</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -40030,14 +40046,14 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {2560, 1440}}</string>
+		<string>{{0, 0}, {3440, 1440}}</string>
 		<key>topLeft</key>
-		<string>{304, 712}</string>
+		<string>{1376, 830}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>A112719B-FF81-4412-8351-08940FC523C9</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>80</integer>
+	<integer>105</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -40812,7 +40828,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-02-27T16:23:29Z</date>
+	<date>2020-05-26T01:40:11Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>

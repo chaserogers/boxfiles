@@ -1,6 +1,11 @@
 let mapleader = " "
 nnoremap <leader>ll :source ~/.vimrc<CR>
 
+" esc in insert mode -- key presses must happen inside a 1s window, this can be
+" adjusted in the general.vimrc file by adjusting `timeoutlen`
+inoremap kj <esc>
+vnoremap kj <esc>
+
 " write file (save)
 nnoremap <leader>w :w<cr>
 
