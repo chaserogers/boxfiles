@@ -70,7 +70,9 @@ packages=(
 )
 
 casks=(
+  1password
   alfred
+  firefox
   homebrew/cask-versions/adoptopenjdk8
   iterm2
   postman

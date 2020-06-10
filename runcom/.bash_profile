@@ -11,8 +11,6 @@ done
 git_completion_script=/usr/local/etc/bash_completion.d/git-completion.bash
 test -s $git_completion_script && source $git_completion_script
 
-source ~/.private_profile
-
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
