@@ -8,8 +8,8 @@
 [github]
   user = chaserogers
 
-[includeIf "gitdir:~/work/"]
-  path = ~/work/.gitconfig
+[includeIf "gitdir:~/workspace/"]
+  path = ~/workspace/.gitconfig
 
 [alias]
   ci = commit
@@ -77,7 +77,7 @@
   HEAD = yellow
 
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 
 [push]
   default = matching

@@ -15,6 +15,9 @@ nnoremap <leader>q :q!<cr>
 " quit and save
 nnoremap <leader>x :x<cr>
 
+" find next occurence of visual selection
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+
 " move text after cursor to newline
 nnoremap <leader>j i<cr><esc>
 

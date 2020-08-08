@@ -8,7 +8,7 @@ alias e='mvim -v'
 # file navigation
 alias ..='cd ..'
 alias d='cd ~/Desktop'
-alias w='cd ~/work'
+alias w='cd ~/workspace'
 alias n='cd ~/notes'
 alias dot='cd ~/.dotfiles/dotfiles'
 

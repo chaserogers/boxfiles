@@ -25,3 +25,8 @@ fi
 
 # jabba for managing java versions
 [ -s "/Users/chase.rogers/.jabba/jabba.sh" ] && source "/Users/chase.rogers/.jabba/jabba.sh"
+
+source ~/.private_profile
+
+# init rbenv
+eval "$(rbenv init -)"

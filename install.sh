@@ -12,9 +12,13 @@ source "$DOTFILES_ROOT/package/brew.sh"
 rm -rf ~/.vim
 ln -sfnv "$DOTFILES_ROOT/vim/.vim" ~/.vim
 
-# Install vscode
+# Configure vscode
 rm -rf ~/Library/Application\ Support/Code/User/settings.json
-ln -sfv "$DOTFILES_ROOT/vscode/user_settings.json" ~/Library/Application\ Support/Code/User/settings.json
+ln -sfv "$DOTFILES_ROOT/vscode/User/settings.json" ~/Library/Application\ Support/Code/User/
+rm -rf ~/Library/Application\ Support/Code/CachedExtensions
+ln -sfnv "$DOTFILES_ROOT/vscode/CachedExtensions" ~/Library/Application\ Support/Code/CachedExtensions
+rm -rf ~/Library/Application\ Support/Code/CachedExtensionVSIXs
+ln -sfnv "$DOTFILES_ROOT/vscode/CachedExtensionVSIXs" ~/Library/Application\ Support/Code/CachedExtensionVSIXs
 
 # Symlink dotfiles
 ln -sfv "$DOTFILES_ROOT/runcom/.bash_profile" ~
@@ -26,8 +30,6 @@ ln -sfv "$DOTFILES_ROOT/runcom/.jshintrc" ~
 ln -sfv "$DOTFILES_ROOT/git/.gitconfig" ~
 ln -sfv "$DOTFILES_ROOT/git/.gitignore_global" ~
 ln -sfv "$DOTFILES_ROOT/git/.gitmessage.txt" ~
-ln -sfv "$DOTFILES_ROOT/git/.pull_request_template.md" ~
-ln -sfv "$DOTFILES_ROOT/git/.issue_template.md" ~
 ln -sfv "$DOTFILES_ROOT/vim/.vimrc" ~
 
 # Hush terminal login messages

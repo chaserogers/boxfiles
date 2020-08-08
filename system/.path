@@ -1,5 +1,5 @@
 # Path for brew
-test -d /usr/local/bin && export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+# test -d /usr/local/bin && export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
 # Path for Heroku
 test -d /usr/local/heroku/ && export PATH="/usr/local/heroku/bin:$PATH"
@@ -19,7 +19,16 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 # golang workspace bin
-export PATH=$PATH:$(go env GOPATH)/bin
+# export PATH=$PATH:$(go env GOPATH)/bin
 
 # custom scripts
 export PATH=$PATH:~/.scripts
+
+# pyenv
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+# gopath
+export PATH="$HOME/go/bin:$PATH"
+
+# aws path
+export PATH="$HOME/.aws/bin:$PATH"

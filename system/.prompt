@@ -76,17 +76,4 @@ function get_terminal_column() {
   echo "$((${pos[1]} - 1))"
 }
 
-function configure_prompt() {
-  if [ "$(get_terminal_column)" != 0 ]; then
-    PS1="\n"
-  else
-    PS1=""
-  fi
-}
-
-# PROMPT_COMMAND='PS1+="${BIWhite}${bakblu} \@ ${c_reset}${BIWhite}${bakpur} $PWD ${c_reset}\n$(git_prompt)${BIPurple}\$${c_reset} "'
-
-# PROMPT_COMMAND='PS1+="${BICyan}[\t][\w]${c_reset}$(git_prompt)\n${BICyan}$ ${c_reset}"'
-# PROMPT_COMMAND='PS1+="${BICyan}[\t][\w]${c_reset}$(git_prompt)\n${BICyan}$ ${c_reset}"'
-PROMPT_COMMAND='PS1+="${cyan}[\#][\t][\w]${c_reset}$(git_prompt)\n${cyan}$ ${c_reset}"'
-PROMPT_COMMAND="configure_prompt;$PROMPT_COMMAND"
+PROMPT_COMMAND='PS1="${cyan}[\#][\t][\w]${c_reset}$(git_prompt)\n${cyan}$ ${c_reset}"'

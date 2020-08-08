@@ -69,19 +69,19 @@ packages=(
   yarn
 )
 
-casks=(
-  1password
-  alfred
-  firefox
-  homebrew/cask-versions/adoptopenjdk8
-  iterm2
-  postman
-  slack
-  spotify
-  visual-studio-code
-)
+# casks=(
+#   1password
+#   alfred
+#   firefox
+#   homebrew/cask-versions/adoptopenjdk8
+#   iterm2
+#   postman
+#   slack
+#   spotify
+#   visual-studio-code
+# )
 
-brew cask install "${casks[@]}"
+# brew cask install "${casks[@]}"
 brew install "${packages[@]}"
 
 brew services start --all

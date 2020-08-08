@@ -60,6 +60,7 @@ let g:ale_linters_explicit = 1
 " list of linters to use
 let g:ale_linters = {
 \   'javascript': ['eslint'],
+\   'go': ['golangci-lint'],
 \}
 
 let g:ale_fixers = {

@@ -11,3 +11,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # bash deprecation warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# python version manager
+export PYENV_ROOT="$HOME/.pyenv"
+
+export GOPATH="$HOME/go"
