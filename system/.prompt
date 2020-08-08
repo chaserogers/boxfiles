@@ -65,15 +65,4 @@ function git_prompt() {
   echo "${c_reset}${git_color}($git_branch)${c_reset}${orange}${tracker}"
 }
 
-function get_terminal_column() {
-  exec < /dev/tty
-  local oldstty=$(stty -g)
-  stty raw -echo min 0
-  echo -en "\033[6n" > /dev/tty
-  local pos
-  IFS=';' read -r -d R -a pos
-  stty $oldstty
-  echo "$((${pos[1]} - 1))"
-}
-
 PROMPT_COMMAND='PS1="${cyan}[\#][\t][\w]${c_reset}$(git_prompt)\n${cyan}$ ${c_reset}"'
