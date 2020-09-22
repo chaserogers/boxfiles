@@ -1,9 +1,10 @@
 {
     "workbench.colorTheme": "Nord",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontSize": 15,
-    "terminal.integrated.fontSize": 15,
-    "editor.fontFamily": "Monaco",
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "editor.fontFamily": "Office Code Pro",
+    "editor.rulers": [100, 120, 140],
 
     "breadcrumbs.enabled": true,
     "diffEditor.renderSideBySide": false,
@@ -12,12 +13,11 @@
     "editor.highlightActiveIndentGuide": false,
     "editor.insertSpaces": true,
     "editor.links": false,
-    "editor.matchBrackets": "near",
+    "editor.matchBrackets": "never",
     "editor.minimap.enabled": false,
     "editor.occurrencesHighlight": false,
     "editor.quickSuggestionsDelay": 1,
     "editor.renderLineHighlight": "gutter",
-    "editor.rulers": [100, 120, 140],
     "editor.renderIndentGuides": false,
     "editor.selectionHighlight": false,
     "editor.suggestSelection": "first",
@@ -70,6 +70,7 @@
     "trailing-spaces.syntaxIgnore": [
         "markdown"
     ],
+    "update.mode": "manual",
     "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
     "window.nativeTabs": true,
     "window.newWindowDimensions": "maximized",

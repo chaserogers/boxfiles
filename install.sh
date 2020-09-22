@@ -15,10 +15,6 @@ ln -sfnv "$DOTFILES_ROOT/vim/.vim" ~/.vim
 # Configure vscode
 rm -rf ~/Library/Application\ Support/Code/User/settings.json
 ln -sfv "$DOTFILES_ROOT/vscode/User/settings.json" ~/Library/Application\ Support/Code/User/
-rm -rf ~/Library/Application\ Support/Code/CachedExtensions
-ln -sfnv "$DOTFILES_ROOT/vscode/CachedExtensions" ~/Library/Application\ Support/Code/CachedExtensions
-rm -rf ~/Library/Application\ Support/Code/CachedExtensionVSIXs
-ln -sfnv "$DOTFILES_ROOT/vscode/CachedExtensionVSIXs" ~/Library/Application\ Support/Code/CachedExtensionVSIXs
 
 # Symlink dotfiles
 ln -sfv "$DOTFILES_ROOT/runcom/.bash_profile" ~
