@@ -12,7 +12,7 @@ if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 
-LS_COLORS="di=0;34:ex=4;32:fi=0;32:ln=0;35:so=0;33:cd=0;33:bd=0;33:mi=0;31:pi=0;31:ow=0;34"
+LS_COLORS="di=0;34:ex=0;32:fi=0;32:ln=0;35:so=0;33:cd=0;33:bd=0;33:mi=0;31:pi=0;31:ow=0;34"
 
 # enable programmable completion features
 if ! shopt -oq posix; then
