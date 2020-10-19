@@ -29,4 +29,4 @@ ln -sfv "$DOTFILES_ROOT/git/.gitmessage.txt" ~
 ln -sfv "$DOTFILES_ROOT/vim/.vimrc" ~
 
 # Hush terminal login messages
-touch .hushlogin
+touch ~/.hushlogin

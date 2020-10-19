@@ -11,7 +11,7 @@ highlight CursorLineNr term=NONE cterm=NONE gui=bold guifg=#D8DEE9 guibg=#2E3440
 set encoding=utf-8
 set guifont=Office\ Code\ Pro:h15
 set guioptions=
-set lines=45 columns=100
+" set lines=45 columns=100
 
 " dont show mode under statusline as it isnt needed
 set noshowmode

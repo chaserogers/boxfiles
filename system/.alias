@@ -1,30 +1,16 @@
-# general bash commands
-alias ls='ls -lG'
-alias ll='ls -laGh'
-alias cl='clear'
-alias vim='mvim -v'
-alias e='mvim -v'
+alias ls='ls -lG --color=auto'
+alias ll='ls -laGh --color=auto'
 
-# file navigation
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+alias clear='clear -x'
+alias cl='clear -x'
+
 alias ..='cd ..'
-alias d='cd ~/Desktop'
-alias w='cd ~/workspace'
-alias n='cd ~/notes'
+alias w='cd /mnt/c/Users/crogers/workspace'
+alias n='cd /mnt/c/Users/crogers/notes'
 alias dot='cd ~/.dotfiles/dotfiles'
 
-# rails and ruby
-alias be='bundle exec'
-alias fs='foreman start -f'
-alias rs='rails server'
-alias rc='rails console'
-alias yolo='bundle exec rake db:{drop,create,migrate,seed}'
-alias dcm='bundle exec rake db:{drop,create,migrate}'
-alias cop='rubocop'
-
-# docker compose
-alias dc='docker-compose'
-alias dcrw='docker-compose run web'
-alias dcu='docker-compose up'
-
-# terraform
 alias tf='terraform'

@@ -38,7 +38,7 @@ function git_prompt() {
   fi
 
   # Grab working branch name
-  git_branch=$(Git branch 2>/dev/null| sed -n '/^\*/s/^\* //p')
+  git_branch=$(git branch 2>/dev/null| sed -n '/^\*/s/^\* //p')
 
   # Clean branch
   if git diff --quiet 2> /dev/null; then
@@ -65,4 +65,14 @@ function git_prompt() {
   echo "${c_reset}${git_color}($git_branch)${c_reset}${orange}${tracker}"
 }
 
-PROMPT_COMMAND='PS1="${cyan}[\#][\t][\w]${c_reset}$(git_prompt)\n${cyan}$ ${c_reset}"'
+function venv_prompt() {
+  if [ -z $VIRTUAL_ENV ]; then
+    base=""
+  else
+    base="($(basename $VIRTUAL_ENV))"
+  fi
+
+  echo "${c_reset}${purple}$base${c_reset}"
+}
+
+PROMPT_COMMAND='PS1="${cyan}[\#][\t][\w]${c_reset}$(git_prompt)\n$(venv_prompt)${cyan}$ ${c_reset}"'
