@@ -1,39 +1,3 @@
-function topen() {
-  touch $1
-  open $1
-}
-
-function mk() {
-  mkdir -p "$@" && cd "$@"
-}
-
-function manpdf() {
-  man -t "${1}" | open -f -a /Applications/Preview.app/
-}
-
-function weather() {
-  curl wttr.in/$1
-}
-
-function hdi() {
-  answerlink=`howdoi $@ -l`
-  open $answerlink
-}
-
-function cpulist() {
-  ps auxr | head -n $1 | cut -c1-165
-}
-
-function memlist() {
-  ps auxm | head -n $1 | cut -c1-165
-}
-
 function num_untracked() {
   expr `git status --porcelain 2>/dev/null| grep "^??" | wc -l`
-}
-
-# pow server needs to reload pf anchor rules from time to time
-function reload_pf_anchor_rules() {
-  sudo pfctl -f /etc/pf.conf
-  sudo pfctl -e
 }
