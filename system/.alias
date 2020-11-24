@@ -9,10 +9,12 @@ alias clear='clear -x'
 alias cl='clear -x'
 
 alias ..='cd ..'
-alias w='cd /mnt/c/Users/crogers/workspace'
-alias n='cd /mnt/c/Users/crogers/notes'
+alias w='cd ~/workspace'
+alias n='cd ~/notes'
 alias dot='cd ~/.dotfiles/dotfiles'
 
 alias tf='terraform'
 
 alias awsid='aws sts get-caller-identity'
+
+alias kc='kubectl'

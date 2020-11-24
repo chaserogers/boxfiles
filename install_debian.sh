@@ -3,7 +3,7 @@
 DOTFILES_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # install packages
-# source "$DOTFILES_ROOT/package/apt.sh"
+source "$DOTFILES_ROOT/package/apt.sh"
 
 # Symlink vim package and config folders
 rm -rf ~/.vim

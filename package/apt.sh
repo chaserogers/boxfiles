@@ -8,6 +8,9 @@ packages=(
   build-essential
   ca-certificates
   curl
+  gnupg-agent
+  gnupg2
+  jq
   libbz2-dev
   libffi-dev
   llvm
@@ -20,10 +23,11 @@ packages=(
   liblzma-dev
   software-properties-common
   tk-dev
+  unzip
   wget
   xz-utils
   zlib1g-dev
 )
 
-sudo apt update
-sudo apt install --no-install-recommends "${packages[@]}"
+sudo apt -y update
+sudo apt -y install --no-install-recommends "${packages[@]}"

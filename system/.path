@@ -32,3 +32,5 @@ export PATH="$HOME/go/bin:$PATH"
 
 # aws path
 export PATH="$HOME/.aws/bin:$PATH"
+
+export PATH="/usr/local/concourse/bin:$PATH"

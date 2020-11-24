@@ -1,3 +1,7 @@
 function num_untracked() {
   expr `git status --porcelain 2>/dev/null| grep "^??" | wc -l`
 }
+
+function instance_id_from_name() {
+  aws ec2 describe-instances --filters Name=tag:Name,Values=$1 | jq .Reservations[].Instances[].InstanceId
+}
