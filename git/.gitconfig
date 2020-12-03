@@ -1,5 +1,5 @@
 [user]
-	name = Chase Rogers
+  name = Chase Rogers
   email = chaseanthonyrogers@gmail.com
 
 [github]
@@ -76,16 +76,6 @@
 [commit]
 	template = ~/.gitmessage.txt
 
-[filter "lfs"]
-  clean = git-lfs clean %f
-  smudge = git-lfs smudge %f
-  required = true
-
-[diff]
-	tool = gvimdiff
-
-[difftool]
-	prompt = false
-
 [credential]
-	helper = store
+    helper = store
+
