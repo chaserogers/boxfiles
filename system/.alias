@@ -1,12 +1,12 @@
-alias ls='ls -l --color=auto'
-alias ll='ls -lah --color=auto'
+alias ls='ls -lG'
+alias ll='ls -laGh'
+alias cl='clear'
+alias vim='mvim -v'
+alias e='mvim -v'
 
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
-
-alias clear='clear -x'
-alias cl='clear -x'
+alias grep='grep'
+alias egrep='egrep'
+alias fgrep='fgrep'
 
 alias ..='cd ..'
 alias w='cd ~/workspace'

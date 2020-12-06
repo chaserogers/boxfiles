@@ -51,10 +51,6 @@ set scrolloff=15
 " use system clipboard
 set clipboard=unnamed
 
-" change cursors between modes in terminal vim
-let &t_SI = "\e[6 q"
-let &t_EI = "\e[2 q"
-
 " time out on mapping after 1s, time out on key codes after 0.1s (fixes lag)
 set timeout timeoutlen=1100 ttimeoutlen=100
 

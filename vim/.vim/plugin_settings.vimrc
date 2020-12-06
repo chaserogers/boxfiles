@@ -72,3 +72,11 @@ let test#strategy = "dispatch"
 
 nmap <silent><leader>sf :TestFile<CR>
 nmap <silent><leader>sa :TestSuite<CR>
+
+" terminus plugin cursor settings
+" 0 = block
+" 1 = vertical bar
+" 2 = underline
+let g:TerminusInsertCursorShape = 1
+let g:TerminusNormalCursorShape = 2
+let g:TerminusReplaceCursorShape = 0
