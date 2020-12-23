@@ -78,5 +78,5 @@ nmap <silent><leader>sa :TestSuite<CR>
 " 1 = vertical bar
 " 2 = underline
 let g:TerminusInsertCursorShape = 1
-let g:TerminusNormalCursorShape = 2
-let g:TerminusReplaceCursorShape = 0
+let g:TerminusNormalCursorShape = 0
+let g:TerminusReplaceCursorShape = 2
