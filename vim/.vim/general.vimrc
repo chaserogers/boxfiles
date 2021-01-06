@@ -1,5 +1,6 @@
 " Color Scheme
 syntax on
+let g:dracula_italic=0
 colorscheme dracula
 
 " highlight cursor line in gutter

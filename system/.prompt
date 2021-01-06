@@ -52,7 +52,7 @@ function git_prompt() {
 
   # Clean branch
   if git diff --quiet 2> /dev/null; then
-    git_color="${green}"
+    git_color="${cyan}"
   fi
 
   # Dirty branch
