@@ -18,3 +18,6 @@ ln -sfv "$DOTFILES_ROOT/runcom/.ripgreprc" ~
 
 # Hush terminal login messages
 touch ~/.hushlogin
+
+# handle swapfiles
+touch ~/.vim/swapfiles

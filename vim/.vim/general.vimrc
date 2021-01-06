@@ -1,17 +1,17 @@
 " Color Scheme
 syntax on
-colorscheme nord
+colorscheme dracula
 
 " highlight cursor line in gutter
-set cursorline
-highlight CursorLine term=NONE cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
-highlight CursorLineNr term=NONE cterm=NONE gui=bold guifg=#D8DEE9 guibg=#2E3440
+" set cursorline
+" highlight CursorLine term=NONE cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+" highlight CursorLineNr term=NONE cterm=NONE gui=bold guifg=#D8DEE9 guibg=#2E3440
 
 " Basic settings
 set encoding=utf-8
-set guifont=Office\ Code\ Pro:h15
+set guifont=DejaVu\ Sans\ Mono:h19
 set guioptions=
-" set lines=45 columns=100
+set lines=45 columns=100
 
 " dont show mode under statusline as it isnt needed
 set noshowmode

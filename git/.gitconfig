@@ -1,6 +1,6 @@
 [user]
   name = Chase Rogers
-  email = chaseanthonyrogers@gmail.com
+  email = mail@chaserogers.org
 
 [github]
   user = chaserogers
@@ -78,4 +78,3 @@
 
 [credential]
     helper = osxkeychain
-

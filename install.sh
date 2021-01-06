@@ -30,3 +30,6 @@ ln -sfv "$DOTFILES_ROOT/vim/.vimrc" ~
 
 # Hush terminal login messages
 touch ~/.hushlogin
+
+# vim swapfiles
+touch ~/.vim/swapfiles

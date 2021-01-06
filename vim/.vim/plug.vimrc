@@ -34,10 +34,12 @@ Plug 'sheerun/vim-polyglot'
 Plug 'plasticboy/vim-markdown'
 Plug 'hashivim/vim-terraform'
 Plug 'stephpy/vim-yaml'
+Plug 'fatih/vim-go'
 
 " colors and themes
-Plug 'rafi/awesome-vim-colorschemes'
 Plug 'arcticicestudio/nord-vim'
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'morhetz/gruvbox'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'mhartington/oceanic-next'
@@ -46,5 +48,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'sjl/badwolf'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()

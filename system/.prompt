@@ -52,17 +52,17 @@ function git_prompt() {
 
   # Clean branch
   if git diff --quiet 2> /dev/null; then
-    git_color="${green_b}"
+    git_color="${green}"
   fi
 
   # Dirty branch
   if ! git diff --quiet 2> /dev/null; then
-    git_color="${red_b}"
+    git_color="${red}"
   fi
 
   # Tracked branch
   if ! git diff --cached --quiet 2> /dev/null; then
-    git_color="${yellow_b}"
+    git_color="${yellow}"
   fi
 
   # Untracked files
@@ -72,7 +72,7 @@ function git_prompt() {
     tracker="+"
   fi
 
-  echo "${c_reset}${git_color}($git_branch)${c_reset}${orange_b}${tracker}"
+  echo "${c_reset}${git_color}($git_branch)${c_reset}${orange}${tracker}"
 }
 
 function venv_prompt() {
@@ -82,7 +82,7 @@ function venv_prompt() {
     base="($(basename $VIRTUAL_ENV))"
   fi
 
-  echo "${c_reset}${purple_b}$base${c_reset}"
+  echo "${c_reset}${purple}$base${c_reset}"
 }
 
-PROMPT_COMMAND='PS1="${yellow_b}[\#]${c_reset}${green_b}[\u@\h]${c_reset}${blue_b}[\w]${c_reset}$(git_prompt)\n$(venv_prompt)${purple_b}$ ${c_reset}"'
+PROMPT_COMMAND='PS1="${green}[\u@\h]${c_reset}${blue}[\W]${c_reset}$(git_prompt)\n$(venv_prompt)${purple}$ ${c_reset}"'

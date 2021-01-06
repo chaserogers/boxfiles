@@ -53,7 +53,6 @@ nmap <silent> <c-k> <Plug>(ale_previous_wrap)
 nmap <silent> <c-j> <Plug>(ale_next_wrap)
 nmap <silent> <leader>d :ALEFix<cr>
 
-
 " only run linters on exactly what I specify in this file
 let g:ale_linters_explicit = 1
 
