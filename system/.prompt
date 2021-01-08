@@ -19,7 +19,10 @@ blue='\[\e[0;34m\]'
 purple='\[\e[0;35m\]'
 cyan='\[\e[0;36m\]'
 orange='\[\e[38;5;208m\]'
+darkorange='\[\e[38;5;172m\]'
+darkerorange='\[\e[38;5;130m\]'
 hotpink='\[\e[38;5;201m\]'
+darkgreen='\[\e[38;5;34m\]'
 
 # Bold
 red_b='\[\e[01;31m\]'
@@ -52,7 +55,7 @@ function git_prompt() {
 
   # Clean branch
   if git diff --quiet 2> /dev/null; then
-    git_color="${cyan}"
+    git_color="${green}"
   fi
 
   # Dirty branch
@@ -72,17 +75,17 @@ function git_prompt() {
     tracker="+"
   fi
 
-  echo "${c_reset}${git_color}($git_branch)${c_reset}${orange}${tracker}"
+  echo "${c_reset}${red}[${c_reset}${git_color}$git_branch${c_reset}${red}]${c_reset}${darkorange}${tracker}"
 }
 
 function venv_prompt() {
   if [ -z $VIRTUAL_ENV ]; then
     base=""
   else
-    base="($(basename $VIRTUAL_ENV))"
+    base="${red}[$(basename $VIRTUAL_ENV)]${c_reset}"
   fi
 
-  echo "${c_reset}${purple}$base${c_reset}"
+  echo $base
 }
 
-PROMPT_COMMAND='PS1="${green}[\u@\h]${c_reset}${blue}[\W]${c_reset}$(git_prompt)\n$(venv_prompt)${purple}$ ${c_reset}"'
+PROMPT_COMMAND='PS1="${red}┌──[${c_reset}${cyan}\u${c_reset}@${yellow}\h${c_reset}${red}]─[${c_reset}${blue}\W${c_reset}${red}]${c_reset}$(git_prompt)\n${red}└──╼[${purple}\#${c_reset}${red}]${c_reset}$(venv_prompt)${red}$ ${c_reset}"'
