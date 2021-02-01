@@ -1,5 +1,5 @@
 let g:lightline = {
-    \ 'colorscheme': 'darcula',
+    \ 'colorscheme': 'srcery_drk',
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
     \             [ 'gitbranch', 'filename' ] ],
