@@ -44,6 +44,8 @@ bakpur='\[\e[45m\]'
 bakcyn='\[\e[46m\]'
 On_White='\[\e[47m\]'
 
+connector=$green
+
 # determines if the git branch you are on is clean or dirty
 function git_prompt() {
   if ! git rev-parse --git-dir > /dev/null 2>&1; then
@@ -75,17 +77,17 @@ function git_prompt() {
     tracker="+"
   fi
 
-  echo "${c_reset}${red}[${c_reset}${git_color}$git_branch${c_reset}${red}]${c_reset}${darkorange}${tracker}"
+  echo "${c_reset}${connector}[${c_reset}${git_color}$git_branch${c_reset}${connector}]${c_reset}${darkorange}${tracker}"
 }
 
 function venv_prompt() {
   if [ -z $VIRTUAL_ENV ]; then
     base=""
   else
-    base="${red}[$(basename $VIRTUAL_ENV)]${c_reset}"
+    base="${connector}[$(basename $VIRTUAL_ENV)]${c_reset}"
   fi
 
   echo $base
 }
 
-PROMPT_COMMAND='PS1="${red}┌──[${c_reset}${cyan}\u${c_reset}@${yellow}\h${c_reset}${red}]─[${c_reset}${blue}\W${c_reset}${red}]${c_reset}$(git_prompt)\n${red}└──╼[${purple}\#${c_reset}${red}]${c_reset}$(venv_prompt)${red}$ ${c_reset}"'
+PROMPT_COMMAND='PS1="${connector}┌──[${c_reset}${blue}\u${c_reset}@${yellow}\h${c_reset}${connector}]─[${c_reset}\W${connector}]${c_reset}$(git_prompt)\n${connector}└──╼[${cyan}\#${c_reset}${connector}]${c_reset}$(venv_prompt)${connector}$ ${c_reset}"'
