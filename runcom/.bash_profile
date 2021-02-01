@@ -30,3 +30,6 @@ fi
 
 # init rbenv
 eval "$(rbenv init -)"
+
+# start tmux in every shell
+# [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit;}
