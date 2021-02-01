@@ -11,6 +11,7 @@ ln -sfnv "$DOTFILES_ROOT/vim/.vim" ~/.vim
 
 # Symlink dotfiles
 ln -sfv "$DOTFILES_ROOT/runcom/.bashrc" ~
+ln -sfv "$DOTFILES_ROOT/runcom/.tmux.conf" ~
 ln -sfv "$DOTFILES_ROOT/git/.gitconfig" ~
 ln -sfv "$DOTFILES_ROOT/git/.gitmessage.txt" ~
 ln -sfv "$DOTFILES_ROOT/vim/.vimrc" ~

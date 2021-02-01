@@ -18,6 +18,7 @@ ln -sfv "$DOTFILES_ROOT/vscode/User/settings.json" ~/Library/Application\ Suppor
 
 # Symlink dotfiles
 ln -sfv "$DOTFILES_ROOT/runcom/.bash_profile" ~
+ln -sfv "$DOTFILES_ROOT/runcom/.tmux.conf" ~
 ln -sfv "$DOTFILES_ROOT/runcom/.inputrc" ~
 ln -sfv "$DOTFILES_ROOT/runcom/.pryrc" ~
 ln -sfv "$DOTFILES_ROOT/runcom/.ripgreprc" ~
