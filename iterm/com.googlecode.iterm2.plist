@@ -35621,7 +35621,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Title Components</key>
-			<integer>5</integer>
+			<integer>36</integer>
 			<key>Transparency</key>
 			<real>0.049700586928934011</real>
 			<key>Triggers</key>
@@ -42379,8 +42379,6 @@
 	</dict>
 	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
 	<true/>
-	<key>PreventEscapeSequenceFromClearingHistory</key>
-	<false/>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
