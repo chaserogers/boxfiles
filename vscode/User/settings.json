@@ -1,6 +1,5 @@
 {
-    "workbench.colorTheme": "Nord",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Dracula",
     "editor.fontSize": 19,
     "terminal.integrated.fontSize": 19,
     "editor.fontFamily": "DejaVu Sans Mono",
@@ -71,7 +70,6 @@
         "markdown"
     ],
     "update.mode": "manual",
-    "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
     "window.nativeTabs": true,
     "window.newWindowDimensions": "maximized",
     "window.restoreWindows": "none",
@@ -79,5 +77,6 @@
     "window.zoomLevel": 0,
     "workbench.settings.editor": "json",
     "workbench.sideBar.location": "left",
-    "workbench.startupEditor": "welcomePage"
+    "workbench.startupEditor": "welcomePage",
+    "workbench.iconTheme": "material-icon-theme"
 }
