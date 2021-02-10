@@ -28,8 +28,5 @@ fi
 
 # source ~/.private_profile
 
-# init rbenv
-eval "$(rbenv init -)"
-
 # start tmux in every shell
-# [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit;}
+[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit; }
