@@ -35,6 +35,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'hashivim/vim-terraform'
 Plug 'stephpy/vim-yaml'
 Plug 'fatih/vim-go'
+Plug 'tomlion/vim-solidity'
 
 " colors and themes
 Plug 'arcticicestudio/nord-vim'
