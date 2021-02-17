@@ -90,4 +90,4 @@ function venv_prompt() {
   echo $base
 }
 
-PROMPT_COMMAND='PS1="${connector}┌──[${c_reset}${blue}\u${c_reset}@${yellow}\h${c_reset}${connector}]─[${c_reset}\W${connector}]${c_reset}$(git_prompt)\n${connector}└──╼[${cyan}\#${c_reset}${connector}]${c_reset}$(venv_prompt)${connector}$ ${c_reset}"'
+PROMPT_COMMAND='PS1="\n${connector}┌──[${c_reset}${blue}\u${c_reset}@${yellow}\h${c_reset}${connector}]─[${c_reset}\W${connector}]${c_reset}$(git_prompt)\n${connector}└──╼[${cyan}\#${c_reset}${connector}]${c_reset}$(venv_prompt)${connector}$ ${c_reset}"'

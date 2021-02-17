@@ -9,12 +9,11 @@ alias egrep='egrep'
 alias fgrep='fgrep'
 
 alias ..='cd ..'
-alias w='cd ~/workspace'
-alias n='cd ~/notes'
+alias work='cd ~/workspace'
+alias notes='cd ~/notes'
 alias dot='cd ~/.dotfiles/dotfiles'
 
 alias tf='terraform'
-
 alias awsid='aws sts get-caller-identity'
-
 alias kc='kubectl'
+alias be='bundle exec'
