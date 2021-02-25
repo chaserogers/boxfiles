@@ -16,17 +16,23 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # init pyenv for managing python versions
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # jabba for managing java versions
-[ -s "/Users/chase.rogers/.jabba/jabba.sh" ] && source "/Users/chase.rogers/.jabba/jabba.sh"
+[ -s "~/.jabba/jabba.sh" ] && source "~/.jabba/jabba.sh"
 
 # load rbenv automatically
 eval "$(rbenv init -)"
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '~/.google-cloud-sdk/path.bash.inc' ]; then . '~/.google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '~/.google-cloud-sdk/completion.bash.inc' ]; then . '~/.google-cloud-sdk/completion.bash.inc'; fi
+
 # start tmux in every shell
 # [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit; }
 
+# load private profile
 source ~/.private_profile
