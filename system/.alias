@@ -12,6 +12,7 @@ alias ..='cd ..'
 alias work='cd ~/workspace'
 alias notes='cd ~/notes'
 alias dot='cd ~/.dotfiles/dotfiles'
+alias scratch='vim ~/notes/scratch.md'
 
 alias tf='terraform'
 alias awsid='aws sts get-caller-identity'

@@ -74,7 +74,16 @@
   HEAD = yellow
 
 [commit]
-	template = ~/.gitmessage.txt
+  template = ~/.gitmessage.txt
 
 [credential]
-    helper = osxkeychain
+  helper = osxkeychain
+
+[pull]
+  rebase = false
+
+[diff]
+  tool = vscode
+
+[init]
+  defaultBranch = main

@@ -28,6 +28,9 @@ let g:SuperTabCrMapping = 1
 let g:AutoPairs = {'(':')', '[':']', '{':'}'}
 let g:AutoPairsMapBS = 0
 
+" fzf
+let g:fzf_layout = { 'down': '40%' }
+" let g:fzf_layout = { 'tmux': '100%' }
 let g:fzf_colors =
   \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
@@ -65,12 +68,6 @@ let g:ale_linters = {
 let g:ale_fixers = {
 \  'javascript': ['eslint'],
 \}
-
-" vim-test
-let test#strategy = "dispatch"
-
-nmap <silent><leader>sf :TestFile<CR>
-nmap <silent><leader>sa :TestSuite<CR>
 
 " terminus plugin cursor settings
 " 0 = block

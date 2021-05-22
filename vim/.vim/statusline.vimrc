@@ -1,5 +1,5 @@
 let g:lightline = {
-    \ 'colorscheme': 'srcery_drk',
+    \ 'colorscheme': 'nord',
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
     \             [ 'gitbranch', 'filename' ] ],

@@ -28,6 +28,7 @@ packages=(
   imagemagick
   jenkins
   jpeg
+  jq
   leiningen
   libassuan
   libgcrypt

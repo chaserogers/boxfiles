@@ -25,14 +25,23 @@ eval "$(pyenv virtualenv-init -)"
 # load rbenv automatically
 eval "$(rbenv init -)"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '~/.google-cloud-sdk/path.bash.inc' ]; then . '~/.google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '~/.google-cloud-sdk/completion.bash.inc' ]; then . '~/.google-cloud-sdk/completion.bash.inc'; fi
-
 # start tmux in every shell
 # [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit; }
 
 # load private profile
 source ~/.private_profile
+
+# enable forward search in reverse-i-search with <C-S>
+stty -ixon
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/crogers/.google-cloud-sdk/path.bash.inc' ]; then . '/Users/crogers/.google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/crogers/.google-cloud-sdk/completion.bash.inc' ]; then . '/Users/crogers/.google-cloud-sdk/completion.bash.inc'; fi
+
+# nix
+if [ -e /Users/crogers/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/crogers/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+# haskell (ghcup)
+[[ -f ~/.bashrc ]] && source ~/.bashrc # ghcup-env

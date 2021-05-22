@@ -6,6 +6,7 @@ export PATH="/Library/Python/2.7/site-packages:$PATH"
 # Path for VIM
 PATH=/opt/local/bin:$PATH/
 
+export PATH=$PATH:~/.local/bin
 # path for mysql
 export PATH="$PATH:/usr/local/mysql/bin"
 
@@ -27,3 +28,4 @@ export PATH="$HOME/go/bin:$PATH"
 
 # aws path
 export PATH="$HOME/.aws/bin:$PATH"
+
