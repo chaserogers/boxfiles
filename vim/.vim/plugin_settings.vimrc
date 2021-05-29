@@ -63,6 +63,7 @@ let g:ale_linters_explicit = 1
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'go': ['golangci-lint'],
+\   'python': ['flake8'],
 \}
 
 let g:ale_fixers = {
