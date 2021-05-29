@@ -2,11 +2,6 @@ alias ls='ls -lG'
 alias ll='ls -laGh'
 alias cl='clear'
 alias vim='mvim -v'
-alias e='mvim -v'
-
-alias grep='grep'
-alias egrep='egrep'
-alias fgrep='fgrep'
 
 alias ..='cd ..'
 alias work='cd ~/workspace'
