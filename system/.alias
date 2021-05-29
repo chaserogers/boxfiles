@@ -2,6 +2,7 @@ alias ls='ls -lG'
 alias ll='ls -laGh'
 alias cl='clear'
 alias vim='mvim -v'
+alias e=$EDITOR
 
 alias ..='cd ..'
 alias work='cd ~/workspace'
