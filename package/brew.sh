@@ -86,3 +86,7 @@ packages=(
 brew install "${packages[@]}"
 
 brew services start --all
+
+# install vagrant
+brew tap hashicorp/tap
+brew install hashicorp/tap/vagrant
