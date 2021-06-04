@@ -26,7 +26,6 @@ ln -sfv "$DOTFILES_ROOT/runcom/.psqlrc" ~
 ln -sfv "$DOTFILES_ROOT/runcom/.jshintrc" ~
 ln -sfv "$DOTFILES_ROOT/git/.gitconfig" ~
 ln -sfv "$DOTFILES_ROOT/git/.gitignore_global" ~
-ln -sfv "$DOTFILES_ROOT/git/.gitmessage.txt" ~
 ln -sfv "$DOTFILES_ROOT/vim/.vimrc" ~
 
 # Hush terminal login messages

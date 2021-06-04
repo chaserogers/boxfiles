@@ -13,7 +13,6 @@ ln -sfnv "$DOTFILES_ROOT/vim/.vim" ~/.vim
 ln -sfv "$DOTFILES_ROOT/runcom/.bashrc" ~
 ln -sfv "$DOTFILES_ROOT/runcom/.tmux.conf" ~
 ln -sfv "$DOTFILES_ROOT/git/.gitconfig" ~
-ln -sfv "$DOTFILES_ROOT/git/.gitmessage.txt" ~
 ln -sfv "$DOTFILES_ROOT/vim/.vimrc" ~
 ln -sfv "$DOTFILES_ROOT/runcom/.ripgreprc" ~
 
