@@ -45,3 +45,6 @@ if [ -e /Users/crogers/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/croger
 
 # haskell (ghcup)
 [[ -f ~/.bashrc ]] && source ~/.bashrc # ghcup-env
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
