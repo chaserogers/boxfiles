@@ -73,9 +73,6 @@
   stash = blue
   HEAD = yellow
 
-[commit]
-  template = ~/.gitmessage.txt
-
 [credential]
   helper = osxkeychain
 

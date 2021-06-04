@@ -1,6 +1,5 @@
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-surround'
-Plug 'ervandew/supertab'
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
@@ -24,7 +23,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " Languages and Syntax
-Plug 'dense-analysis/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
