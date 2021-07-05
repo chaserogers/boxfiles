@@ -16,22 +16,9 @@
   br = branch
   unstage = reset HEAD
   amend = commit --verbose --amend
-
-  lg = log \
-      --pretty=format:'%C(green bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(magenta bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n'
+  lg = log
 
   lg-find = log --all --pretty=\"format:%Cgreen%H %Cblue%s\n%b%Creset\" --name-status --grep
-
-  ll = log \
-    --graph \
-    --abbrev-commit \
-    --decorate \
-    --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''%C(white)%s%C(reset) %C(dim white)- %an%C(reset)' \
-    --all
-
-  mine = log \
-    --pretty=format:'%C(green bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(magenta bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n' \
-    --author=chaseanthonyrogers@gmail.com
 
   lg1 = log \
     --pretty=format:'%C(green bold)%h%Creset -%C(yellow bold)%d%Creset %s %C(blue bold)(%cr) %C(magenta bold)<%an>%Creset' \
@@ -44,34 +31,6 @@
 
 [color]
   ui = auto
-[color "status"]
-  header = normal
-  branch = normal
-  untracked = cyan
-  added = yellow
-  changed = red
-[color "branch"]
-  current = green bold
-  local = yellow
-  remote = cyan
-[color "diff"]
-  meta = yellow
-  frag = magenta
-  plain = normal
-  old = red bold
-  new = green bold
-  whitespace = normal
-[color "interactive"]
-  prompt = cyan bold
-  header = green bold
-  help = yellow
-  error = red
-[color "decorate"]
-  branch = yellow bold
-  remoteBranch = cyan
-  tag = white bold
-  stash = blue
-  HEAD = yellow
 
 [credential]
   helper = osxkeychain
