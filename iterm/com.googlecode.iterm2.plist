@@ -34760,6 +34760,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>64396244-E8F2-4B2E-BB9F-AA53AC39EC9F</string>
+	<key>DefaultTabStopWidth</key>
+	<integer>4</integer>
 	<key>DimBackgroundWindows</key>
 	<true/>
 	<key>DimInactiveSplitPanes</key>
@@ -35194,7 +35196,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>110</integer>
+			<integer>180</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Boost</key>
@@ -35624,13 +35626,15 @@
 			<key>Non-ASCII Ligatures</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>DejaVuSansMono 16</string>
+			<string>DejaVuSansMono 17</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
+			<key>Place Prompt at First Column</key>
+			<true/>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -35803,7 +35807,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Title Components</key>
-			<integer>5</integer>
+			<integer>4</integer>
 			<key>Transparency</key>
 			<real>0.016079732914960104</real>
 			<key>Triggers</key>
