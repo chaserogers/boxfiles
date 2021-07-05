@@ -28,4 +28,3 @@ export PATH="$HOME/go/bin:$PATH"
 
 # aws path
 export PATH="$HOME/.aws/bin:$PATH"
-
