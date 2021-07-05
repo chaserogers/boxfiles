@@ -1,50 +1,20 @@
 # \[\e[0m\] resets the color to default color
-c_reset='\[\e[0m\]'
+c_reset="\[\e[0m\]"
 
-# Bold High Intensity
-BIBlack='\[\e[1;90m\]'
-BIRed='\[\e[1;91m\]'
-BIGreen='\[\e[1;92m\]'
-BIYellow='\[\e[1;93m\]'
-BIBlue='\[\e[1;94m\]'
-BIPurple='\[\e[1;95m\]'
-BICyan='\[\e[1;96m\]'
-BIWhite='\[\e[1;97m\]'
+# colors
+black="\[\e[0;30m\]"
+red="\[\e[0;31m\]"
+green="\[\e[0;32m\]"
+yellow="\[\e[0;33m\]"
+blue="\[\e[0;34m\]"
+purple="\[\e[0;35m\]"
+cyan="\[\e[0;36m\]"
+white="\[\e[0;37m\]"
 
-# Normal
-red='\[\e[0;31m\]'
-green='\[\e[0;32m\]'
-yellow='\[\e[0;33m\]'
-blue='\[\e[0;34m\]'
-purple='\[\e[0;35m\]'
-cyan='\[\e[0;36m\]'
-orange='\[\e[38;5;208m\]'
-darkorange='\[\e[38;5;172m\]'
-darkerorange='\[\e[38;5;130m\]'
-hotpink='\[\e[38;5;201m\]'
-darkgreen='\[\e[38;5;34m\]'
+darkorange="\[\e[38;5;172m\]"
 
-# Bold
-red_b='\[\e[01;31m\]'
-green_b='\[\e[01;32m\]'
-yellow_b='\[\e[01;33m\]'
-blue_b='\[\e[01;34m\]'
-purple_b='\[\e[01;35m\]'
-cyan_b='\[\e[01;36m\]'
-orange_b='\[\e[01;38;5;208m\]'
-hotpink_b='\[\e[01;38;5;201m\]'
-
-# Background colors
-On_Black='\[\e[40m\]'
-bakred='\[\e[41m\]'
-bakgrn='\[\e[42m\]'
-bakylw='\[\e[43m\]'
-bakblu='\[\e[44m\]'
-bakpur='\[\e[45m\]'
-bakcyn='\[\e[46m\]'
-On_White='\[\e[47m\]'
-
-connector=$green
+# connector color
+connector=$cyan
 
 # determines if the git branch you are on is clean or dirty
 function git_prompt() {
@@ -80,14 +50,41 @@ function git_prompt() {
   echo "${c_reset}${connector}[${c_reset}${git_color}$git_branch${c_reset}${connector}]${c_reset}${darkorange}${tracker}"
 }
 
+# for python virtual environments
 function venv_prompt() {
   if [ -z $VIRTUAL_ENV ]; then
     base=""
   else
-    base="${connector}[$(basename $VIRTUAL_ENV)]${c_reset}"
+    base="${connector}($(basename $VIRTUAL_ENV))${c_reset}"
   fi
 
   echo $base
 }
 
-PROMPT_COMMAND='PS1="${connector}┌──[${c_reset}${blue}\u${c_reset}@${yellow}\h${c_reset}${connector}]─[${c_reset}${cyan}\W${c_reset}${connector}]${c_reset}$(git_prompt)\n${connector}└──╼[${purple}\#${c_reset}${connector}]${c_reset}$(venv_prompt)${connector}$ ${c_reset}"'
+# Get the current terminal column value. From https://stackoverflow.com/a/2575525/549363.
+__get_terminal_column() {
+  exec < /dev/tty
+  local oldstty=$(stty -g)
+  stty raw -echo min 0
+  echo -en "\033[6n" > /dev/tty
+  local pos
+  IFS=';' read -r -d R -a pos
+  stty $oldstty
+  echo "$((${pos[1]} - 1))"
+}
+
+# Insert newline before prompt when needed
+__configure_prompt() {
+  if [ "$(__get_terminal_column)" != 0 ]; then
+    echo
+  fi
+}
+
+# single line prompt
+# PROMPT_COMMAND='__configure_prompt;PS1="${connector}[${c_reset}${blue}\u${c_reset}@${purple}\h${c_reset}${connector}][${c_reset}${blue}\W${c_reset}${connector}]${c_reset}$(git_prompt)$(venv_prompt)${connector}$ ${c_reset}"'
+
+# multline prompt with connectors
+# PROMPT_COMMAND='__configure_prompt;PS1="${connector}┌──[${c_reset}${blue}\u${c_reset}@${purple}\h${c_reset}${connector}]─[${c_reset}${blue}\W${c_reset}${connector}]${c_reset}$(git_prompt)\n${connector}└──╼[${purple}\#${c_reset}${connector}]${c_reset}$(venv_prompt)${connector}$ ${c_reset}"'
+
+# multiline prompt without connectors
+PROMPT_COMMAND='__configure_prompt;PS1="${connector}[${c_reset}${blue}\u${c_reset}${white}@${c_reset}${purple}\h${c_reset}${connector}][${c_reset}${blue}\W${c_reset}${connector}]${c_reset}$(git_prompt)\n${connector}[${purple}\#${c_reset}${connector}]${c_reset}$(venv_prompt)${connector}$ ${c_reset}"'

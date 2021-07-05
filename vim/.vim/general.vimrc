@@ -92,7 +92,7 @@ set autoindent
 set nopaste
 set pastetoggle=<F3>
 
-" for html/rb files, 2 spaces
+" 2 spaces
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype haml setlocal ts=2 sw=2 expandtab
 autocmd Filetype slim setlocal ts=2 sw=2 expandtab
@@ -101,6 +101,7 @@ autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype elixir setlocal ts=2 sw=2 expandtab
 autocmd Filetype bash setlocal ts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 expandtab
+autocmd Filetype dockerfile setlocal ts=2 sw=2 expandtab
 
 " for js/coffee/jade/scss files, 4 spaces
 autocmd Filetype python setlocal ts=4 sw=4 expandtab

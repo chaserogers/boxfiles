@@ -45,3 +45,15 @@ nnoremap <c-f> :echo expand('%:p')<cr>
 
 " align with tabular
 map <leader>tt :Tab /
+
+" split creation
+set splitright
+nnoremap <leader>- :sp<cr>
+set splitbelow
+nnoremap <leader>\ :vsp<cr>
+
+"split navigation
+nnoremap <leader><down> <C-W><C-J>
+nnoremap <leader><up> <C-W><C-K>
+nnoremap <leader><right> <C-W><C-L>
+nnoremap <leader><left> <C-W><C-H>
