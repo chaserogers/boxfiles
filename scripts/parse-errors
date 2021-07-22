@@ -1,0 +1,6 @@
+#! /usr/bin/env bash
+
+sed -n -e 's/^.*message: //p' | while read -r line
+do
+  aws sts decode-authorization-message --encoded-message $line | jq -r '.DecodedMessage' | jq '.context' | jq '{action,resource}'
+done

@@ -12,6 +12,10 @@ source "$DOTFILES_ROOT/package/brew.sh"
 rm -rf ~/.vim
 ln -sfnv "$DOTFILES_ROOT/vim/.vim" ~/.vim
 
+# Symlink custom scripts directory
+rm -rf ~/.scripts
+ln -sfnv "$DOTFILES_ROOT/scripts" ~/.scripts
+
 # Configure vscode
 rm -rf ~/Library/Application\ Support/Code/User/settings.json
 ln -sfv "$DOTFILES_ROOT/vscode/User/settings.json" ~/Library/Application\ Support/Code/User/

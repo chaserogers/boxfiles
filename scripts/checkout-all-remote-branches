@@ -1,0 +1,10 @@
+#!/bin/bash
+
+all_branches="$(git branch -r)"
+
+for branch in $all_branches; do
+  cut_branch="$(echo $branch | cut -d / -f 2-)"
+  echo "*** CUT BRANCH *** $cut_branch"
+
+  git checkout $cut_branch
+done

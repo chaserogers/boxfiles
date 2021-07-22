@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+
+policy_arn=$1
+policy_doc=$2
+old_version=$(aws iam list-policy-versions --policy-arn $policy_arn --query "Versions[].VersionId" | jq -r '.[-1]')
+
+aws iam delete-policy-version --policy-arn $policy_arn --version-id $old_version
+
+version_id=$(aws iam create-policy-version --policy-arn $policy_arn --policy-document $policy_doc --set-as-default | jq -r '.PolicyVersion' | jq -r '.VersionId')
+
+aws iam get-policy-version --policy-arn $policy_arn --version-id $version_id

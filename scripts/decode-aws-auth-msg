@@ -1,0 +1,5 @@
+#! /usr/bin/env bash
+
+aws sts decode-authorization-message --encoded-message $1 | \
+  jq -r '.DecodedMessage' | \
+  jq -r '.context | {action,resource}'

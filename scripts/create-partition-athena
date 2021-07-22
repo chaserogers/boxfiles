@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -e
+
+DB=$1
+TABLE=$2
+LOCATION=$3
+REGION=$4
+OUTPUT_LOCATION=$5
+
+folders_raw=$(aws s3 ls $LOCATION --region $REGION)
+folders=$(echo $folders_raw | sed 's/PRE//g')
+
+for folder in $folders; do
+  partition_name=$(echo $folder | sed 's/\///g')
+
+  echo "partition_name --> $partition_name"
+
+  query="ALTER TABLE $DB.$TABLE ADD IF NOT EXISTS PARTITION (dt='$partition_name') LOCATION '$LOCATION$folder';"
+
+  aws athena start-query-execution --query-string "$query" --result-configuration OutputLocation=$OUTPUT_LOCATION --region $REGION
+done

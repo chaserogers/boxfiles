@@ -9,6 +9,10 @@ source "$DOTFILES_ROOT/package/apt.sh"
 rm -rf ~/.vim
 ln -sfnv "$DOTFILES_ROOT/vim/.vim" ~/.vim
 
+# Symlink custom scripts directory
+rm -rf ~/.scripts
+ln -sfnv "$DOTFILES_ROOT/scripts" ~/.scripts
+
 # Symlink dotfiles
 ln -sfv "$DOTFILES_ROOT/runcom/.bashrc" ~
 ln -sfv "$DOTFILES_ROOT/runcom/.tmux.conf" ~

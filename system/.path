@@ -7,8 +7,10 @@ export PATH="/Library/Python/2.7/site-packages:$PATH"
 PATH=/opt/local/bin:$PATH/
 
 export PATH=$PATH:~/.local/bin
+
 # path for mysql
 export PATH="$PATH:/usr/local/mysql/bin"
+export PATH="/usr/local/opt/mysql@5.5/bin:$PATH"
 
 # path for VS Code "code" command
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
