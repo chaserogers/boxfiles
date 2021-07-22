@@ -21,9 +21,6 @@ set guifont=DejaVu\ Sans\ Mono:h19
 set guioptions=
 set lines=45 columns=100
 
-" dont show mode under statusline as it isnt needed
-set noshowmode
-
 " put swapfiles elsewhere
 set swapfile
 set directory^=~/.vim/swapfiles//
