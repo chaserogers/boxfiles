@@ -33,3 +33,6 @@ touch ~/.hushlogin
 
 # vim swapfiles
 touch ~/.vim/swapfiles
+
+mkdir ~/workspace
+ln -sfv "$DOTFILES_ROOT/git/workspace/.gitconfig" ~/workspace
