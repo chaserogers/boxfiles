@@ -1,4 +1,5 @@
 call plug#begin('~/.vim/plugged')
+Plug 'ycm-core/youcompleteme'
 Plug 'tpope/vim-surround'
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-commentary'
@@ -23,7 +24,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " Languages and Syntax
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'

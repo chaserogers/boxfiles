@@ -1,14 +1,14 @@
 " Color Scheme
 syntax on
 
+colorscheme nord
+
 " configure dracula color scheme before we set it
 " let g:dracula_italic=0
 " let g:dracula_bold=0
 " let g:dracula_underline=0
 " let g:dracula_undercurl=0
 " let g:dracula_inverse=0
-
-colorscheme nord
 
 " highlight cursor line in gutter
 " set cursorline
