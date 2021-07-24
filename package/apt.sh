@@ -7,6 +7,7 @@ packages=(
   apt-transport-https
   build-essential
   ca-certificates
+  cmake
   curl
   gnupg-agent
   gnupg2

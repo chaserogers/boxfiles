@@ -10,6 +10,7 @@ packages=(
   automake
   bash
   bsdmake
+  cmake
   coreutils
   cowsay
   csshx
