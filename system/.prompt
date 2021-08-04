@@ -14,7 +14,7 @@ white="\[\e[0;37m\]"
 darkorange="\[\e[38;5;172m\]"
 
 # connector color
-connector=$cyan
+connector=$red
 
 # determines if the git branch you are on is clean or dirty
 function git_prompt() {
@@ -87,4 +87,4 @@ __configure_prompt() {
 # PROMPT_COMMAND='__configure_prompt;PS1="${connector}┌──[${c_reset}${blue}\u${c_reset}@${purple}\h${c_reset}${connector}]─[${c_reset}${blue}\W${c_reset}${connector}]${c_reset}$(git_prompt)\n${connector}└──╼[${purple}\#${c_reset}${connector}]${c_reset}$(venv_prompt)${connector}$ ${c_reset}"'
 
 # multiline prompt without connectors
-PROMPT_COMMAND='__configure_prompt;PS1="${connector}[${c_reset}${blue}\u${c_reset}${white}@${c_reset}${purple}\h${c_reset}${connector}][${c_reset}${blue}\W${c_reset}${connector}]${c_reset}$(git_prompt)\n${connector}[${purple}\#${c_reset}${connector}]${c_reset}$(venv_prompt)${connector}$ ${c_reset}"'
+PROMPT_COMMAND='__configure_prompt;PS1="${connector}[${c_reset}${purple}\u${c_reset}${white}@${c_reset}${green}\h${c_reset}${connector}][${c_reset}${purple}\w${c_reset}${connector}]${c_reset}$(git_prompt)\n${connector}[${green}\#${c_reset}${connector}]${c_reset}$(venv_prompt)${connector}$ ${c_reset}"'
