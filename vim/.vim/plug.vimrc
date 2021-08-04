@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'ycm-core/youcompleteme'
+Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-commentary'
@@ -11,7 +12,6 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'jremmen/vim-ripgrep'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'jiangmiao/auto-pairs'
 Plug 'diepm/vim-rest-console'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-vinegar'

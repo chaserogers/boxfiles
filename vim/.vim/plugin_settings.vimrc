@@ -45,14 +45,7 @@ let g:TerminusInsertCursorShape = 1
 let g:TerminusNormalCursorShape = 0
 let g:TerminusReplaceCursorShape = 2
 
-" coc settings
-let g:coc_global_extensions = [ 'coc-tsserver' ]
-
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
-
-vmap <leader>cf <Plug>(coc-format-selected)
-nmap <leader>cf <Plug>(coc-format-selected)
-
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" delimitMate settings
+let delimitMate_expand_cr = 1
+let delimitMate_expand_space = 1
+let delimitMate_excluded_ft = "md,txt,csv"

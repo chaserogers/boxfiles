@@ -3,17 +3,10 @@ syntax on
 
 colorscheme nord
 
-" configure dracula color scheme before we set it
-" let g:dracula_italic=0
-" let g:dracula_bold=0
-" let g:dracula_underline=0
-" let g:dracula_undercurl=0
-" let g:dracula_inverse=0
-
 " highlight cursor line in gutter
-" set cursorline
-" highlight CursorLine term=NONE cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
-" highlight CursorLineNr term=NONE cterm=NONE gui=bold guifg=#D8DEE9 guibg=#2E3440
+set cursorline
+highlight CursorLine term=NONE cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+highlight CursorLineNr term=NONE cterm=NONE gui=bold guifg=#D8DEE9 guibg=#2E3440
 
 " Basic settings
 set encoding=utf-8
@@ -29,7 +22,19 @@ set shortmess+=A
 " set nowrap
 set wrap
 set nolinebreak
-set nolist
+
+" list tabs and trailing spaces
+set list
+set listchars=tab:>-,trail:-
+
+" highlight color for nbsp, tab, and trail
+highlight SpecialKey ctermfg=red guifg='#400000'
+
+" Remove trailing spaces on save
+au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,README.md  setf markdown
+
+" trim trailing spaces on save
+autocmd BufWritePre * :%s/\s\+$//e
 
 set spr
 set ea
@@ -61,16 +66,6 @@ set timeout timeoutlen=1100 ttimeoutlen=100
 
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
-
-" Remove trailing spaces on save
-au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,README.md  setf markdown
-
-" Highlight trailing whitespace
-highlight ExtraWhitespace ctermbg=red guibg='#400000'
-match ExtraWhitespace /\s\+$/
-
-" trim trailing spaces on save
-autocmd BufWritePre * :%s/\s\+$//e
 
 " close all quickfix windows after a selection is made
 " autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
