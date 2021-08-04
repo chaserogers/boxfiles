@@ -5,3 +5,10 @@ function num_untracked() {
 function instance_id_from_name() {
   aws ec2 describe-instances --filters Name=tag:Name,Values=$1 | jq .Reservations[].Instances[].InstanceId
 }
+
+function vgid() {
+  BOX_NAME=$1
+  BOX_ID=$(vagrant global-status | grep $BOX_NAME | awk '{print $1}')
+
+  echo $BOX_ID
+}
