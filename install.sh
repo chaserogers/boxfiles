@@ -14,7 +14,7 @@ ln -sfnv "$DOTFILES_ROOT/vim/.vim" ~/.vim
 
 # Symlink custom scripts directory
 rm -rf ~/.scripts
-ln -sfnv "$DOTFILES_ROOT/scripts" ~/.scripts
+ln -sfnv "$DOTFILES_ROOT/scripts/.scripts" ~/.scripts
 
 # Configure vscode
 rm -rf ~/Library/Application\ Support/Code/User/settings.json

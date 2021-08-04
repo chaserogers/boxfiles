@@ -1,0 +1,6 @@
+#! /usr/bin/env bash
+
+BOX_NAME=$1
+BOX_ID=$(vagrant global-status | grep $BOX_NAME | awk '{print $1}')
+
+vagrant up $BOX_ID && vagrant ssh $BOX_ID && vagrant suspend $BOX_ID

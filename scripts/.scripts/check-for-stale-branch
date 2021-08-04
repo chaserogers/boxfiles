@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -e
+
+LOCAL_BRANCH=$(git branch --show-current)
+REMOTE_BRANCH=$1
+
+BEHIND_COUNT=$(git rev-list --left-right --count $REMOTE_BRANCH...$LOCAL_BRANCH | awk '{print $1}')
+
+if [[ ${BEHIND_COUNT} -ge 1 ]]; then
+  echo "stale"
+else
+  echo "up-to-date"
+fi

@@ -1,0 +1,18 @@
+#! /usr/bin/env bash
+
+set -a
+
+MAP=$(vagrant global-status | while read line; do
+  if [[ $line =~ "virtualbox" ]]; then
+    box_name=$(echo $line | awk '{print $2}' | tr '[:lower:]' '[:upper:]')
+    box_id=$(echo $line | awk '{print $1}')
+
+    echo "VG_${box_name}_ID=${box_id}"
+  fi
+done)
+
+for statement in $MAP; do
+  eval $statement
+done
+
+set +a
