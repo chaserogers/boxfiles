@@ -16,6 +16,7 @@ ln -sfnv "$DOTFILES_ROOT/scripts" ~/.scripts
 # Symlink dotfiles
 ln -sfv "$DOTFILES_ROOT/runcom/.bashrc" ~
 ln -sfv "$DOTFILES_ROOT/runcom/.tmux.conf" ~
+ln -sfv "$DOTFILES_ROOT/runcom/.ctags" ~
 ln -sfv "$DOTFILES_ROOT/git/.gitconfig" ~
 ln -sfv "$DOTFILES_ROOT/vim/.vimrc" ~
 ln -sfv "$DOTFILES_ROOT/runcom/.ripgreprc" ~
