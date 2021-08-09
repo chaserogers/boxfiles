@@ -1,0 +1,14 @@
+#! /usr/bin/env bash
+
+usage_instructions () {
+  msg=$'ERROR: wrong number of arguments\n\nexample usage:\n  heroku-member-info-json <team>'
+
+  echo >&2 "$msg"
+  exit 1
+}
+
+[ "$#" -eq 1 ] || usage_instructions
+
+TEAM=$1
+
+heroku members --team $TEAM --json >> $(TZ=UTC date "+%Y%m%d%H%M%S")_${TEAM}_heroku_members.json
