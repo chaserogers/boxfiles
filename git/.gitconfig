@@ -10,6 +10,7 @@
 
 [alias]
   ci = commit
+  ai = add -i
   co = checkout
   df = diff
   st = status -sb
@@ -17,17 +18,14 @@
   unstage = reset HEAD
   amend = commit --verbose --amend
   lg = log
-
-  lg-find = log --all --pretty=\"format:%Cgreen%H %Cblue%s\n%b%Creset\" --name-status --grep
+  lgdf = log -p
+  lg-find = log --all --name-status --grep
 
   lg1 = log \
     --pretty=format:'%C(green bold)%h%Creset -%C(yellow bold)%d%Creset %s %C(blue bold)(%cr) %C(magenta bold)<%an>%Creset' \
     --abbrev-commit \
     --date=relative
 
-  lgdf = log \
-    --pretty=format:'%C(green bold)commit %H%Creset%C(yellow bold)%d%Creset\n%C(magenta bold)Author: %an <%ae>%Creset\n%C(blue bold)Date: %cd%Creset\n\n%B\n' \
-    -p
 
 [color]
   ui = auto
