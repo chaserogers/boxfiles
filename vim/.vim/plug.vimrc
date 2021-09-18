@@ -1,5 +1,5 @@
 call plug#begin('~/.vim/plugged')
-Plug 'ycm-core/youcompleteme'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'mileszs/ack.vim'
@@ -15,9 +15,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'diepm/vim-rest-console'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-vinegar'
-Plug 'janko/vim-test'
-Plug 'tpope/vim-dispatch'
 Plug 'wincent/terminus'
+Plug 'tpope/vim-rsi'
 
 " Git
 Plug 'airblade/vim-gitgutter'

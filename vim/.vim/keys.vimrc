@@ -23,10 +23,6 @@ nnoremap <Leader>O O<esc>
 "rg
 nnoremap <leader>f :Rg<space>
 
-" switch to preview buffer or next buffer
-nnoremap <s-tab> :bp<cr>
-nnoremap <tab> :bn<cr>
-
 " switch buffer by number
 nnoremap <leader>b :ls<cr>:b
 
@@ -57,3 +53,6 @@ nnoremap <leader><down> <C-W><C-J>
 nnoremap <leader><up> <C-W><C-K>
 nnoremap <leader><right> <C-W><C-L>
 nnoremap <leader><left> <C-W><C-H>
+
+" Make Y yank till end of line
+nnoremap Y yg_

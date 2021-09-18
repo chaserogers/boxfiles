@@ -1,14 +1,11 @@
-#!/usr/bin/env bash
+#! /usr/bin/env bash
 
 set -e
 
-LOCAL_BRANCH=$(git branch --show-current)
-REMOTE_BRANCH=$1
+APP=$1
+DEPLOY_DESCRIPTIONS=$(heroku releases -a $APP --json | jq 'map(select(.description | contains("Deploy")))')
+LATEST_DEPLOY_SHA=$(echo $DEPLOY_DESCRIPTIONS | jq  -r .[0].description | cut -d ' ' -f 2)
 
-BEHIND_COUNT=$(git rev-list --left-right --count $REMOTE_BRANCH...$LOCAL_BRANCH | awk '{print $1}')
+echo $LATEST_DEPLOY_SHA
 
-if [[ ${BEHIND_COUNT} -ge 1 ]]; then
-  echo "stale"
-else
-  echo "up-to-date"
-fi
+git merge-base --is-ancestor $LATEST_DEPLOY_SHA HEAD

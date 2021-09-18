@@ -26,7 +26,7 @@ eval "$(pyenv virtualenv-init -)"
 eval "$(rbenv init -)"
 
 # start tmux in every shell
-# [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit; }
+# [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session; }
 
 # load private profile
 source ~/.private_profile
