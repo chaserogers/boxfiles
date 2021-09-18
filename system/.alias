@@ -6,7 +6,8 @@ alias e=$EDITOR
 
 alias ..='cd ..'
 alias work='cd ~/workspace'
-alias notes='vim ~/notes'
+alias enotes='cd ~/notes && vim . && cd -'
+alias notes='cd ~/notes'
 alias dot='cd ~/.dotfiles/dotfiles'
 alias edot='cd ~/.dotfiles/dotfiles && vim . && cd -'
 alias scripts='ls ~/.scripts'
