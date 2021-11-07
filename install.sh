@@ -16,6 +16,10 @@ ln -sfnv "$DOTFILES_ROOT/vim/.vim" ~/.vim
 rm -rf ~/.scripts
 ln -sfnv "$DOTFILES_ROOT/scripts/.scripts" ~/.scripts
 
+# Symlink vagrant boxes
+rm -rf ~/.vagrant-boxes
+ln -sfnv "$DOTFILES_ROOT/vagrant/.vagrant-boxes" ~/.vagrant-boxes
+
 # Configure vscode
 rm -rf ~/Library/Application\ Support/Code/User/settings.json
 ln -sfv "$DOTFILES_ROOT/vscode/User/settings.json" ~/Library/Application\ Support/Code/User/

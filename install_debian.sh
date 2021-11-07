@@ -13,6 +13,10 @@ ln -sfnv "$DOTFILES_ROOT/vim/.vim" ~/.vim
 rm -rf ~/.scripts
 ln -sfnv "$DOTFILES_ROOT/scripts" ~/.scripts
 
+# Symlink vagrant boxes
+rm -rf ~/.vagrant-boxes
+ln -sfnv "$DOTFILES_ROOT/vagrant/.vagrant-boxes" ~/.vagrant-boxes
+
 # Symlink dotfiles
 ln -sfv "$DOTFILES_ROOT/runcom/.bashrc" ~
 ln -sfv "$DOTFILES_ROOT/runcom/.tmux.conf" ~

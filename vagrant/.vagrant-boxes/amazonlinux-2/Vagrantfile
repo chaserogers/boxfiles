@@ -1,0 +1,14 @@
+Vagrant.configure("2") do |config|
+  box_name = "bento/amazonlinux-2"
+  config.vm.box = box_name
+
+  config.vm.hostname = "amazonlinux2"
+  config.vm.define "al2"
+
+  config.vm.provider "virtualbox" do |v|
+    v.name = box_name.sub("/", "-")
+
+    v.memory = 2048
+    v.cpus = 2
+  end
+end
