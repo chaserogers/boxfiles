@@ -22,6 +22,7 @@ packages=(
   libxml2-dev
   libxmlsec1-dev
   liblzma-dev
+  neofetch
   software-properties-common
   tk-dev
   unzip

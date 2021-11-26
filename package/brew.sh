@@ -45,6 +45,7 @@ packages=(
   macvim
   mercurial
   mysql
+  neofetch
   node
   openssl
   ossp-uuid
@@ -55,6 +56,7 @@ packages=(
   proctools
   pth
   python3
+  ranger
   readline
   redis
   rg
@@ -66,6 +68,7 @@ packages=(
   tree
   unixodbc
   v8
+  w3m
   wxmac
   xz
   yarn

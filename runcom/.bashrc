@@ -41,3 +41,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # start tmux in every shell
 # [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit;}
+
+# sets both ignorespace and ignoredupes
+HISTCONTROL=ignoreboth
+
+neofetch
