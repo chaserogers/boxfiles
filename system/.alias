@@ -3,6 +3,7 @@ alias ll='ls -laGh'
 alias cl='clear'
 alias vim='mvim -v'
 alias e=$EDITOR
+alias tree='tree -C'
 
 alias ..='cd ..'
 alias work='cd ~/workspace'
@@ -19,3 +20,4 @@ alias kc='kubectl'
 alias be='bundle exec'
 alias dc='docker-compose'
 alias vg='vagrant'
+alias nctl='lima nerdctl'

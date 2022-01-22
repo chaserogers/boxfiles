@@ -51,4 +51,4 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 # sets both ignorespace and ignoredupes
 HISTCONTROL=ignoreboth
 
-neofetch
+# neofetch

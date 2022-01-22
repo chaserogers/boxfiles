@@ -45,4 +45,4 @@ export NVM_DIR="$HOME/.nvm"
 # sets both ignorespace and ignoredupes
 HISTCONTROL=ignoreboth
 
-neofetch
+# neofetch
