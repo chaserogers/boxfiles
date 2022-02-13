@@ -48,6 +48,7 @@ packages=(
   neofetch
   node
   openssl
+  openvpn
   ossp-uuid
   pcre
   pinentry

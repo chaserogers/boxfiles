@@ -43,5 +43,9 @@ touch ~/.hushlogin
 # vim swapfiles
 touch ~/.vim/swapfiles
 
+# make workspace directory and give it its own gitconfig
 mkdir ~/workspace
 ln -sfv "$DOTFILES_ROOT/git/workspace/.gitconfig" ~/workspace
+
+# create private profile for sensitive configuration settings
+echo "# put sensitive config here" > ~/.private_profile
